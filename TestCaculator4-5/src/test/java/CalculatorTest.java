@@ -39,4 +39,14 @@ public class CalculatorTest {
     public void testHavingDifferenceDelimiter() {
         assertEquals(Calculator.add("//;\n1;2"), 3);
     }
+
+    @Test
+    public void testRaiseException() {
+        try{
+            Calculator.add("//;\n1;-2");
+            fail("Exception expected");
+        }catch (Exception e) {
+
+        }
+    }
 }
