@@ -37,8 +37,19 @@ public class Calculator {
 
     private static String getDelimiter(String text) {
         String delimiterString = ",|\n";
-        if (text.startsWith("//["))
-            delimiterString = nomalize(text.split("]")[0].split("\\[")[1]) + "|\n";
+        if (text.startsWith("//[")) {
+
+            String[] listDelimiter = text.split("\\[");
+            //String delimiterString = nomalize(plit("]")[0].split("\\[")[1]) + "|\n";
+            delimiterString = nomalize(listDelimiter[1].split("\\]")[0]);
+            int i = 0;
+            for (String s : listDelimiter) {
+                i++;
+                if (i > 1)
+                    delimiterString += "|" + nomalize(s.split("\\]")[0]);
+            }
+
+        }
         else
         if (text.startsWith("//"))
             delimiterString = text.substring(2, 3) + "|\n";
