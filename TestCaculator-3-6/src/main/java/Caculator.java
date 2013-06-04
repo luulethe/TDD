@@ -9,7 +9,7 @@ public class Caculator {
     public static int add(String text) throws Exception {
         if (text.equals(""))
             return 0;
-        String delimiterString = getDelemiter(text);
+        String delimiterString = getDelimiter(text);
         String[] listNumber = getListNumber(text, delimiterString);
         return sum(listNumber);
     }
@@ -37,7 +37,7 @@ public class Caculator {
         return numberString.split(delimiterString);
     }
 
-    private static String getDelemiter(String text) {
+    private static String getDelimiter(String text) {
 
         String delimiterString = "\n|,";
         if (!text.startsWith("//")) {

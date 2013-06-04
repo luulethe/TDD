@@ -74,6 +74,7 @@ public class TestCaculator {
     @Test
     public void TestMutipleDelimiter() throws Exception {
         assertEquals(6, Caculator.add("//[*][%]\n1*2%3"));
+
     }
 
     @Test
