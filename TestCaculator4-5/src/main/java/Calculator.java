@@ -9,9 +9,15 @@ public class Calculator {
     public static int add(String text) {
         if (text.equals(""))
             return 0;
-        String[] listNumber = text.split(",|\n");
+        String delimiterString = ",|\n";
+        if (text.startsWith("//"))
+            delimiterString = text.substring(2, 3) + "|\n";
+        String numberString = text;
+        if (text.startsWith("//"))
+            numberString = text.split("\n")[1];
+        String[] listNumber = numberString.split(delimiterString);
         int sum = 0;
-        for(String s : listNumber) {
+        for (String s : listNumber) {
             sum += Integer.parseInt(s);
         }
         return sum;
