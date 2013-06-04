@@ -63,21 +63,21 @@ public class CalculatorTest {
 
     @Test
     public void testIgnoreMoreThan1000() throws Exception {
-            assertEquals(Calculator.add("//;\n1;1001;2"),3);
+        assertEquals(Calculator.add("//;\n1;1001;2"), 3);
     }
 
     @Test
     public void testDelimiterAnyLength() throws Exception {
-        assertEquals(Calculator.add("//[***]\n1***2***3"),6);
+        assertEquals(Calculator.add("//[***]\n1***2***3"), 6);
     }
 
     @Test
     public void testMultipleDelimiter() throws Exception {
-        assertEquals(Calculator.add("//[*][%]\n1*2%3"),6);
+        assertEquals(Calculator.add("//[*][%]\n1*2%3"), 6);
     }
 
     @Test
     public void testMultipleDelimiterAnyLength() throws Exception {
-        assertEquals(Calculator.add("//[****][%%%%]\n1****2%%%%3"),6);
+        assertEquals(Calculator.add("//[****][%%%%]\n1****2%%%%3"), 6);
     }
 }

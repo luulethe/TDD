@@ -38,9 +38,7 @@ public class Calculator {
     private static String getDelimiter(String text) {
         String delimiterString = ",|\n";
         if (text.startsWith("//[")) {
-
             String[] listDelimiter = text.split("\\[");
-            //String delimiterString = nomalize(plit("]")[0].split("\\[")[1]) + "|\n";
             delimiterString = nomalize(listDelimiter[1].split("\\]")[0]);
             int i = 0;
             for (String s : listDelimiter) {
@@ -48,18 +46,15 @@ public class Calculator {
                 if (i > 1)
                     delimiterString += "|" + nomalize(s.split("\\]")[0]);
             }
-
-        }
-        else
-        if (text.startsWith("//"))
+        } else if (text.startsWith("//"))
             delimiterString = text.substring(2, 3) + "|\n";
-        return delimiterString;  //To change body of created methods use File | Settings | File Templates.
+        return delimiterString;
     }
 
     private static String nomalize(String s) {
-        s = s.replaceAll("[*]","\\\\*");
-        s = s.replaceAll("[?]","\\\\?");
-        return s.replaceAll("[+]","\\\\+");
+        s = s.replaceAll("[*]", "\\\\*");
+        s = s.replaceAll("[?]", "\\\\?");
+        return s.replaceAll("[+]", "\\\\+");
 
     }
 }
