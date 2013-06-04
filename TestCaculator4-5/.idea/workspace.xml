@@ -4,7 +4,7 @@
     <list default="true" id="be3809fc-1470-409e-81f2-8d241a84d23f" name="Default" comment="" />
     <ignored path="TestCaculator4-5.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/CalculatorTest.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370327977317" ignored="false" />
+    <file path="/CalculatorTest.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370328049488" ignored="false" />
     <file path="/Calculator.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370327938709" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +76,7 @@
       <file leaf-file-name="CalculatorTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="46" selection-start="630" selection-end="630" vertical-scroll-proportion="0.78552276">
+            <state line="34" column="38" selection-start="729" selection-end="729" vertical-scroll-proportion="0.8391421">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -385,7 +385,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -496,7 +496,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="46" selection-start="630" selection-end="630" vertical-scroll-proportion="0.78552276">
+        <state line="34" column="38" selection-start="729" selection-end="729" vertical-scroll-proportion="0.8391421">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

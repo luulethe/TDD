@@ -12,19 +12,26 @@ import static junit.framework.Assert.*;
 public class CalculatorTest {
     @Test
     public void testEmptyString() {
-        assertEquals(Calculator.add(""),0) ;
+        assertEquals(Calculator.add(""), 0);
     }
+
     @Test
     public void testOneNumber() {
-        assertEquals(Calculator.add("1"),1) ;
+        assertEquals(Calculator.add("1"), 1);
     }
 
     @Test
     public void testTwoNumber() {
-        assertEquals(Calculator.add("1,2"),3) ;
+        assertEquals(Calculator.add("1,2"), 3);
     }
+
     @Test
     public void testUnknowNumber() {
-        assertEquals(Calculator.add("1,2,3"),6) ;
+        assertEquals(Calculator.add("1,2,3"), 6);
+    }
+
+    @Test
+    public void testHavingNewLine() {
+        assertEquals(Calculator.add("1\n2,3"), 6);
     }
 }
