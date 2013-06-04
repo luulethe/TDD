@@ -5,7 +5,7 @@
     <ignored path="TestCaculator4-5.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/CalculatorTest.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370328171935" ignored="false" />
-    <file path="/Calculator.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370328409764" ignored="false" />
+    <file path="/Calculator.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370328612539" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="64" selection-start="587" selection-end="587" vertical-scroll-proportion="0.8042895">
+            <state line="13" column="23" selection-start="412" selection-end="412" vertical-scroll-proportion="-0.66219836">
               <folding />
             </state>
           </provider>
@@ -498,7 +498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="64" selection-start="587" selection-end="587" vertical-scroll-proportion="0.8042895">
+        <state line="13" column="23" selection-start="412" selection-end="412" vertical-scroll-proportion="-0.66219836">
           <folding />
         </state>
       </provider>

@@ -9,17 +9,30 @@ public class Calculator {
     public static int add(String text) {
         if (text.equals(""))
             return 0;
-        String delimiterString = ",|\n";
-        if (text.startsWith("//"))
-            delimiterString = text.substring(2, 3) + "|\n";
-        String numberString = text;
-        if (text.startsWith("//"))
-            numberString = text.split("\n")[1];
-        String[] listNumber = numberString.split(delimiterString);
+        String delimiterString = getDelimiter(text);
+        String[] listNumber = getListNumber(text, delimiterString);
+        return sum(listNumber);
+    }
+
+    private static int sum(String[] listNumber) {
         int sum = 0;
         for (String s : listNumber) {
             sum += Integer.parseInt(s);
         }
         return sum;
+    }
+
+    private static String[] getListNumber(String text, String delimiterString) {
+        String numberString = text;
+        if (text.startsWith("//"))
+            numberString = text.split("\n")[1];
+        return numberString.split(delimiterString);
+    }
+
+    private static String getDelimiter(String text) {
+        String delimiterString = ",|\n";
+        if (text.startsWith("//"))
+            delimiterString = text.substring(2, 3) + "|\n";
+        return delimiterString;  //To change body of created methods use File | Settings | File Templates.
     }
 }
