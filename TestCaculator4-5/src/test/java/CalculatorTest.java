@@ -60,4 +60,9 @@ public class CalculatorTest {
 
         }
     }
+
+    @Test
+    public void testIgnoreMoreThan1000() throws Exception {
+            assertEquals(Calculator.add("//;\n1;1001;2"),3);
+    }
 }
