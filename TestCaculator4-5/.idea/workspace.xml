@@ -4,7 +4,7 @@
     <list default="true" id="be3809fc-1470-409e-81f2-8d241a84d23f" name="Default" comment="" />
     <ignored path="TestCaculator4-5.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/CalculatorTest.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370328049488" ignored="false" />
+    <file path="/CalculatorTest.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370328171935" ignored="false" />
     <file path="/Calculator.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370328089914" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +76,7 @@
       <file leaf-file-name="CalculatorTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="38" selection-start="729" selection-end="729" vertical-scroll-proportion="0.8391421">
+            <state line="39" column="50" selection-start="859" selection-end="859" vertical-scroll-proportion="0.8391421">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,8 +95,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/CalculatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CalculatorTest.java" />
       </list>
     </option>
   </component>
@@ -496,7 +496,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="38" selection-start="729" selection-end="729" vertical-scroll-proportion="0.8391421">
+        <state line="39" column="50" selection-start="859" selection-end="859" vertical-scroll-proportion="0.8391421">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
