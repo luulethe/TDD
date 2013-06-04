@@ -11,7 +11,7 @@ import static junit.framework.Assert.*;
  */
 public class CalculatorTest {
     @Test
-    public void testEmptyString() throws Exception{
+    public void testEmptyString() throws Exception {
         assertEquals(Calculator.add(""), 0);
     }
 
@@ -42,10 +42,21 @@ public class CalculatorTest {
 
     @Test
     public void testRaiseException() throws Exception {
-        try{
+        try {
             Calculator.add("//;\n1;-2");
             fail("Exception expected");
-        }catch (Exception e) {
+        } catch (Exception e) {
+
+        }
+    }
+
+    @Test
+    public void testMessageException() throws Exception {
+        try {
+            Calculator.add("//;\n1;-2");
+            fail("Exception expected");
+        } catch (Exception e) {
+            assertEquals(e.getMessage(), "negatives not allowed -2");
 
         }
     }

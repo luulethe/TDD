@@ -4,7 +4,7 @@
     <list default="true" id="be3809fc-1470-409e-81f2-8d241a84d23f" name="Default" comment="" />
     <ignored path="TestCaculator4-5.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/CalculatorTest.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370328868723" ignored="false" />
+    <file path="/CalculatorTest.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370328948655" ignored="false" />
     <file path="/Calculator.java" changelist="be3809fc-1470-409e-81f2-8d241a84d23f" time="1370328860566" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +67,7 @@
       <file leaf-file-name="Calculator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="56" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+            <state line="25" column="33" selection-start="812" selection-end="833" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,7 +76,7 @@
       <file leaf-file-name="CalculatorTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="53" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.78552276">
+            <state line="55" column="47" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.6246649">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -489,14 +489,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="56" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+        <state line="25" column="33" selection-start="812" selection-end="833" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="53" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.78552276">
+        <state line="55" column="47" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.6246649">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
