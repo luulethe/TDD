@@ -37,8 +37,18 @@ public class Calculator {
 
     private static String getDelimiter(String text) {
         String delimiterString = ",|\n";
+        if (text.startsWith("//["))
+            delimiterString = nomalize(text.split("]")[0].split("\\[")[1]) + "|\n";
+        else
         if (text.startsWith("//"))
             delimiterString = text.substring(2, 3) + "|\n";
         return delimiterString;  //To change body of created methods use File | Settings | File Templates.
+    }
+
+    private static String nomalize(String s) {
+        s = s.replaceAll("[*]","\\\\*");
+        s = s.replaceAll("[?]","\\\\?");
+        return s.replaceAll("[+]","\\\\+");
+
     }
 }

@@ -68,6 +68,6 @@ public class CalculatorTest {
 
     @Test
     public void testDelimiterAnyLength() throws Exception {
-        assertEquals(Calculator.add("//[***]\\n1***2***3"),6);
+        assertEquals(Calculator.add("//[***]\n1***2***3"),6);
     }
 }

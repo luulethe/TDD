@@ -10,10 +10,10 @@
     <file path="$PROJECT_DIR$/../TestCaculator4-5/pom.xml" changelist="8067bc8f-f1b3-45e4-a7d3-fc3e177d964c" time="1370327343941" ignored="false" />
     <file path="$PROJECT_DIR$/../TestCaculator4-5/src/main/java/Caculator.java" changelist="8067bc8f-f1b3-45e4-a7d3-fc3e177d964c" time="1370327365196" ignored="false" />
     <file path="$PROJECT_DIR$/../TestCaculator4-5/src/test/java/CaculatorTest.java" changelist="8067bc8f-f1b3-45e4-a7d3-fc3e177d964c" time="1370327377082" ignored="false" />
-    <file path="$PROJECT_DIR$/../TestCaculator4-5/src/main/java/Calculator.java" changelist="8067bc8f-f1b3-45e4-a7d3-fc3e177d964c" time="1370329029056" ignored="false" />
-    <file path="$PROJECT_DIR$/../TestCaculator4-5/src/test/java/CalculatorTest.java" changelist="8067bc8f-f1b3-45e4-a7d3-fc3e177d964c" time="1370329205822" ignored="false" />
+    <file path="$PROJECT_DIR$/../TestCaculator4-5/src/main/java/Calculator.java" changelist="8067bc8f-f1b3-45e4-a7d3-fc3e177d964c" time="1370329455702" ignored="false" />
+    <file path="$PROJECT_DIR$/../TestCaculator4-5/src/test/java/CalculatorTest.java" changelist="8067bc8f-f1b3-45e4-a7d3-fc3e177d964c" time="1370329373082" ignored="false" />
     <file path="/CalculatorTest.java" changelist="8067bc8f-f1b3-45e4-a7d3-fc3e177d964c" time="1370329187098" ignored="false" />
-    <file path="/Calculator.java" changelist="8067bc8f-f1b3-45e4-a7d3-fc3e177d964c" time="1370329020353" ignored="false" />
+    <file path="/Calculator.java" changelist="8067bc8f-f1b3-45e4-a7d3-fc3e177d964c" time="1370329448231" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,10 +72,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Caculator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Caculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Caculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="19" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
+            <state line="26" column="19" selection-start="848" selection-end="848" vertical-scroll-proportion="-0.6168717">
               <folding />
             </state>
           </provider>
@@ -92,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="19" selection-start="429" selection-end="658" vertical-scroll-proportion="0.63268894">
+            <state line="18" column="19" selection-start="429" selection-end="658" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -540,13 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Caculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="19" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCaculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="39" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
@@ -558,7 +551,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="19" selection-start="429" selection-end="658" vertical-scroll-proportion="0.63268894">
+        <state line="18" column="19" selection-start="429" selection-end="658" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Caculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="19" selection-start="848" selection-end="848" vertical-scroll-proportion="-0.6168717">
           <folding />
         </state>
       </provider>
