@@ -50,4 +50,14 @@ public class TestCalculator {
 
         }
     }
+
+    @Test
+    public void testMessageException() {
+        try {
+            Calculator.add("//;\n1;-2");
+            fail("Exception excepted");
+        } catch (Exception e) {
+            assertEquals(e.getMessage(),"negatives not allowed -2");
+        }
+    }
 }
