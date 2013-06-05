@@ -33,6 +33,6 @@ public class TestCalculator {
 
     @Test
     public void testHavingNewLine() {
-        assertEquals(Calculator.add("1\n,2,3,4,5"), 15);
+        assertEquals(Calculator.add("1\n2,3,4,5"), 15);
     }
 }
