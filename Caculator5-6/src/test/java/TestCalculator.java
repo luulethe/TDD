@@ -40,4 +40,14 @@ public class TestCalculator {
     public void testDifferenceDelimiters() {
         assertEquals(Calculator.add("//;\n1;2"), 3);
     }
+
+    @Test
+    public void testRaiseException() {
+        try {
+            Calculator.add("//;\n1;-2");
+            fail("Exception excepted");
+        } catch (Exception e) {
+
+        }
+    }
 }

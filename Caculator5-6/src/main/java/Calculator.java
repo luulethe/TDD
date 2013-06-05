@@ -16,6 +16,7 @@ public class Calculator {
 
     private static int sumList(String[] listNumber) {
         int sum = 0;
+
         for (String s : listNumber) {
             sum += Integer.parseInt(s);
         }
