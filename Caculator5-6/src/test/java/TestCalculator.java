@@ -11,33 +11,33 @@ import static junit.framework.Assert.*;
  */
 public class TestCalculator {
     @Test
-    public void testEmptyString() {
+    public void testEmptyString() throws Exception {
         assertEquals(Calculator.add(""), 0);
     }
 
     @Test
-    public void testOneNumber() {
+    public void testOneNumber() throws Exception {
         assertEquals(Calculator.add("1"), 1);
     }
 
     @Test
-    public void testTwoNumber() {
+    public void testTwoNumber() throws Exception {
         assertEquals(Calculator.add("1,2"), 3);
     }
 
     @Test
-    public void testUnknownNumber() {
+    public void testUnknownNumber() throws Exception {
         assertEquals(Calculator.add("1,2,3,4,5"), 15);
         assertEquals(Calculator.add("1,2,3,4,50"), 60);
     }
 
     @Test
-    public void testHavingNewLine() {
+    public void testHavingNewLine() throws Exception {
         assertEquals(Calculator.add("1\n2,3,4,5"), 15);
     }
 
     @Test
-    public void testDifferenceDelimiters() {
+    public void testDifferenceDelimiters() throws Exception {
         assertEquals(Calculator.add("//;\n1;2"), 3);
     }
 

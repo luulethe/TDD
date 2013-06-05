@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 public class Calculator {
-    public static int add(String text) {
+    public static int add(String text) throws  Exception{
         if (text.equals(""))
             return 0;
         String delimiterString = getDelimiter(text);
@@ -14,12 +14,17 @@ public class Calculator {
         return sumList(listNumber);  //To change body of created methods use File | Settings | File Templates.
     }
 
-    private static int sumList(String[] listNumber) {
+    private static int sumList(String[] listNumber) throws Exception{
         int sum = 0;
-
+        String negativeString = "";
         for (String s : listNumber) {
             sum += Integer.parseInt(s);
+            if (Integer.parseInt(s) < 0) {
+                negativeString += " " + s;
+            }
         }
+        if (!negativeString.equals(""))
+            throw  new Exception("negatives not allowed"+ negativeString);
         return sum;  //To change body of created methods use File | Settings | File Templates.
     }
 
