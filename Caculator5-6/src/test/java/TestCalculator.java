@@ -60,4 +60,9 @@ public class TestCalculator {
             assertEquals(e.getMessage(),"negatives not allowed -2");
         }
     }
+
+    @Test
+    public void testIgnoreMore1000() throws Exception {
+        assertEquals(Calculator.add("//;\n1;2000;2"), 3);
+    }
 }
