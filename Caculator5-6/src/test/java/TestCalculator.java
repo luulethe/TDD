@@ -24,4 +24,10 @@ public class TestCalculator {
     public void testTwoNumber() {
         assertEquals(Calculator.add("1,2"), 3);
     }
+
+    @Test
+    public void testUnknownNumber() {
+        assertEquals(Calculator.add("1,2,3,4,5"), 15);
+        assertEquals(Calculator.add("1,2,3,4,50"), 60);
+    }
 }
