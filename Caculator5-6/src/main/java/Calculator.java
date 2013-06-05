@@ -9,7 +9,13 @@ public class Calculator {
     public static int add(String text) {
         if (text.equals(""))
             return 0;
-        String[] listNumber = text.split(",|\n");
+        String delimiterString = ",|\n";
+        if (text.startsWith("//"))
+            delimiterString = text.substring(2,3) + "|\n";
+        String textNumber = text;
+        if (text.startsWith("//"))
+            textNumber = text.split("\n")[1];
+        String[] listNumber = textNumber.split(delimiterString);
         int sum = 0;
         for(String s : listNumber) {
             sum += Integer.parseInt(s);
