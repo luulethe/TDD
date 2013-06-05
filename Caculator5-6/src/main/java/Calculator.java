@@ -40,9 +40,17 @@ public class Calculator {
 
     private static String getDelimiter(String text) {
         String delimiterString = ",|\n";
-        if (text.startsWith("//["))
-            delimiterString = Pattern.quote(text.split("]")[0].split("\\[")[1]) + "|\n";
-        else if (text.startsWith("//"))
+        if (text.startsWith("//[")) {
+            delimiterString = "\n";
+            String[] listDelimiter = text.split("\\[");
+            int i = 0;
+            for (String s : listDelimiter) {
+                i++;
+                if (i > 1) {
+                    delimiterString += "|" + Pattern.quote(s.split("]")[0]);
+                }
+            }
+        } else if (text.startsWith("//"))
             delimiterString = text.substring(2, 3) + "|\n";
         return delimiterString;
     }
