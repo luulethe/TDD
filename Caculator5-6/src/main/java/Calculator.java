@@ -7,6 +7,13 @@
  */
 public class Calculator {
     public static int add(String text) {
-        return Integer.parseInt(text);  //To change body of created methods use File | Settings | File Templates.
+        if (text.equals(""))
+            return 0;
+        String[] listNumber = text.split(",");
+        int sum = 0;
+        for(String s : listNumber) {
+            sum += Integer.parseInt(s);
+        }
+        return sum;  //To change body of created methods use File | Settings | File Templates.
     }
 }
