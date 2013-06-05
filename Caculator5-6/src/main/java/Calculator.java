@@ -7,6 +7,6 @@
  */
 public class Calculator {
     public static int add(String text) {
-        return 0;  //To change body of created methods use File | Settings | File Templates.
+        return Integer.parseInt(text);  //To change body of created methods use File | Settings | File Templates.
     }
 }
