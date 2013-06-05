@@ -13,7 +13,7 @@ public class Calculator {
             return 0;
         String delimiterString = getDelimiter(text);
         String[] listNumber = getListNumber(text, delimiterString);
-        return sumList(listNumber);  //To change body of created methods use File | Settings | File Templates.
+        return sumList(listNumber);
     }
 
     private static int sumList(String[] listNumber) throws Exception {
@@ -28,7 +28,7 @@ public class Calculator {
         }
         if (!negativeString.equals(""))
             throw new Exception("negatives not allowed" + negativeString);
-        return sum;  //To change body of created methods use File | Settings | File Templates.
+        return sum;
     }
 
     private static String[] getListNumber(String text, String delimiterString) {
