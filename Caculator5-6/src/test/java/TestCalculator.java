@@ -65,4 +65,9 @@ public class TestCalculator {
     public void testIgnoreMore1000() throws Exception {
         assertEquals(Calculator.add("//;\n1;2000;2"), 3);
     }
+
+    @Test
+    public void testDelimiterAnyLength() throws Exception {
+        assertEquals(Calculator.add("//[***]\\n1***2***3"), 6);
+    }
 }
