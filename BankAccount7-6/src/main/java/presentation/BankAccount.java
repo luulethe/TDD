@@ -15,11 +15,34 @@ public class BankAccount {
         this.bankAccountDAO = bankAccountDAO;
     }
 
-    private BankAccountDAO bankAccountDAO;
+    private static BankAccountDAO bankAccountDAO;
 
-    public BankAccountEntity open(String accountNumber) {
+    public static BankAccountDAO getBankAccountDAO() {
+        return bankAccountDAO;
+    }
+
+    public static void setBankAccountDAO(BankAccountDAO bankAccountDAO) {
+        BankAccount.bankAccountDAO = bankAccountDAO;
+    }
+
+    public static BankAccountEntity open(String accountNumber) {
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 0);
         bankAccountDAO.save(bankAccountEntity);
         return bankAccountEntity;
+    }
+
+    public static void deposit(String accountNumber, int amount, String description) {
+        doTransaction(accountNumber, amount, description);
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
+    private static void doTransaction(String accountNumber, int amount, String description) {
+        BankAccountEntity bankAccountEntity = bankAccountDAO.getAccount(accountNumber);
+        bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
+        bankAccountDAO.save(bankAccountEntity);
+    }
+
+    public static BankAccountEntity getAccount(String accountNumber) {
+        return bankAccountDAO.getAccount(accountNumber);
     }
 }

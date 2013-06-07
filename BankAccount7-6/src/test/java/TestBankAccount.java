@@ -1,13 +1,12 @@
 import entity.BankAccountEntity;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.*;
 import presentation.BankAccount;
 import dao.BankAccountDAO;
 
 import static junit.framework.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.reset;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,19 +16,46 @@ import static org.mockito.Mockito.verify;
  * To change this template use File | Settings | File Templates.
  */
 public class TestBankAccount {
-    BankAccountDAO mockAccountDao = mock(BankAccountDAO.class);
-    static final double   e = 0.00001;
+    BankAccountDAO mockAccountDAO = mock(BankAccountDAO.class);
+    static final double e = 0.00001;
+    static String accountNumber = "1234567890";
 
     @Before
     public void setUp() {
-        reset(mockAccountDao);
+        reset(mockAccountDAO);
+        BankAccount.setBankAccountDAO(mockAccountDAO);
     }
 
     @Test
-    public void testOpenAccount() {
-        BankAccount bankAccount = new BankAccount(mockAccountDao);
-        BankAccountEntity bankAccountEntity = bankAccount.open("1234567890");
-        assertEquals(bankAccountEntity.getBalance(), 0 ,e);
-        verify(mockAccountDao).save(bankAccountEntity);
+    public void testOpenAccountAndPersistent() {
+        BankAccountEntity bankAccountEntity = BankAccount.open(accountNumber);
+
+        assertEquals(bankAccountEntity.getAccountNumber(), accountNumber);
+        assertEquals(bankAccountEntity.getBalance(), 0, e);
+        verify(mockAccountDAO).save(bankAccountEntity);
+    }
+
+    @Test
+    public void testGetAccount() {
+        BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 100);
+        when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
+        BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
+
+        verify(mockAccountDAO).getAccount(accountNumber);
+        assertEquals(bankAccountEntity, bankAccountEntityFromDatabase);
+    }
+
+    @Test
+    public void testDeposit() {
+        ArgumentCaptor<BankAccountEntity> argument = org.mockito.ArgumentCaptor.forClass(BankAccountEntity.class);
+
+        BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 0);
+        when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
+        BankAccountEntity bankAccountEntity = BankAccount.open(accountNumber);
+        BankAccount.deposit(accountNumber, 100, "send money");
+
+        verify(mockAccountDAO,times(2)).save(argument.capture());
+        assertEquals(argument.getAllValues().get(1).getAccountNumber(),accountNumber);
+        assertEquals(argument.getAllValues().get(1).getBalance(),100,e);
     }
 }

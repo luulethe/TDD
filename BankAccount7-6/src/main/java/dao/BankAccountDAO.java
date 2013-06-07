@@ -12,4 +12,8 @@ import entity.BankAccountEntity;
 public class BankAccountDAO {
     public void save(BankAccountEntity bankAccountEntity) {
     }
+
+    public BankAccountEntity getAccount(String accountNumber) {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }

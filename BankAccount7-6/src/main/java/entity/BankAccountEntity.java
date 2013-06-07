@@ -41,4 +41,17 @@ public class BankAccountEntity {
     public void setOpenTimestamp(long openTimestamp) {
         this.openTimestamp = openTimestamp;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof BankAccountEntity) {
+            BankAccountEntity otherAccount = (BankAccountEntity) o;
+            if (otherAccount.getAccountNumber().equals(accountNumber) && (otherAccount.getBalance() - balance < 0.00001) &&
+                    (otherAccount.getOpenTimestamp() == openTimestamp))
+                return true;
+            else
+                return false;
+        }
+        return false;
+    }
 }
