@@ -43,12 +43,11 @@ public class TestTransaction {
 
         BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 0);
         when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
-        BankAccountEntity bankAccountEntity = BankAccount.open(accountNumber);
         BankAccount.deposit(accountNumber, 100, "send money");
 
-        verify(mockAccountDAO, times(2)).save(argument.capture());
-        assertEquals(argument.getAllValues().get(1).getAccountNumber(), accountNumber);
-        assertEquals(argument.getAllValues().get(1).getBalance(), 100, e);
+        verify(mockAccountDAO, times(1)).save(argument.capture());
+        assertEquals(argument.getValue().getAccountNumber(), accountNumber);
+        assertEquals(argument.getValue().getBalance(), 100, e);
     }
 
     @Test
@@ -58,7 +57,6 @@ public class TestTransaction {
 
         BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 0);
         when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
-        BankAccountEntity bankAccountEntity = BankAccount.open(accountNumber);
         BankAccount.deposit(accountNumber, 100, "send money");
         BankAccount.deposit(accountNumber, 200, "send money1");
 
@@ -68,7 +66,6 @@ public class TestTransaction {
         assertEquals(list.get(0).getAccountNumber(), accountNumber);
         assertEquals(list.get(0).getAmount(), 100, e);
         assertEquals(list.get(0).getDescription(), "send money");
-        //assertEquals(list.get(0).getTimestamp(), System.currentTimeMillis());
 
         assertEquals(list.get(1).getAccountNumber(), accountNumber);
         assertEquals(list.get(1).getAmount(), 200, e);
@@ -81,23 +78,21 @@ public class TestTransaction {
 
         BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 100);
         when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
-        BankAccountEntity bankAccountEntity = BankAccount.open(accountNumber);
         BankAccount.Withdraw(accountNumber, 50, "withdraw money");
         BankAccount.Withdraw(accountNumber, 20, "withdraw money");
 
-        verify(mockAccountDAO, times(3)).save(argument.capture());
-        assertEquals(argument.getAllValues().get(2).getAccountNumber(), accountNumber);
-        assertEquals(argument.getAllValues().get(2).getBalance(), 30, e);
+        verify(mockAccountDAO, times(2)).save(argument.capture());
+        assertEquals(argument.getAllValues().get(1).getAccountNumber(), accountNumber);
+        assertEquals(argument.getAllValues().get(1).getBalance(), 30, e);
     }
 
     @Test
-    public void testSaveTransactionWidth() {
+    public void testSaveTransactionWithdraw() {
 
         ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
 
         BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 500);
         when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
-        BankAccountEntity bankAccountEntity = BankAccount.open(accountNumber);
         BankAccount.Withdraw(accountNumber, 100, "withdraw money");
         BankAccount.Withdraw(accountNumber, 200, "withdraw money1");
 
@@ -116,8 +111,6 @@ public class TestTransaction {
 
     @Test
     public void testGetAllTransaction() {
-
-        ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
         List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
         listResult.add(new TransactionEntity(accountNumber, 100, "deposit"));
         listResult.add(new TransactionEntity(accountNumber, 50, "withdraw"));
@@ -136,8 +129,6 @@ public class TestTransaction {
 
     @Test
     public void testGetTransactionBetween2Time() {
-
-        ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
         List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
         listResult.add(new TransactionEntity(accountNumber, 100, "deposit"));
         listResult.add(new TransactionEntity(accountNumber, 50, "withdraw"));
@@ -159,7 +150,6 @@ public class TestTransaction {
     @Test
     public void testGetNLatestTransaction() throws Exception{
 
-        ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
         List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
         listResult.add(new TransactionEntity(accountNumber, 100, "deposit"));
         listResult.add(new TransactionEntity(accountNumber, 50, "withdraw"));
@@ -178,15 +168,10 @@ public class TestTransaction {
     }
     @Test(expected = Exception.class)
     public void testGetNLatestTransactionRaiseException() throws Exception{
-
-        ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
-
         long times = -2;
         when(mockTransactionDAO.getTransactionsOccurred(accountNumber, times)).thenReturn(null);
         List<TransactionEntity> listTransaction = BankAccount.getTransactionsOccurred(accountNumber, times);
-        //fail("Exception ex");
         verify(mockTransactionDAO).getTransactionsOccurred(accountNumber, times);
-
     }
 
 }
