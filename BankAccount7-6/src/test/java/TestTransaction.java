@@ -8,6 +8,7 @@ import org.mockito.ArgumentCaptor;
 import presentation.BankAccount;
 import presentation.Transaction;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
@@ -111,4 +112,23 @@ public class TestTransaction {
         assertEquals(list.get(1).getDescription(), "withdraw money1");
     }
 
+    @Test
+    public void testGetAllTransaction() {
+
+        ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
+        List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
+        listResult.add(new TransactionEntity(accountNumber,100,"deposit"));
+        listResult.add(new TransactionEntity(accountNumber,50,"withdraw"));
+
+        when(mockTransactionDAO.getTransactionsOccurred(accountNumber)).thenReturn(listResult);
+        List<TransactionEntity> listTransaction = BankAccount.getTransactionsOccurred(accountNumber);
+        verify(mockTransactionDAO).getTransactionsOccurred(accountNumber);
+
+        assertEquals(listTransaction.size(),listResult.size());
+        int i = 0;
+        for(TransactionEntity tr : listResult) {
+            assertEquals(tr,listTransaction.get(i));
+            i++;
+        }
+    }
 }

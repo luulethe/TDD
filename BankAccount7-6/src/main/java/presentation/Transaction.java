@@ -3,6 +3,8 @@ package presentation;
 import dao.TransactionDAO;
 import entity.TransactionEntity;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: luult
@@ -24,5 +26,9 @@ public class Transaction {
         TransactionEntity transactionEntity =  new TransactionEntity(accountNumber, amount, description);
         dao.save(transactionEntity);
         return transactionEntity;
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
+        return dao.getTransactionsOccurred(accountNumber);  //To change body of created methods use File | Settings | File Templates.
     }
 }

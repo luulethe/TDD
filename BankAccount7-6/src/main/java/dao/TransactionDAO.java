@@ -3,6 +3,8 @@ package dao;
 import entity.BankAccountEntity;
 import entity.TransactionEntity;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: luult
@@ -13,5 +15,9 @@ import entity.TransactionEntity;
 public class TransactionDAO {
     public void save(TransactionEntity transactionEntity) {
 
+    }
+
+    public List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
+        return null;
     }
 }
