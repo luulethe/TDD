@@ -38,7 +38,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testDeposit() {
+    public void testDeposit() throws Exception {
         ArgumentCaptor<BankAccountEntity> argument = org.mockito.ArgumentCaptor.forClass(BankAccountEntity.class);
 
         BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 0);
@@ -51,7 +51,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testSaveTransactionDeposit() {
+    public void testSaveTransactionDeposit() throws Exception {
 
         ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
 
@@ -73,7 +73,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testWithdraw() {
+    public void testWithdraw() throws Exception {
         ArgumentCaptor<BankAccountEntity> argument = org.mockito.ArgumentCaptor.forClass(BankAccountEntity.class);
 
         BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 100);
@@ -86,8 +86,20 @@ public class TestTransaction {
         assertEquals(argument.getAllValues().get(1).getBalance(), 30, e);
     }
 
+    @Test(expected = Exception.class)
+    public void testWithdrawRaiseException() throws Exception {
+        ArgumentCaptor<BankAccountEntity> argument = org.mockito.ArgumentCaptor.forClass(BankAccountEntity.class);
+
+        BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 100);
+        when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
+
+        BankAccount.Withdraw(accountNumber, 200, "withdraw money");
+
+        verify(mockAccountDAO, times(0)).save(argument.capture());
+    }
+
     @Test
-    public void testSaveTransactionWithdraw() {
+    public void testSaveTransactionWithdraw() throws Exception {
 
         ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
 
@@ -148,7 +160,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testGetNLatestTransaction() throws Exception{
+    public void testGetNLatestTransaction() throws Exception {
 
         List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
         listResult.add(new TransactionEntity(accountNumber, 100, "deposit"));
@@ -166,8 +178,9 @@ public class TestTransaction {
             i++;
         }
     }
+
     @Test(expected = Exception.class)
-    public void testGetNLatestTransactionRaiseException() throws Exception{
+    public void testGetNLatestTransactionRaiseException() throws Exception {
         long times = -2;
         when(mockTransactionDAO.getTransactionsOccurred(accountNumber, times)).thenReturn(null);
         List<TransactionEntity> listTransaction = BankAccount.getTransactionsOccurred(accountNumber, times);

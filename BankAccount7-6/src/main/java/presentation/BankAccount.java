@@ -35,12 +35,13 @@ public class BankAccount {
         return bankAccountEntity;
     }
 
-    public static void deposit(String accountNumber, int amount, String description) {
+    public static void deposit(String accountNumber, int amount, String description) throws Exception{
         doTransaction(accountNumber, amount, description);
     }
 
-    private static void doTransaction(String accountNumber, int amount, String description) {
+    private static void doTransaction(String accountNumber, int amount, String description) throws Exception{
         BankAccountEntity bankAccountEntity = bankAccountDAO.getAccount(accountNumber);
+        if (bankAccountEntity.getBalance() + amount <0) throw new Exception("Don't enough money");
         bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
         bankAccountDAO.save(bankAccountEntity);
         Transaction.createTransaction(accountNumber, amount, description);
@@ -50,7 +51,7 @@ public class BankAccount {
         return bankAccountDAO.getAccount(accountNumber);
     }
 
-    public static void Withdraw(String accountNumber, int amount, String description) {
+    public static void Withdraw(String accountNumber, int amount, String description) throws Exception{
         doTransaction(accountNumber, -amount, description);
     }
 
