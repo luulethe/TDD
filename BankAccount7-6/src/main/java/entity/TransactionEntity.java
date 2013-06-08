@@ -1,7 +1,6 @@
 package entity;
 
-import utils.MyTimer;
-import utils.MyTimerClass;
+import java.util.Calendar;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,7 +10,7 @@ import utils.MyTimerClass;
  * To change this template use File | Settings | File Templates.
  */
 public class TransactionEntity {
-    public static MyTimer mytimer = new MyTimerClass();
+    private static Calendar calendar = Calendar.getInstance() ;
     private String accountNumber;
     private double amount;
     private String description;
@@ -22,7 +21,7 @@ public class TransactionEntity {
         this.accountNumber = accountNumber;
         this.amount = amount;
         this.description = description;
-        this.timestamp = mytimer.getCurrentTime();
+        this.timestamp = calendar.getTimeInMillis();
     }
 
     public String getAccountNumber() {
@@ -41,8 +40,8 @@ public class TransactionEntity {
         return timestamp;
     }
 
-    public static void setMyTimer(MyTimer myTimer1) {
-        TransactionEntity.mytimer = myTimer1;
+    public static void setCalendar(Calendar c) {
+        TransactionEntity.calendar = c;
 
         //this.mytimer = mytimer;
     }

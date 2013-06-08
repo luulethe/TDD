@@ -10,6 +10,7 @@ import presentation.Transaction;
 import sun.util.resources.LocaleNames_ga;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
@@ -57,12 +58,10 @@ public class TestTransaction {
 
         BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 0);
         when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
-        MockTimer myMockTimer = new MockTimer();
-        TransactionEntity.setMyTimer(myMockTimer);
-
-        myMockTimer.setCurrentTime(1000);
+        Calendar mockCalendar = mock(Calendar.class);
+        TransactionEntity.setCalendar(mockCalendar);
+        when(mockCalendar.getTimeInMillis()).thenReturn(1000L).thenReturn(2000L);
         BankAccount.deposit(accountNumber, 100, "send money");
-        myMockTimer.setCurrentTime(2000);
         BankAccount.deposit(accountNumber, 200, "send money1");
 
         verify(mockTransactionDAO, times(2)).save(argument.capture());
@@ -112,6 +111,11 @@ public class TestTransaction {
 
         BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 500);
         when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
+
+        Calendar mockCalendar = mock(Calendar.class);
+        TransactionEntity.setCalendar(mockCalendar);
+        when(mockCalendar.getTimeInMillis()).thenReturn(1000L).thenReturn(2000L);
+
         BankAccount.Withdraw(accountNumber, 100, "withdraw money");
         BankAccount.Withdraw(accountNumber, 200, "withdraw money1");
 
@@ -121,11 +125,12 @@ public class TestTransaction {
         assertEquals(list.get(0).getAccountNumber(), accountNumber);
         assertEquals(list.get(0).getAmount(), -100, e);
         assertEquals(list.get(0).getDescription(), "withdraw money");
-        //assertEquals(list.get(0).getTimestamp(), System.currentTimeMillis());
+        assertEquals(list.get(0).getTimestamp(), 1000);
 
         assertEquals(list.get(1).getAccountNumber(), accountNumber);
         assertEquals(list.get(1).getAmount(), -200, e);
         assertEquals(list.get(1).getDescription(), "withdraw money1");
+        assertEquals(list.get(1).getTimestamp(), 2000);
     }
 
     @Test
