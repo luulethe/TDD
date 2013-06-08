@@ -1,5 +1,8 @@
 package entity;
 
+import utils.MyTimer;
+import utils.MyTimerClass;
+
 /**
  * Created with IntelliJ IDEA.
  * User: luult
@@ -8,16 +11,18 @@ package entity;
  * To change this template use File | Settings | File Templates.
  */
 public class TransactionEntity {
+    public static MyTimer mytimer = new MyTimerClass();
     private String accountNumber;
     private double amount;
     private String description;
     private long timestamp;
 
+    //private Timer
     public TransactionEntity(String accountNumber, double amount, String description) {
         this.accountNumber = accountNumber;
         this.amount = amount;
         this.description = description;
-        this.timestamp = System.currentTimeMillis();
+        this.timestamp = mytimer.getCurrentTime();
     }
 
     public String getAccountNumber() {
@@ -34,6 +39,12 @@ public class TransactionEntity {
 
     public long getTimestamp() {
         return timestamp;
+    }
+
+    public static void setMyTimer(MyTimer myTimer1) {
+        TransactionEntity.mytimer = myTimer1;
+
+        //this.mytimer = mytimer;
     }
 
     @Override

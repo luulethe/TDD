@@ -57,7 +57,12 @@ public class TestTransaction {
 
         BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 0);
         when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
+        MockTimer myMockTimer = new MockTimer();
+        TransactionEntity.setMyTimer(myMockTimer);
+
+        myMockTimer.setCurrentTime(1000);
         BankAccount.deposit(accountNumber, 100, "send money");
+        myMockTimer.setCurrentTime(2000);
         BankAccount.deposit(accountNumber, 200, "send money1");
 
         verify(mockTransactionDAO, times(2)).save(argument.capture());
@@ -66,10 +71,12 @@ public class TestTransaction {
         assertEquals(list.get(0).getAccountNumber(), accountNumber);
         assertEquals(list.get(0).getAmount(), 100, e);
         assertEquals(list.get(0).getDescription(), "send money");
+        assertEquals(list.get(0).getTimestamp(), 1000);
 
         assertEquals(list.get(1).getAccountNumber(), accountNumber);
         assertEquals(list.get(1).getAmount(), 200, e);
         assertEquals(list.get(1).getDescription(), "send money1");
+        assertEquals(list.get(1).getTimestamp(), 2000);
     }
 
     @Test
