@@ -45,17 +45,6 @@ public class TestBankAccount {
         assertEquals(bankAccountEntity, bankAccountEntityFromDatabase);
     }
 
-    @Test
-    public void testDeposit() {
-        ArgumentCaptor<BankAccountEntity> argument = org.mockito.ArgumentCaptor.forClass(BankAccountEntity.class);
 
-        BankAccountEntity bankAccountEntityFromDatabase = new BankAccountEntity(accountNumber, 0);
-        when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityFromDatabase);
-        BankAccountEntity bankAccountEntity = BankAccount.open(accountNumber);
-        BankAccount.deposit(accountNumber, 100, "send money");
 
-        verify(mockAccountDAO,times(2)).save(argument.capture());
-        assertEquals(argument.getAllValues().get(1).getAccountNumber(),accountNumber);
-        assertEquals(argument.getAllValues().get(1).getBalance(),100,e);
-    }
 }

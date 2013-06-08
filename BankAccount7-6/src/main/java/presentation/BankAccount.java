@@ -1,6 +1,7 @@
 package presentation;
 
 import dao.BankAccountDAO;
+import dao.TransactionDAO;
 import entity.BankAccountEntity;
 
 /**
@@ -11,11 +12,11 @@ import entity.BankAccountEntity;
  * To change this template use File | Settings | File Templates.
  */
 public class BankAccount {
+    private static BankAccountDAO bankAccountDAO;
+
     public BankAccount(BankAccountDAO bankAccountDAO) {
         this.bankAccountDAO = bankAccountDAO;
     }
-
-    private static BankAccountDAO bankAccountDAO;
 
     public static BankAccountDAO getBankAccountDAO() {
         return bankAccountDAO;
@@ -40,9 +41,14 @@ public class BankAccount {
         BankAccountEntity bankAccountEntity = bankAccountDAO.getAccount(accountNumber);
         bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
         bankAccountDAO.save(bankAccountEntity);
+        Transaction.createTransaction(accountNumber,amount,description);
     }
 
     public static BankAccountEntity getAccount(String accountNumber) {
         return bankAccountDAO.getAccount(accountNumber);
+    }
+
+    public static void Withdraw(String accountNumber, int amount, String description) {
+        doTransaction(accountNumber, -amount, description);
     }
 }
