@@ -31,4 +31,12 @@ public class Transaction {
     public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
         return dao.getTransactionsOccurred(accountNumber);  //To change body of created methods use File | Settings | File Templates.
     }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, long startTime, long stopTime) {
+        return dao.getTransactionsOccurred(accountNumber,startTime,stopTime);  //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, long times) {
+        return dao.getTransactionsOccurred(accountNumber,times);  //To change body of created methods use File | Settings | File Templates.
+    }
 }

@@ -37,14 +37,13 @@ public class BankAccount {
 
     public static void deposit(String accountNumber, int amount, String description) {
         doTransaction(accountNumber, amount, description);
-        //To change body of created methods use File | Settings | File Templates.
     }
 
     private static void doTransaction(String accountNumber, int amount, String description) {
         BankAccountEntity bankAccountEntity = bankAccountDAO.getAccount(accountNumber);
         bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
         bankAccountDAO.save(bankAccountEntity);
-        Transaction.createTransaction(accountNumber,amount,description);
+        Transaction.createTransaction(accountNumber, amount, description);
     }
 
     public static BankAccountEntity getAccount(String accountNumber) {
@@ -56,6 +55,15 @@ public class BankAccount {
     }
 
     public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
-        return Transaction.getTransactionsOccurred(accountNumber);  //To change body of created methods use File | Settings | File Templates.
+        return Transaction.getTransactionsOccurred(accountNumber);
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, long startTime, long stopTime) {
+        return Transaction.getTransactionsOccurred(accountNumber, startTime, stopTime);
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, long times) throws Exception {
+        if (times < 0) throw new Exception("time have to bigger than 0");
+        return Transaction.getTransactionsOccurred(accountNumber, times);
     }
 }

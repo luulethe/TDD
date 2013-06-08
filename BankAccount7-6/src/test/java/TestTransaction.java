@@ -7,11 +7,13 @@ import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 import presentation.BankAccount;
 import presentation.Transaction;
+import sun.util.resources.LocaleNames_ga;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.fail;
 import static org.mockito.Mockito.*;
 
 /**
@@ -117,18 +119,74 @@ public class TestTransaction {
 
         ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
         List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
-        listResult.add(new TransactionEntity(accountNumber,100,"deposit"));
-        listResult.add(new TransactionEntity(accountNumber,50,"withdraw"));
+        listResult.add(new TransactionEntity(accountNumber, 100, "deposit"));
+        listResult.add(new TransactionEntity(accountNumber, 50, "withdraw"));
 
         when(mockTransactionDAO.getTransactionsOccurred(accountNumber)).thenReturn(listResult);
         List<TransactionEntity> listTransaction = BankAccount.getTransactionsOccurred(accountNumber);
         verify(mockTransactionDAO).getTransactionsOccurred(accountNumber);
 
-        assertEquals(listTransaction.size(),listResult.size());
+        assertEquals(listTransaction.size(), listResult.size());
         int i = 0;
-        for(TransactionEntity tr : listResult) {
-            assertEquals(tr,listTransaction.get(i));
+        for (TransactionEntity tr : listResult) {
+            assertEquals(tr, listTransaction.get(i));
             i++;
         }
     }
+
+    @Test
+    public void testGetTransactionBetween2Time() {
+
+        ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
+        List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
+        listResult.add(new TransactionEntity(accountNumber, 100, "deposit"));
+        listResult.add(new TransactionEntity(accountNumber, 50, "withdraw"));
+
+        long startTime = 10;
+        long stopTime = 1000;
+        when(mockTransactionDAO.getTransactionsOccurred(accountNumber, startTime, stopTime)).thenReturn(listResult);
+        List<TransactionEntity> listTransaction = BankAccount.getTransactionsOccurred(accountNumber, startTime, stopTime);
+        verify(mockTransactionDAO).getTransactionsOccurred(accountNumber, startTime, stopTime);
+
+        assertEquals(listTransaction.size(), listResult.size());
+        int i = 0;
+        for (TransactionEntity tr : listResult) {
+            assertEquals(tr, listTransaction.get(i));
+            i++;
+        }
+    }
+
+    @Test
+    public void testGetNLatestTransaction() throws Exception{
+
+        ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
+        List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
+        listResult.add(new TransactionEntity(accountNumber, 100, "deposit"));
+        listResult.add(new TransactionEntity(accountNumber, 50, "withdraw"));
+
+        long times = 2;
+        when(mockTransactionDAO.getTransactionsOccurred(accountNumber, times)).thenReturn(listResult);
+        List<TransactionEntity> listTransaction = BankAccount.getTransactionsOccurred(accountNumber, times);
+        verify(mockTransactionDAO).getTransactionsOccurred(accountNumber, times);
+
+        assertEquals(listTransaction.size(), listResult.size());
+        int i = 0;
+        for (TransactionEntity tr : listResult) {
+            assertEquals(tr, listTransaction.get(i));
+            i++;
+        }
+    }
+    @Test(expected = Exception.class)
+    public void testGetNLatestTransactionRaiseException() throws Exception{
+
+        ArgumentCaptor<TransactionEntity> argument = org.mockito.ArgumentCaptor.forClass(TransactionEntity.class);
+
+        long times = -2;
+        when(mockTransactionDAO.getTransactionsOccurred(accountNumber, times)).thenReturn(null);
+        List<TransactionEntity> listTransaction = BankAccount.getTransactionsOccurred(accountNumber, times);
+        //fail("Exception ex");
+        verify(mockTransactionDAO).getTransactionsOccurred(accountNumber, times);
+
+    }
+
 }

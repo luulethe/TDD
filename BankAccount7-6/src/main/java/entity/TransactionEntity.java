@@ -35,4 +35,14 @@ public class TransactionEntity {
     public long getTimestamp() {
         return timestamp;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof TransactionEntity) {
+            TransactionEntity otherObject = (TransactionEntity) o;
+            return (otherObject.accountNumber.equals(accountNumber)) && (otherObject.getAmount() == amount) && (
+                    otherObject.getDescription().equals(description)) && (otherObject.getTimestamp() == timestamp);
+        }
+        return false;
+    }
 }
