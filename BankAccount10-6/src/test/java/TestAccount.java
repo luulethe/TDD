@@ -33,8 +33,20 @@ public class TestAccount {
         BankAccountEntity.setCalendar(mockCalendar);
         when(mockCalendar.getTimeInMillis()).thenReturn(1000L);
         BankAccountEntity bankAccountEntity = BankAccount.open(accountNumber);
+        verify(mockAccountDAO).save(bankAccountEntity);
         assertEquals(bankAccountEntity.getAccountNumber(), accountNumber);
         assertEquals(bankAccountEntity.getBalance(), 0, e);
         assertEquals(bankAccountEntity.getOpenTimeStamp(), 1000L);
+    }
+    @Test
+    public void testGetAccount() {
+        BankAccountEntity bankAccountEntityResult = new BankAccountEntity(accountNumber,1000);
+        when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityResult);
+
+        BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
+
+        verify(mockAccountDAO).getAccount(accountNumber);
+        assertEquals(bankAccountEntity.getAccountNumber(), accountNumber);
+        assertEquals(bankAccountEntity.getBalance(), 1000, e);
     }
 }

@@ -14,8 +14,8 @@ public class BankAccount {
     private static BankAccountDAO bankAccountDAO;
 
     public static BankAccountEntity open(String accountNumber) {
-        BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber,0);
-        BankAccountDAO.save(bankAccountEntity);
+        BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 0);
+        bankAccountDAO.save(bankAccountEntity);
         return bankAccountEntity;
     }
 
@@ -25,5 +25,9 @@ public class BankAccount {
 
     public static BankAccountDAO getBankAccountDAO() {
         return bankAccountDAO;
+    }
+
+    public static BankAccountEntity getAccount(String accountNumber) {
+        return bankAccountDAO.getAccount(accountNumber);
     }
 }

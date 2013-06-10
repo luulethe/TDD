@@ -10,7 +10,11 @@ import entity.BankAccountEntity;
  * To change this template use File | Settings | File Templates.
  */
 public class BankAccountDAO {
-    public static void save(BankAccountEntity bankAccountEntity) {
+    public void save(BankAccountEntity bankAccountEntity) {
         //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public BankAccountEntity getAccount(String accountNumber) {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
