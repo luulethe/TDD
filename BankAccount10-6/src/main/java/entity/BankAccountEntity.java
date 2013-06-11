@@ -10,10 +10,11 @@ import java.util.Calendar;
  * To change this template use File | Settings | File Templates.
  */
 public class BankAccountEntity {
-    String accountNumber ;
+    String accountNumber;
     double balance;
     long openTimeStamp;
-    private static Calendar calendar = Calendar.getInstance() ;
+    private static Calendar calendar = Calendar.getInstance();
+
     public BankAccountEntity(String accountNumber, double balance) {
         this.accountNumber = accountNumber;
         this.balance = balance;

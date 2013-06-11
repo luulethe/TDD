@@ -1,4 +1,4 @@
-package Presentation;
+package presentation;
 
 import dao.BankAccountDAO;
 import entity.BankAccountEntity;
@@ -29,5 +29,12 @@ public class BankAccount {
 
     public static BankAccountEntity getAccount(String accountNumber) {
         return bankAccountDAO.getAccount(accountNumber);
+    }
+
+    public static void deposit(String accountNumber, int amount, String description) {
+        BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
+        bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
+        Transaction.createTransaction(accountNumber, amount, description);
+        bankAccountDAO.save(bankAccountEntity);
     }
 }

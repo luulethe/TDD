@@ -1,4 +1,4 @@
-import Presentation.BankAccount;
+import presentation.BankAccount;
 import dao.BankAccountDAO;
 import entity.BankAccountEntity;
 import org.junit.Before;
@@ -38,9 +38,10 @@ public class TestAccount {
         assertEquals(bankAccountEntity.getBalance(), 0, e);
         assertEquals(bankAccountEntity.getOpenTimeStamp(), 1000L);
     }
+
     @Test
     public void testGetAccount() {
-        BankAccountEntity bankAccountEntityResult = new BankAccountEntity(accountNumber,1000);
+        BankAccountEntity bankAccountEntityResult = new BankAccountEntity(accountNumber, 1000);
         when(mockAccountDAO.getAccount(accountNumber)).thenReturn(bankAccountEntityResult);
 
         BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
