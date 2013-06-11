@@ -6,10 +6,10 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/TestAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370848186437" ignored="false" />
     <file path="/fragment.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370938548119" ignored="false" />
-    <file path="/BankAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370950178192" ignored="false" />
+    <file path="/BankAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370950424567" ignored="false" />
     <file path="/BankAccountEntity.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370847484471" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370848092480" ignored="false" />
-    <file path="/TestTransaction.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370949899452" ignored="false" />
+    <file path="/TestTransaction.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370950473564" ignored="false" />
     <file path="/TransactionDAO.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370933265284" ignored="false" />
     <file path="/TransactionEntity.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370934877997" ignored="false" />
     <file path="/Transaction.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370938491739" ignored="false" />
@@ -76,10 +76,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BankAccount.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="12" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.68406594">
+            <state line="40" column="52" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestTransaction.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestTransaction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="27" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.0">
+            <state line="95" column="61" selection-start="3767" selection-end="3767" vertical-scroll-proportion="0.8489011">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,8 +152,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Presentation/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/TransactionDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/presentation/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestTransaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/presentation/BankAccount.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestTransaction.java" />
       </list>
     </option>
   </component>
@@ -786,19 +786,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="27" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="40" column="52" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="12" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.68406594">
-          <folding />
+        <state line="95" column="61" selection-start="3767" selection-end="3767" vertical-scroll-proportion="0.8489011">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

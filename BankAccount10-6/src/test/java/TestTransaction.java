@@ -1,3 +1,4 @@
+import org.junit.rules.ExpectedException;
 import presentation.BankAccount;
 import presentation.Transaction;
 import dao.BankAccountDAO;
@@ -36,7 +37,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testDeposit() {
+    public void testDeposit() throws Exception{
 
         ArgumentCaptor<BankAccountEntity> argument = org.mockito.ArgumentCaptor.forClass(BankAccountEntity.class);
         BankAccountEntity bankAccountEntityResult = new BankAccountEntity(accountNumber, 1000);
@@ -51,7 +52,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testSaveTransactionDeposit() {
+    public void testSaveTransactionDeposit() throws Exception{
         ArgumentCaptor<TransactionEntity> argument = ArgumentCaptor.forClass(TransactionEntity.class);
         Calendar calendar = mock(Calendar.class);
         TransactionEntity.setCalendar(calendar);
@@ -78,7 +79,7 @@ public class TestTransaction {
         assertEquals(list.get(1).getTimeStamp(), 3000L);
     }
     @Test
-    public void testWithdraw() {
+    public void testWithdraw() throws  Exception{
         ArgumentCaptor<BankAccountEntity> argument = org.mockito.ArgumentCaptor.forClass(BankAccountEntity.class);
         BankAccountEntity bankAccountEntityResult = new BankAccountEntity(accountNumber, 1000);
         when(mockAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntityResult);
@@ -89,5 +90,13 @@ public class TestTransaction {
 
         assertEquals(argument.getValue().getAccountNumber(), accountNumber);
         assertEquals(argument.getValue().getBalance(), 900, e);
+    }
+
+    @Test(expected = Exception.class)
+    public void testRaiseExceptionWithdraw() throws Exception {
+        BankAccountEntity bankAccountEntityResult = new BankAccountEntity(accountNumber, 1000);
+        when(mockAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntityResult);
+        BankAccount.withdraw(accountNumber, 2000, "deposit money");
+
     }
 }

@@ -31,16 +31,18 @@ public class BankAccount {
         return bankAccountDAO.getAccount(accountNumber);
     }
 
-    public static void deposit(String accountNumber, int amount, String description) {
+    public static void deposit(String accountNumber, int amount, String description) throws Exception {
         doTransaction(accountNumber, amount, description);
     }
 
-    public static void withdraw(String accountNumber, int amount, String description) {
+    public static void withdraw(String accountNumber, int amount, String description) throws Exception {
         doTransaction(accountNumber, -amount, description);
     }
 
-    private static void doTransaction(String accountNumber, int amount, String description) {
+    private static void doTransaction(String accountNumber, int amount, String description) throws Exception {
         BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
+        if (bankAccountEntity.getBalance() + amount < 0)
+            throw new Exception("don't enough money");
         bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
         if (amount < 0)
             amount = -amount;
