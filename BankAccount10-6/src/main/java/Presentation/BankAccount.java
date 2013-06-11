@@ -32,15 +32,18 @@ public class BankAccount {
     }
 
     public static void deposit(String accountNumber, int amount, String description) {
-        BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
-        bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
-        Transaction.createTransaction(accountNumber, amount, description);
-        bankAccountDAO.save(bankAccountEntity);
+        doTransaction(accountNumber, amount, description);
     }
 
     public static void withdraw(String accountNumber, int amount, String description) {
+        doTransaction(accountNumber, -amount, description);
+    }
+
+    private static void doTransaction(String accountNumber, int amount, String description) {
         BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
-        bankAccountEntity.setBalance(bankAccountEntity.getBalance() - amount);
+        bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
+        if (amount < 0)
+            amount = -amount;
         Transaction.createTransaction(accountNumber, amount, description);
         bankAccountDAO.save(bankAccountEntity);
     }

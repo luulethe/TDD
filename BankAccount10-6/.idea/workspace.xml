@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/TestAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370848186437" ignored="false" />
     <file path="/fragment.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370938548119" ignored="false" />
-    <file path="/BankAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370949938104" ignored="false" />
+    <file path="/BankAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370950178192" ignored="false" />
     <file path="/BankAccountEntity.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370847484471" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370848092480" ignored="false" />
     <file path="/TestTransaction.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370949899452" ignored="false" />
@@ -79,7 +79,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="69" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.9587912">
+            <state line="40" column="12" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.68406594">
               <folding />
             </state>
           </provider>
@@ -797,7 +797,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="69" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.9587912">
+        <state line="40" column="12" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.68406594">
           <folding />
         </state>
       </provider>
