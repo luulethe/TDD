@@ -9,10 +9,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 
 /**
@@ -98,7 +100,6 @@ public class TestTransaction {
         BankAccountEntity bankAccountEntityResult = new BankAccountEntity(accountNumber, 1000);
         when(mockAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntityResult);
         BankAccount.withdraw(accountNumber, 2000, "deposit money");
-
     }
 
     @Test
@@ -128,4 +129,63 @@ public class TestTransaction {
         assertEquals(list.get(1).getDescription(), "deposit money123");
         assertEquals(list.get(1).getTimeStamp(), 3000L);
     }
+
+    @Test
+    public void testTransactionOccurred() {
+        List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
+        TransactionEntity trE1 = new TransactionEntity(accountNumber, 1000, "deposit money");
+        TransactionEntity trE2 = new TransactionEntity(accountNumber, 1000, "withdraw money");
+        listResult.add(trE1);
+        listResult.add(trE2);
+        when(mockTransactionDao.getTransactionsOccurred(accountNumber)).thenReturn(listResult);
+
+        List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber);
+
+        assertEquals(list.size(), listResult.size());
+        int i = 0;
+        for (TransactionEntity trE : listResult) {
+            assertTrue(trE.equals(list.get(i)));
+            i++;
+        }
+    }
+
+    @Test
+    public void testTransactionOccurredByTime() {
+        List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
+        TransactionEntity trE1 = new TransactionEntity(accountNumber, 1000, "deposit money");
+        TransactionEntity trE2 = new TransactionEntity(accountNumber, 1000, "withdraw money");
+        listResult.add(trE1);
+        listResult.add(trE2);
+        long startTime = 1000;
+        long stopTime = 2000;
+        when(mockTransactionDao.getTransactionsOccurred(accountNumber, startTime, stopTime)).thenReturn(listResult);
+        List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber, startTime, stopTime);
+
+        assertEquals(list.size(), listResult.size());
+        int i = 0;
+        for (TransactionEntity trE : listResult) {
+            assertTrue(trE.equals(list.get(i)));
+            i++;
+        }
+    }
+
+    @Test
+    public void testGetNTransaction() {
+        List<TransactionEntity> listResult = new ArrayList<TransactionEntity>();
+        TransactionEntity trE1 = new TransactionEntity(accountNumber, 1000, "deposit money");
+        TransactionEntity trE2 = new TransactionEntity(accountNumber, 1000, "withdraw money");
+        listResult.add(trE1);
+        listResult.add(trE2);
+        int n = 2;
+        when(mockTransactionDao.getTransactionsOccurred(accountNumber, n)).thenReturn(listResult);
+        List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber, n);
+
+        assertEquals(list.size(), listResult.size());
+        int i = 0;
+        for (TransactionEntity trE : listResult) {
+            assertTrue(trE.equals(list.get(i)));
+            i++;
+        }
+    }
+
 }

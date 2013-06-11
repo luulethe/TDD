@@ -2,6 +2,9 @@ package presentation;
 
 import dao.BankAccountDAO;
 import entity.BankAccountEntity;
+import entity.TransactionEntity;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -48,5 +51,18 @@ public class BankAccount {
             amount = -amount;
         Transaction.createTransaction(accountNumber, amount, description);
         bankAccountDAO.save(bankAccountEntity);
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
+        return Transaction.getTransactionsOccurred(accountNumber);
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, long startTime, long stopTime) {
+        return Transaction.getTransactionsOccurred(accountNumber, startTime, stopTime);
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n) {
+        return Transaction.getTransactionsOccurred(accountNumber, n);
     }
 }

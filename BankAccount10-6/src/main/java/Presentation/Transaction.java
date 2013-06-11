@@ -3,6 +3,8 @@ package presentation;
 import dao.TransactionDAO;
 import entity.TransactionEntity;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: luult
@@ -22,7 +24,19 @@ public class Transaction {
     }
 
     public static void createTransaction(String accountNumber, int amount, String description) {
-        TransactionEntity transactionEntity =  new TransactionEntity(accountNumber, amount, description);
+        TransactionEntity transactionEntity = new TransactionEntity(accountNumber, amount, description);
         transactionDao.save(transactionEntity);
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
+        return transactionDao.getTransactionsOccurred(accountNumber);
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, long startTime, long stopTime) {
+        return transactionDao.getTransactionsOccurred(accountNumber, startTime, stopTime);
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n) {
+        return transactionDao.getTransactionsOccurred(accountNumber, n);
     }
 }

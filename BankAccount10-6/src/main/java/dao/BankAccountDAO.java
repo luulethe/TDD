@@ -1,6 +1,9 @@
 package dao;
 
 import entity.BankAccountEntity;
+import entity.TransactionEntity;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,10 +14,10 @@ import entity.BankAccountEntity;
  */
 public class BankAccountDAO {
     public void save(BankAccountEntity bankAccountEntity) {
-        //To change body of created methods use File | Settings | File Templates.
     }
 
     public BankAccountEntity getAccount(String accountNumber) {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
+
 }

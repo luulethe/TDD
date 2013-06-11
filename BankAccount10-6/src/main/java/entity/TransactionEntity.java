@@ -65,4 +65,13 @@ public class TransactionEntity {
     public static void setCalendar(Calendar c) {
         TransactionEntity.calendar = c;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof TransactionEntity) {
+            TransactionEntity trE = (TransactionEntity) o;
+            return trE.accountNumber.equals(accountNumber) && (trE.amount == amount) && (trE.description.equals(description)) && (trE.timeStamp == timeStamp);
+        }
+        return false;
+    }
 }
