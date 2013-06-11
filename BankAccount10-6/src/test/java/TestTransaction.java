@@ -48,8 +48,6 @@ public class TestTransaction {
 
         assertEquals(argument.getValue().getAccountNumber(), accountNumber);
         assertEquals(argument.getValue().getBalance(), 1100, e);
-
-
     }
 
     @Test
@@ -78,5 +76,18 @@ public class TestTransaction {
         assertEquals(list.get(1).getAmount(), 300,e);
         assertEquals(list.get(1).getDescription(), "deposit money123");
         assertEquals(list.get(1).getTimeStamp(), 3000L);
+    }
+    @Test
+    public void testWithdraw() {
+        ArgumentCaptor<BankAccountEntity> argument = org.mockito.ArgumentCaptor.forClass(BankAccountEntity.class);
+        BankAccountEntity bankAccountEntityResult = new BankAccountEntity(accountNumber, 1000);
+        when(mockAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntityResult);
+
+        BankAccount.withdraw(accountNumber, 100, "deposit money");
+
+        verify(mockAccountDao, times(1)).save(argument.capture());
+
+        assertEquals(argument.getValue().getAccountNumber(), accountNumber);
+        assertEquals(argument.getValue().getBalance(), 900, e);
     }
 }
