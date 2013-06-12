@@ -141,6 +141,7 @@ public class TestTransaction {
 
         List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber);
 
+        verify(mockTransactionDao).getTransactionsOccurred(accountNumber);
         assertEquals(list.size(), listResult.size());
         int i = 0;
         for (TransactionEntity trE : listResult) {
@@ -161,6 +162,7 @@ public class TestTransaction {
         when(mockTransactionDao.getTransactionsOccurred(accountNumber, startTime, stopTime)).thenReturn(listResult);
         List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber, startTime, stopTime);
 
+        verify(mockTransactionDao).getTransactionsOccurred(accountNumber, startTime, stopTime);
         assertEquals(list.size(), listResult.size());
         int i = 0;
         for (TransactionEntity trE : listResult) {
@@ -180,6 +182,7 @@ public class TestTransaction {
         when(mockTransactionDao.getTransactionsOccurred(accountNumber, n)).thenReturn(listResult);
         List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber, n);
 
+        verify(mockTransactionDao).getTransactionsOccurred(accountNumber, n);
         assertEquals(list.size(), listResult.size());
         int i = 0;
         for (TransactionEntity trE : listResult) {
