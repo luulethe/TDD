@@ -4,7 +4,7 @@
     <list default="true" id="61600682-9e4a-4b75-be94-0e211595f4aa" name="Default" comment="" />
     <ignored path="BankAccount12-6.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/TestAccount.java" changelist="61600682-9e4a-4b75-be94-0e211595f4aa" time="1371020975017" ignored="false" />
+    <file path="/TestAccount.java" changelist="61600682-9e4a-4b75-be94-0e211595f4aa" time="1371021211873" ignored="false" />
     <file path="/pom.xml" changelist="61600682-9e4a-4b75-be94-0e211595f4aa" time="1371019387541" ignored="false" />
     <file path="/fragment.java" changelist="61600682-9e4a-4b75-be94-0e211595f4aa" time="1371020051060" ignored="false" />
     <file path="/BankAccount.java" changelist="61600682-9e4a-4b75-be94-0e211595f4aa" time="1371020759975" ignored="false" />
@@ -77,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestAccount.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestAccount.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="44" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
+            <state line="49" column="60" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.41018766">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankAccount.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="38" selection-start="780" selection-end="780" vertical-scroll-proportion="1.3694445">
+            <state line="15" column="34" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -496,7 +496,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.67058825" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -584,18 +584,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAccount.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="44" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
+        <state line="15" column="34" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="38" selection-start="780" selection-end="780" vertical-scroll-proportion="1.3694445">
+        <state line="49" column="60" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.41018766">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

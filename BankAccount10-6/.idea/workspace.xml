@@ -4,7 +4,7 @@
     <list default="true" id="97b85bb9-4fcc-487a-ac10-67a884197c74" name="Default" comment="" />
     <ignored path="BankAccount10-6.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/TestAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371020975017" ignored="false" />
+    <file path="/TestAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371021211873" ignored="false" />
     <file path="/fragment.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371020051060" ignored="false" />
     <file path="/BankAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371020759975" ignored="false" />
     <file path="/BankAccountEntity.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371019798417" ignored="false" />
@@ -18,7 +18,7 @@
     <file path="$PROJECT_DIR$/../../present mockito/code/pom.xml" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1370966774812" ignored="false" />
     <file path="$PROJECT_DIR$/../../present mockito/code/src/main/java/Test.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371007351798" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount12-6/pom.xml" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371019388376" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount12-6/src/test/java/TestAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371021034397" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount12-6/src/test/java/TestAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371021242874" ignored="false" />
     <file path="/pom.xml" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371019387541" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount12-6/src/main/java/entity/BankAccountEntity.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371019852981" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount12-6/src/main/java/presentation/BankAccount.java" changelist="97b85bb9-4fcc-487a-ac10-67a884197c74" time="1371020759975" ignored="false" />
@@ -106,7 +106,7 @@
       <file leaf-file-name="TestAccount.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="42" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.5620438">
+            <state line="35" column="42" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.23357664">
               <folding />
             </state>
           </provider>
@@ -827,7 +827,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.5620438">
+        <state line="35" column="42" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.23357664">
           <folding />
         </state>
       </provider>
