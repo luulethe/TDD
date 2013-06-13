@@ -48,6 +48,7 @@ public class TestAccount {
 
         BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
         verify(mockBankAccountDao).getAccount(accountNumber);
+
         assertEquals(bankAccountEntity.getBalance(), 2000, e);
         assertEquals(bankAccountEntity.getAccountNumber(), accountNumber);
     }
