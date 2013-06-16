@@ -52,4 +52,17 @@ public class TestAccount {
         assertEquals(bankAccountEntity.getBalance(), 2000, e);
         assertEquals(bankAccountEntity.getAccountNumber(), accountNumber);
     }
+
+    @Test
+    public void testGetAccountOther() {
+        BankAccountEntity bankAccountEntityResult = BankAccount.open(accountNumber);
+        when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntityResult);
+
+        BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
+        verify(mockBankAccountDao).getAccount(accountNumber);
+
+        assertEquals(bankAccountEntity.getBalance(), 0, e);
+        assertEquals(bankAccountEntity.getAccountNumber(), accountNumber);
+    }
+
 }
