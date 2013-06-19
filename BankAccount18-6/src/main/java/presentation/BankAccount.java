@@ -26,4 +26,8 @@ public class BankAccount {
     public static BankAccountEntity getAccount(String accountNumber) {
         return bankAccountDao.getAccount(accountNumber);
     }
+
+    public static void deposit(String accountNumber, int amount, String description) {
+        //To change body of created methods use File | Settings | File Templates.
+    }
 }
