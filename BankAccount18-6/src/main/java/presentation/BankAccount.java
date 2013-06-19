@@ -28,6 +28,9 @@ public class BankAccount {
     }
 
     public static void deposit(String accountNumber, int amount, String description) {
-        //To change body of created methods use File | Settings | File Templates.
+        BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
+        bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
+        bankAccountDao.save(bankAccountEntity);
+
     }
 }

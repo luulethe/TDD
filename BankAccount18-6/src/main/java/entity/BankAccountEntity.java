@@ -40,4 +40,12 @@ public class BankAccountEntity {
     public void setOpenTimeStamp(Long openTimeStamp) {
         this.openTimeStamp = openTimeStamp;
     }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 }
