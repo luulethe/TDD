@@ -1,6 +1,7 @@
 package presentation;
 
 import dao.TransactionDao;
+import entity.TransactionEntity;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,5 +15,10 @@ public class Transaction {
 
     public static void setDao(TransactionDao dao) {
         Transaction.transactionDao = dao;
+    }
+
+    public static void createTransaction(String accountNumber, int amount, String description) {
+        TransactionEntity transactionEntity = new TransactionEntity(accountNumber, amount, description);
+        transactionDao.save(transactionEntity);
     }
 }

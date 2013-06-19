@@ -31,6 +31,6 @@ public class BankAccount {
         BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
         bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
         bankAccountDao.save(bankAccountEntity);
-
+        Transaction.createTransaction(accountNumber, amount, description);
     }
 }

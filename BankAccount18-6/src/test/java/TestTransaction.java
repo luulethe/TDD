@@ -8,6 +8,7 @@ import org.mockito.ArgumentCaptor;
 import presentation.BankAccount;
 import presentation.Transaction;
 
+import java.util.Calendar;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -29,10 +30,9 @@ public class TestTransaction {
     @Before
     public void setUp() {
         reset(mockBankAccountDao);
-        reset(mockBankAccountDao);
+        reset(mockTransactionDao);
         BankAccount.setDao(mockBankAccountDao);
         Transaction.setDao(mockTransactionDao);
-
     }
 
     @Test
@@ -46,7 +46,6 @@ public class TestTransaction {
 
         assertEquals(argument.getValue().getAccountNumber(), accountNumber);
         assertEquals(argument.getValue().getBalance(), 1100, e);
-
     }
 
     @Test
@@ -55,18 +54,24 @@ public class TestTransaction {
         when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
 
         ArgumentCaptor<TransactionEntity> argument = ArgumentCaptor.forClass(TransactionEntity.class);
-
+        Calendar mockCalendar = mock(Calendar.class);
+        when(mockCalendar.getTimeInMillis()).thenReturn(2000L, 4000L);
+        TransactionEntity.setCalendar(mockCalendar);
 
         BankAccount.deposit(accountNumber, 100, "deposit money");
         BankAccount.deposit(accountNumber, 200, "deposit money1");
 
-        verify(mockTransactionDao).save(argument.capture());
+        verify(mockTransactionDao, times(2)).save(argument.capture());
         List<TransactionEntity> list = argument.getAllValues();
 
-        assertEquals(list.get(0).getAccountNumber() , accountNumber);
-        assertEquals(list.get(0).getOpenTimeStamp() , 2000L);
-        assertEquals(list.get(0).getAmount() , 100, e);
-        assertEquals(list.get(0).getDescription() , "deposit money");
+        assertEquals(list.get(0).getAccountNumber(), accountNumber);
+        assertEquals(list.get(0).getOpenTimeStamp(), 2000L);
+        assertEquals(list.get(0).getAmount(), 100, e);
+        assertEquals(list.get(0).getDescription(), "deposit money");
 
+        assertEquals(list.get(1).getAccountNumber(), accountNumber);
+        assertEquals(list.get(1).getOpenTimeStamp(), 4000L);
+        assertEquals(list.get(1).getAmount(), 200, e);
+        assertEquals(list.get(1).getDescription(), "deposit money1");
     }
 }

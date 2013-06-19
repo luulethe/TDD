@@ -11,6 +11,5 @@ import entity.TransactionEntity;
  */
 public class TransactionDao {
     public void save(TransactionEntity capture) {
-        //To change body of created methods use File | Settings | File Templates.
     }
 }
