@@ -61,4 +61,8 @@ public class BankAccount {
     public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, long startTime, long stopTime) {
         return Transaction.getTransactionsOccurred(accountNumber, startTime, stopTime);
     }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n) {
+        return Transaction.getTransactionsOccurred(accountNumber, n);
+    }
 }

@@ -152,4 +152,10 @@ public class TestTransaction {
         long stopTime = 2000;
         List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber, startTime, stopTime);
     }
+
+    @Test
+    public void testGetNTransaction() {
+        int n = 2;
+        List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber, n);
+    }
 }
