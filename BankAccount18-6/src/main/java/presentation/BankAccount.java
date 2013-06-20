@@ -28,7 +28,7 @@ public class BankAccount {
         return bankAccountDao.getAccount(accountNumber);
     }
 
-    public static void deposit(String accountNumber, int amount, String description) throws Exception{
+    public static void deposit(String accountNumber, int amount, String description) throws Exception {
         doTransaction(accountNumber, amount, description);
     }
 

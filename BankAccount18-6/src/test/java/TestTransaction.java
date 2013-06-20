@@ -113,4 +113,32 @@ public class TestTransaction {
         BankAccount.withdraw(accountNumber, 2000, "withdraw money");
         fail("Exception expected");
     }
+
+    @Test
+    public void testSaveTransactionWithdraw() throws Exception {
+        BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
+        when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
+
+        ArgumentCaptor<TransactionEntity> argument = ArgumentCaptor.forClass(TransactionEntity.class);
+        Calendar mockCalendar = mock(Calendar.class);
+        when(mockCalendar.getTimeInMillis()).thenReturn(2000L, 4000L);
+        TransactionEntity.setCalendar(mockCalendar);
+
+        BankAccount.withdraw(accountNumber, 100, "withdraw money");
+        BankAccount.withdraw(accountNumber, 200, "withdraw money1");
+
+        verify(mockTransactionDao, times(2)).save(argument.capture());
+        List<TransactionEntity> list = argument.getAllValues();
+
+        assertEquals(list.get(0).getAccountNumber(), accountNumber);
+        assertEquals(list.get(0).getOpenTimeStamp(), 2000L);
+        assertEquals(list.get(0).getAmount(), 100, e);
+        assertEquals(list.get(0).getDescription(), "withdraw money");
+
+        assertEquals(list.get(1).getAccountNumber(), accountNumber);
+        assertEquals(list.get(1).getOpenTimeStamp(), 4000L);
+        assertEquals(list.get(1).getAmount(), 200, e);
+        assertEquals(list.get(1).getDescription(), "withdraw money1");
+    }
+
 }
