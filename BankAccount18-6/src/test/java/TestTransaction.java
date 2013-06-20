@@ -145,4 +145,11 @@ public class TestTransaction {
     public void testGetTransactionOccurred() {
         List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber);
     }
+
+    @Test
+    public void testGetTransactionOccurredBetweenTwoTime() {
+        long startTime = 1000;
+        long stopTime = 2000;
+        List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber, startTime, stopTime);
+    }
 }

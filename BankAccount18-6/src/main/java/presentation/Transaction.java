@@ -27,4 +27,8 @@ public class Transaction {
     public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
         return transactionDao.getTransactionsOccurred(accountNumber);  //To change body of created methods use File | Settings | File Templates.
     }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, long startTime, long stopTime) {
+        return transactionDao.getTransactionsOccurred(accountNumber, startTime, stopTime);
+    }
 }
