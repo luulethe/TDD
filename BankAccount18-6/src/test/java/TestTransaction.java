@@ -97,6 +97,13 @@ public class TestTransaction {
         assertEquals(argument.getValue().getBalance(), 900, e);
     }
 
+    @Test(expected = DoNotExitAccountException.class)
+    public void testWithdrawDoNotExitAccount() throws Exception {
+        when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(null);
+        BankAccount.withdraw(accountNumber, 100, "withdraw money");
+        fail("Exception expected");
+    }
+
     @Test(expected = Exception.class)
     public void testWithdrawDoNotMoney() throws Exception {
 
