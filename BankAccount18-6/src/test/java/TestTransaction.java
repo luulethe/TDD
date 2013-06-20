@@ -36,7 +36,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testDeposit() {
+    public void testDeposit() throws Exception{
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
         when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
         ArgumentCaptor<BankAccountEntity> argument = ArgumentCaptor.forClass(BankAccountEntity.class);
@@ -49,7 +49,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testSaveTransactionDeposit() {
+    public void testSaveTransactionDeposit() throws Exception{
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
         when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
 
