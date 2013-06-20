@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/TestBankAccount.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371539525048" ignored="false" />
     <file path="/fragment.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371694246539" ignored="false" />
-    <file path="/BankAccount.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371693802822" ignored="false" />
+    <file path="/BankAccount.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371694356154" ignored="false" />
     <file path="/BankAccountEntity.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371539198494" ignored="false" />
     <file path="/BankAccountDao.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371539378393" ignored="false" />
     <file path="/TestTransaction.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371694214145" ignored="false" />
@@ -24,7 +24,7 @@
     <file path="$PROJECT_DIR$/../../present mockito/code/src/main/java/docmockito/Number27.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371637122876" ignored="false" />
     <file path="$USER_HOME$/Downloads/Chapter9_HoangDinhTien_Thread/Chapter9_HoangDinhTien_Thread/DemoThreads/src/main/java/com/qsoft/demoThreadSleep/MySleepThread.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371652994968" ignored="false" />
     <file path="/MySleepThread.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371652948577" ignored="false" />
-    <file path="/DoNotExitAccountException.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371694255815" ignored="false" />
+    <file path="/DoNotExitAccountException.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371694374646" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,7 @@
       <file leaf-file-name="TestTransaction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="38" selection-start="1968" selection-end="1968" vertical-scroll-proportion="0.58702064">
+            <state line="54" column="24" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.5280236">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,7 +100,7 @@
       <file leaf-file-name="DoNotExitAccountException.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/exceptionPackage/DoNotExitAccountException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="56" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
+            <state line="11" column="15" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,7 +109,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="23" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
+            <state line="42" column="67" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,9 +132,9 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/TransactionEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/presentation/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/TransactionDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestTransaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/presentation/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptionPackage/DoNotExitAccountException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestTransaction.java" />
       </list>
     </option>
   </component>
@@ -576,7 +576,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18787879" sideWeight="0.6134454" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38655463" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38655463" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -737,21 +737,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="23" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
+        <state line="42" column="67" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exceptionPackage/DoNotExitAccountException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="56" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
+        <state line="11" column="15" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="38" selection-start="1968" selection-end="1968" vertical-scroll-proportion="0.58702064">
+        <state line="54" column="24" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.5280236">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

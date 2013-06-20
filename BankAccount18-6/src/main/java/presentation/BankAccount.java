@@ -2,6 +2,7 @@ package presentation;
 
 import dao.BankAccountDao;
 import entity.BankAccountEntity;
+import exceptionPackage.DoNotExitAccountException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -38,6 +39,8 @@ public class BankAccount {
 
     private static void doTransaction(String accountNumber, int amount, String description) throws Exception {
         BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
+        if (bankAccountEntity == null)
+            throw new DoNotExitAccountException("Don't exit account");
         if (bankAccountEntity.getBalance() + amount < 0)
             throw new Exception("Don't enough money");
         bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
