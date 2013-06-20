@@ -2,6 +2,7 @@ import dao.BankAccountDao;
 import dao.TransactionDao;
 import entity.BankAccountEntity;
 import entity.TransactionEntity;
+import exceptionPackage.DoNotExitAccountException;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
@@ -36,7 +37,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testDeposit() throws Exception{
+    public void testDeposit() throws Exception {
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
         when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
         ArgumentCaptor<BankAccountEntity> argument = ArgumentCaptor.forClass(BankAccountEntity.class);
@@ -48,8 +49,15 @@ public class TestTransaction {
         assertEquals(argument.getValue().getBalance(), 1100, e);
     }
 
+    @Test(expected = DoNotExitAccountException.class)
+    public void testDepositDoNotExitAccount() throws Exception {
+        when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(null);
+        BankAccount.deposit(accountNumber, 100, "deposit money");
+        fail("Exception expected");
+    }
+
     @Test
-    public void testSaveTransactionDeposit() throws Exception{
+    public void testSaveTransactionDeposit() throws Exception {
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
         when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
 
@@ -89,8 +97,8 @@ public class TestTransaction {
         assertEquals(argument.getValue().getBalance(), 900, e);
     }
 
-    @Test(expected = Exception.class )
-    public void testWithdrawDoNotMoney() throws Exception{
+    @Test(expected = Exception.class)
+    public void testWithdrawDoNotMoney() throws Exception {
 
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
         when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
