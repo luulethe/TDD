@@ -35,6 +35,9 @@ public class BankAccount {
     }
 
     public static void withdraw(String accountNumber, int amount, String description) {
-
+        BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
+        bankAccountEntity.setBalance(bankAccountEntity.getBalance() - amount);
+        bankAccountDao.save(bankAccountEntity);
+        Transaction.createTransaction(accountNumber, amount, description);
     }
 }
