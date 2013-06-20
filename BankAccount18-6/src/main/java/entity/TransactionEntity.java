@@ -59,7 +59,7 @@ public class TransactionEntity {
         return calendar;
     }
 
-    public static void  setCalendar(Calendar calendar) {
+    public static void setCalendar(Calendar calendar) {
         TransactionEntity.calendar = calendar;
     }
 }
