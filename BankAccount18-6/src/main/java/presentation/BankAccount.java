@@ -45,6 +45,9 @@ public class BankAccount {
             throw new Exception("Don't enough money");
         bankAccountEntity.setBalance(bankAccountEntity.getBalance() + amount);
         bankAccountDao.save(bankAccountEntity);
-        Transaction.createTransaction(accountNumber, amount, description);
+        if (amount < 0)
+            Transaction.createTransaction(accountNumber, -amount, description);
+        else
+            Transaction.createTransaction(accountNumber, amount, description);
     }
 }
