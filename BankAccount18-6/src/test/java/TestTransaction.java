@@ -74,4 +74,19 @@ public class TestTransaction {
         assertEquals(list.get(1).getAmount(), 200, e);
         assertEquals(list.get(1).getDescription(), "deposit money1");
     }
+
+    @Test
+    public void testWithdraw() {
+
+        BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
+        when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
+        ArgumentCaptor<BankAccountEntity> argument = ArgumentCaptor.forClass(BankAccountEntity.class);
+
+        BankAccount.withdraw(accountNumber, 100, "withdraw money");
+        verify(mockBankAccountDao, times(1)).save(argument.capture());
+
+        assertEquals(argument.getValue().getAccountNumber(), accountNumber);
+        assertEquals(argument.getValue().getBalance(), 900, e);
+    }
+
 }

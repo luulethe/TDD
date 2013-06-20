@@ -33,4 +33,8 @@ public class BankAccount {
         bankAccountDao.save(bankAccountEntity);
         Transaction.createTransaction(accountNumber, amount, description);
     }
+
+    public static void withdraw(String accountNumber, int amount, String description) {
+
+    }
 }
