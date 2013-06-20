@@ -141,4 +141,8 @@ public class TestTransaction {
         assertEquals(list.get(1).getDescription(), "withdraw money1");
     }
 
+    @Test
+    public void testGetTransactionOccurred() {
+        List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber);
+    }
 }

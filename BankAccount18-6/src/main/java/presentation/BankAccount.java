@@ -2,7 +2,10 @@ package presentation;
 
 import dao.BankAccountDao;
 import entity.BankAccountEntity;
+import entity.TransactionEntity;
 import exceptionPackage.DoNotExitAccountException;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -49,5 +52,9 @@ public class BankAccount {
             Transaction.createTransaction(accountNumber, -amount, description);
         else
             Transaction.createTransaction(accountNumber, amount, description);
+    }
+
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
+        return Transaction.getTransactionsOccurred(accountNumber);
     }
 }
