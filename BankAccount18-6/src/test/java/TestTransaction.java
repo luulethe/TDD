@@ -89,4 +89,13 @@ public class TestTransaction {
         assertEquals(argument.getValue().getBalance(), 900, e);
     }
 
+    @Test(expected = Exception.class )
+    public void testWithdrawDoNotMoney() {
+
+        BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
+        when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
+
+        BankAccount.withdraw(accountNumber, 2000, "withdraw money");
+        fail("Exception expected");
+    }
 }
