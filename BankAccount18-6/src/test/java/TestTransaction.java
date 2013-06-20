@@ -76,7 +76,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testWithdraw() {
+    public void testWithdraw() throws Exception {
 
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
         when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
@@ -90,7 +90,7 @@ public class TestTransaction {
     }
 
     @Test(expected = Exception.class )
-    public void testWithdrawDoNotMoney() {
+    public void testWithdrawDoNotMoney() throws Exception{
 
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
         when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);

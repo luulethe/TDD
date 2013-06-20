@@ -6,10 +6,10 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/TestBankAccount.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371539525048" ignored="false" />
     <file path="/fragment.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371626653073" ignored="false" />
-    <file path="/BankAccount.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371693105621" ignored="false" />
+    <file path="/BankAccount.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371693515080" ignored="false" />
     <file path="/BankAccountEntity.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371539198494" ignored="false" />
     <file path="/BankAccountDao.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371539378393" ignored="false" />
-    <file path="/TestTransaction.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371693386720" ignored="false" />
+    <file path="/TestTransaction.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371693526437" ignored="false" />
     <file path="/TransactionDao.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371626666944" ignored="false" />
     <file path="/Transaction.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371653767597" ignored="false" />
     <file path="/TransactionEntity.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371653368949" ignored="false" />
@@ -88,7 +88,7 @@
       <file leaf-file-name="TestTransaction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="52" selection-start="3789" selection-end="3789" vertical-scroll-proportion="0.91122717">
+            <state line="89" column="21" selection-start="3541" selection-end="3541" vertical-scroll-proportion="0.5456919">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,7 +99,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="69" selection-start="1494" selection-end="1494" vertical-scroll-proportion="0.0">
+            <state line="36" column="102" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -538,7 +538,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18787879" sideWeight="0.687395" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31260505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31260505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -706,14 +706,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="69" selection-start="1494" selection-end="1494" vertical-scroll-proportion="0.0">
+        <state line="36" column="102" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="52" selection-start="3789" selection-end="3789" vertical-scroll-proportion="0.91122717">
+        <state line="89" column="21" selection-start="3541" selection-end="3541" vertical-scroll-proportion="0.5456919">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

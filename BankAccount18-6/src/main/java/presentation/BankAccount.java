@@ -34,8 +34,10 @@ public class BankAccount {
         Transaction.createTransaction(accountNumber, amount, description);
     }
 
-    public static void withdraw(String accountNumber, int amount, String description) {
+    public static void withdraw(String accountNumber, int amount, String description) throws Exception{
         BankAccountEntity bankAccountEntity = BankAccount.getAccount(accountNumber);
+        if (bankAccountEntity.getBalance() - amount < 0)
+            throw new Exception("Don't enough money");
         bankAccountEntity.setBalance(bankAccountEntity.getBalance() - amount);
         bankAccountDao.save(bankAccountEntity);
         Transaction.createTransaction(accountNumber, amount, description);
