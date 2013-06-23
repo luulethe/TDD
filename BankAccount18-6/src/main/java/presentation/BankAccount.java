@@ -27,7 +27,7 @@ public class BankAccount {
         BankAccount.bankAccountDao = bankAccountDao;
     }
 
-    public static BankAccountEntity getAccount(String accountNumber) {
+    public static BankAccountEntity getAccount(String accountNumber) throws Exception{
         return bankAccountDao.getAccount(accountNumber);
     }
 

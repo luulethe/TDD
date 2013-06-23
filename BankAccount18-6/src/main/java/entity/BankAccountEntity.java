@@ -15,6 +15,12 @@ public class BankAccountEntity {
     long openTimeStamp;
     private static Calendar calendar = Calendar.getInstance();
 
+    public BankAccountEntity(String accountNumber, double balance, long openTimeStamp) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.openTimeStamp = openTimeStamp;
+    }
+
     public BankAccountEntity(String accountNumber, double balance) {
         this.accountNumber = accountNumber;
         this.balance = balance;

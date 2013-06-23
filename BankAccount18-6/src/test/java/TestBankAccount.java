@@ -44,7 +44,7 @@ public class TestBankAccount {
     }
 
     @Test
-    public void testGetAccount() {
+    public void testGetAccount() throws Exception{
         BankAccountEntity bankAccountResult = BankAccount.open(accountNumber);
         when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountResult);
 

@@ -2,6 +2,11 @@ package dao;
 
 import entity.BankAccountEntity;
 
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 /**
  * Created with IntelliJ IDEA.
  * User: luult
@@ -10,11 +15,21 @@ import entity.BankAccountEntity;
  * To change this template use File | Settings | File Templates.
  */
 public class BankAccountDao {
-    public void save(BankAccountEntity bankAccountEntity) {
-        //To change body of created methods use File | Settings | File Templates.
+    private Connection dbConnection;
+
+    public BankAccountDao(DataSource dataSource) throws SQLException {
+        this.dbConnection = dataSource.getConnection();
     }
 
-    public BankAccountEntity getAccount(String accountNumber) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+    public void save(BankAccountEntity bankAccountEntity) {
+
+    }
+    public BankAccountEntity getAccount(String accountNumber) throws SQLException {
+        String queryString = "SELECT * FROM SAVINGS_ACCOUNT WHERE ACCOUNT_NUMBER='" + accountNumber + "'";
+        ResultSet resultSet = dbConnection.createStatement().executeQuery(queryString);
+        if (resultSet.next())
+            return new BankAccountEntity(accountNumber, resultSet.getDouble("balance"), resultSet.getLong("open_time_stamp"));
+        else
+            return null;
     }
 }
