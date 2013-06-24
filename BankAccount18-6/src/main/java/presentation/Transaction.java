@@ -33,6 +33,6 @@ public class Transaction {
     }
 
     public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return transactionDao.getTransactionsOccurred(accountNumber, n);
     }
 }
