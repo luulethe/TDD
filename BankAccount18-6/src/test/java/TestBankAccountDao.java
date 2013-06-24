@@ -60,13 +60,21 @@ public class TestBankAccountDao {
     }
 
     @Test
-    public void testFindByAccountNumber() throws Exception {
+    public void testGetAccountNumber() throws Exception {
         BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
         BankAccountEntity account = bankAccountDao.getAccount("0123456789");
 
         assertEquals("0123456789", account.getAccountNumber());
         assertEquals(100, account.getBalance(), e);
         assertEquals(12345678, account.getOpenTimeStamp());
+    }
+
+    @Test
+    public void testGetAccountReturnNull() throws Exception {
+        BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
+        BankAccountEntity account = bankAccountDao.getAccount("0123456787");
+
+        assertEquals(account, null);
     }
 
     private DataSource dataSource() {

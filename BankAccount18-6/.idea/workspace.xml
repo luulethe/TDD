@@ -26,7 +26,7 @@
     <file path="/MySleepThread.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371652948577" ignored="false" />
     <file path="/DoNotExitAccountException.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371694374646" ignored="false" />
     <file path="/Dummy.txt" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371714162690" ignored="false" />
-    <file path="/TestBankAccountDao.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372000536407" ignored="false" />
+    <file path="/TestBankAccountDao.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372055756509" ignored="false" />
     <file path="/dataset.xml" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372000371466" ignored="false" />
     <file path="/schema.sql" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372000448009" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,46 +93,10 @@
       <file leaf-file-name="TestBankAccountDao.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestBankAccountDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="27" selection-start="2700" selection-end="2700" vertical-scroll-proportion="0.2626728">
+            <state line="70" column="18" selection-start="2697" selection-end="2697" vertical-scroll-proportion="0.7196532">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataset.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/dataset.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="90" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schema.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="111" selection-end="111" vertical-scroll-proportion="-1.2">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="85" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestBankAccount.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestBankAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="49" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -141,9 +105,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/BankAccountDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="26" column="29" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -216,6 +178,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -388,7 +351,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,9 +364,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -475,6 +437,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -501,19 +476,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -611,12 +573,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24033614" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21515152" sideWeight="0.77310926" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22689076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21515152" sideWeight="0.6252101" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37478992" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -687,9 +650,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/BankAccountDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="8" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -718,16 +679,12 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.3.172/h2-1.3.172.jar!/org/h2/Driver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.3.172/h2-1.3.172-sources.jar!/org/h2/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="13" selection-start="1094" selection-end="1094" vertical-scroll-proportion="-5.2214413">
-          <folding />
-        </state>
+        <state line="35" column="13" selection-start="1094" selection-end="1094" vertical-scroll-proportion="-5.2214413" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -758,46 +715,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/BankAccountDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="29" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/presentation/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="85" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0">
+        <state line="29" column="85" selection-start="872" selection-end="872" vertical-scroll-proportion="0.035971224">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestBankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="49" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.0">
+        <state line="46" column="49" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.40246046">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="111" selection-end="111" vertical-scroll-proportion="-1.2">
+        <state line="3" column="22" selection-start="111" selection-end="111" vertical-scroll-proportion="0.10544816">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/dataset.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="90" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+        <state line="2" column="90" selection-start="139" selection-end="139" vertical-scroll-proportion="0.07029877">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/BankAccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="29" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestBankAccountDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="27" selection-start="2700" selection-end="2700" vertical-scroll-proportion="0.2626728">
+        <state line="70" column="18" selection-start="2697" selection-end="2697" vertical-scroll-proportion="0.7196532">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
