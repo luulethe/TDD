@@ -17,7 +17,7 @@ import java.util.List;
 public class BankAccount {
     private static BankAccountDao bankAccountDao;
 
-    public static BankAccountEntity open(String accountNumber) {
+    public static BankAccountEntity open(String accountNumber) throws Exception{
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 0);
         bankAccountDao.save(bankAccountEntity);
         return bankAccountEntity;

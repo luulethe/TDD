@@ -28,7 +28,7 @@ public class TestBankAccount {
     }
 
     @Test
-    public void testOpenAccount() {
+    public void testOpenAccount() throws Exception{
         Calendar calendar = mock(Calendar.class);
         when(calendar.getTimeInMillis()).thenReturn(1000L);
         BankAccountEntity.setCalendar(calendar);
