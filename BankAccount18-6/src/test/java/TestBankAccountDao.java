@@ -31,7 +31,7 @@ public class TestBankAccountDao {
     private static final String USER = "sa";
     private static final String PASSWORD = "";
     private static final double e = 0.0000001;
-
+    private static final String accountNumber = "0123456789";
     @BeforeClass
     public static void createSchema() throws Exception {
         String schemaFileName = System.class.getResource("/schema.sql").toString().substring(6);
@@ -62,7 +62,7 @@ public class TestBankAccountDao {
     @Test
     public void testGetAccountNumber() throws Exception {
         BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
-        BankAccountEntity account = bankAccountDao.getAccount("0123456789");
+        BankAccountEntity account = bankAccountDao.getAccount(accountNumber);
 
         assertEquals("0123456789", account.getAccountNumber());
         assertEquals(100, account.getBalance(), e);
@@ -73,8 +73,19 @@ public class TestBankAccountDao {
     public void testGetAccountReturnNull() throws Exception {
         BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
         BankAccountEntity account = bankAccountDao.getAccount("0123456787");
-
         assertEquals(account, null);
+    }
+
+    @Test
+    public void testSaveAnExitingAccount() throws Exception {
+        BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
+
+        BankAccountEntity account = bankAccountDao.getAccount(accountNumber);
+        account.setBalance(1000);
+        bankAccountDao.save(account);
+        BankAccountEntity accountAfterSaving = bankAccountDao.getAccount(accountNumber);
+
+        assertEquals(accountAfterSaving.getBalance(), 1000, e);
     }
 
     private DataSource dataSource() {
