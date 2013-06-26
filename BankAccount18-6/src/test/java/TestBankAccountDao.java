@@ -34,6 +34,7 @@ public class TestBankAccountDao {
     private static final String PASSWORD = "";
     private static final double e = 0.0000001;
     private static final String accountNumber = "0123456789";
+
     @BeforeClass
     public static void createSchema() throws Exception {
         String schemaFileName = System.class.getResource("/schema.sql").toString().substring(6);
@@ -104,14 +105,23 @@ public class TestBankAccountDao {
     }
 
     @Test(expected = WrongNameException.class)
-    public void testSaveWithWrongAccountName() throws Exception {
+    public void testSaveWithLengthOfAccountNameIsNot10() throws Exception {
 
         BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
 
-        BankAccountEntity account = new BankAccountEntity("123456789", 0);
+        BankAccountEntity account = new BankAccountEntity("12345678", 0);
         bankAccountDao.save(account);
         fail("Exception expected");
+    }
 
+    @Test(expected = WrongNameException.class)
+    public void testSaveWithAccountNameContainsNotDigit() throws Exception {
+
+        BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
+
+        BankAccountEntity account = new BankAccountEntity("a123456789", 0);
+        bankAccountDao.save(account);
+        fail("Exception expected");
     }
 
     private DataSource dataSource() {
