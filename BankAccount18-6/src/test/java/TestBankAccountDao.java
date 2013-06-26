@@ -1,5 +1,7 @@
 import dao.BankAccountDao;
 import entity.BankAccountEntity;
+import exceptionPackage.NegativeBalaceException;
+import exceptionPackage.NegativeOpenTimeStampException;
 import exceptionPackage.WrongNameException;
 import org.dbunit.IDatabaseTester;
 import org.dbunit.JdbcDatabaseTester;
@@ -116,10 +118,24 @@ public class TestBankAccountDao {
 
     @Test(expected = WrongNameException.class)
     public void testSaveWithAccountNameContainsNotDigit() throws Exception {
-
         BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
-
         BankAccountEntity account = new BankAccountEntity("a123456789", 0);
+        bankAccountDao.save(account);
+        fail("Exception expected");
+    }
+
+    @Test(expected = NegativeBalaceException.class)
+    public void testSaveWithNegativeBalance() throws Exception {
+        BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
+        BankAccountEntity account = new BankAccountEntity(accountNumber, -10);
+        bankAccountDao.save(account);
+        fail("Exception expected");
+    }
+
+    @Test(expected = NegativeOpenTimeStampException.class)
+    public void testSaveWithNegativeOpenTimeStamp() throws Exception {
+        BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
+        BankAccountEntity account = new BankAccountEntity(accountNumber, 10, -12345);
         bankAccountDao.save(account);
         fail("Exception expected");
     }

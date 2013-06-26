@@ -1,6 +1,7 @@
 package dao;
 
 import entity.BankAccountEntity;
+import exceptionPackage.NegativeBalaceException;
 import exceptionPackage.WrongNameException;
 
 import javax.sql.DataSource;
@@ -22,9 +23,13 @@ public class BankAccountDao {
         this.dbConnection = dataSource.getConnection();
     }
 
-    public void save(BankAccountEntity bankAccountEntity) throws SQLException,Exception {
+    public void save(BankAccountEntity bankAccountEntity) throws SQLException, Exception {
         if (!isValidateName(bankAccountEntity.getAccountNumber()))
             throw new WrongNameException();
+        System.out.println(bankAccountEntity.getBalance());
+        if (bankAccountEntity.getBalance() < 0)
+            throw new NegativeBalaceException();
+        System.out.println("cccccccc");
         String accountNumber = bankAccountEntity.getAccountNumber();
         String queryString = "SELECT * FROM SAVINGS_ACCOUNT WHERE ACCOUNT_NUMBER='" + accountNumber + "'";
         ResultSet resultSet = dbConnection.createStatement().executeQuery(queryString);
@@ -44,8 +49,8 @@ public class BankAccountDao {
 
     private boolean isValidateName(String accountNumber) {
         if (accountNumber.length() != 10) return false;
-        for(int i = 0; i < 10; i++)
-            if (!((accountNumber.charAt(i) >='0') && (accountNumber.charAt(i) <='9')))
+        for (int i = 0; i < 10; i++)
+            if (!((accountNumber.charAt(i) >= '0') && (accountNumber.charAt(i) <= '9')))
                 return false;
         return true;
     }
