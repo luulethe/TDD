@@ -2,6 +2,7 @@ package dao;
 
 import entity.BankAccountEntity;
 import exceptionPackage.NegativeBalaceException;
+import exceptionPackage.NegativeOpenTimeStampException;
 import exceptionPackage.WrongNameException;
 
 import javax.sql.DataSource;
@@ -26,10 +27,11 @@ public class BankAccountDao {
     public void save(BankAccountEntity bankAccountEntity) throws SQLException, Exception {
         if (!isValidateName(bankAccountEntity.getAccountNumber()))
             throw new WrongNameException();
-        System.out.println(bankAccountEntity.getBalance());
         if (bankAccountEntity.getBalance() < 0)
             throw new NegativeBalaceException();
-        System.out.println("cccccccc");
+        if (bankAccountEntity.getOpenTimeStamp() < 0)
+            throw new NegativeOpenTimeStampException();
+
         String accountNumber = bankAccountEntity.getAccountNumber();
         String queryString = "SELECT * FROM SAVINGS_ACCOUNT WHERE ACCOUNT_NUMBER='" + accountNumber + "'";
         ResultSet resultSet = dbConnection.createStatement().executeQuery(queryString);
