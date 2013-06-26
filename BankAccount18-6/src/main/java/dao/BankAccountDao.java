@@ -44,6 +44,9 @@ public class BankAccountDao {
 
     private boolean isValidateName(String accountNumber) {
         if (accountNumber.length() != 10) return false;
+        for(int i = 0; i < 10; i++)
+            if (!((accountNumber.charAt(i) >='0') && (accountNumber.charAt(i) <='9')))
+                return false;
         return true;
     }
 
