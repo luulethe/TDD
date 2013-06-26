@@ -9,6 +9,7 @@ import org.mockito.ArgumentCaptor;
 import presentation.BankAccount;
 import presentation.Transaction;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -158,4 +159,20 @@ public class TestTransaction {
         int n = 2;
         List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber, n);
     }
+
+//    @Test
+//    public void testGetNTransaction1() {
+//        ArgumentCaptor<String> argument = ArgumentCaptor.forClass(String.class);
+//
+//        List<TransactionEntity> listTransaction = new ArrayList<TransactionEntity>();
+//        listTransaction.add(new TransactionEntity("12",12,"122"));
+//        System.out.println("cccccccccccccccc");
+//        when(BankAccount.getTransactionsOccurred("0123456789")).thenReturn(listTransaction);
+//
+//        //System.out.println(BankAccount.getTransactionsOccurred("0123456789"));
+//        //verify(BankAccount.getTransactionsOccurred(argument.capture()));
+//        //System.out.println(argument.getValue());
+//
+//        //verify(mockTransactionDA).findOneTime("0123456789",1000L,1200L);
+//    }
 }

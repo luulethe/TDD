@@ -88,6 +88,20 @@ public class TestBankAccountDao {
         assertEquals(accountAfterSaving.getBalance(), 1000, e);
     }
 
+    @Test
+    public void testSaveNotExitingAccount() throws Exception {
+        BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
+
+        BankAccountEntity account = new BankAccountEntity("1234567890", 0);
+        bankAccountDao.save(account);
+
+        BankAccountEntity accountAfterSaving = bankAccountDao.getAccount(accountNumber);
+
+        assertEquals(accountAfterSaving.getAccountNumber(), "1234567890");
+        assertEquals(accountAfterSaving.getBalance(), 0, e);
+    }
+
+
     private DataSource dataSource() {
         JdbcDataSource dataSource = new JdbcDataSource();
         dataSource.setURL(JDBC_URL);

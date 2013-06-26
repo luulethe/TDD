@@ -55,6 +55,7 @@ public class BankAccount {
     }
 
     public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
+        System.out.println("dddd");
         return Transaction.getTransactionsOccurred(accountNumber);
     }
 
@@ -65,4 +66,5 @@ public class BankAccount {
     public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n) {
         return Transaction.getTransactionsOccurred(accountNumber, n);
     }
+
 }
