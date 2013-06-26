@@ -1,5 +1,6 @@
 import dao.BankAccountDao;
 import entity.BankAccountEntity;
+import exceptionPackage.WrongNameException;
 import org.dbunit.IDatabaseTester;
 import org.dbunit.JdbcDatabaseTester;
 import org.dbunit.dataset.IDataSet;
@@ -15,6 +16,7 @@ import javax.sql.DataSource;
 import java.nio.charset.Charset;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.fail;
 
 /**
  * Created with IntelliJ IDEA.
@@ -101,6 +103,16 @@ public class TestBankAccountDao {
         assertEquals(accountAfterSaving.getBalance(), 0, e);
     }
 
+    @Test(expected = WrongNameException.class)
+    public void testSaveWithWrongAccountName() throws Exception {
+
+        BankAccountDao bankAccountDao = new BankAccountDao(dataSource());
+
+        BankAccountEntity account = new BankAccountEntity("123456789", 0);
+        bankAccountDao.save(account);
+        fail("Exception expected");
+
+    }
 
     private DataSource dataSource() {
         JdbcDataSource dataSource = new JdbcDataSource();
