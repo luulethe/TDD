@@ -25,12 +25,7 @@ public class BankAccountDao {
     }
 
     public void save(BankAccountEntity bankAccountEntity) throws SQLException, Exception {
-        if (!isValidateName(bankAccountEntity.getAccountNumber()))
-            throw new WrongNameException();
-        if (bankAccountEntity.getBalance() < 0)
-            throw new NegativeBalaceException();
-        if (bankAccountEntity.getOpenTimeStamp() < 0)
-            throw new NegativeOpenTimeStampException();
+        validateAccount(bankAccountEntity);
 
         String accountNumber = bankAccountEntity.getAccountNumber();
         String queryString = "SELECT * FROM SAVINGS_ACCOUNT WHERE ACCOUNT_NUMBER='" + accountNumber + "'";
@@ -47,6 +42,15 @@ public class BankAccountDao {
 
         }
 
+    }
+
+    private void validateAccount(BankAccountEntity bankAccountEntity) throws Exception {
+        if (!isValidateName(bankAccountEntity.getAccountNumber()))
+            throw new WrongNameException();
+        if (bankAccountEntity.getBalance() < 0)
+            throw new NegativeBalaceException();
+        if (bankAccountEntity.getOpenTimeStamp() < 0)
+            throw new NegativeOpenTimeStampException();
     }
 
     private boolean isValidateName(String accountNumber) {

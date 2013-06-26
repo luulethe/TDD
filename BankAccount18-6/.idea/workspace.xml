@@ -8,7 +8,7 @@
     <file path="/fragment.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372260076087" ignored="false" />
     <file path="/BankAccount.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372230250036" ignored="false" />
     <file path="/BankAccountEntity.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1371999351040" ignored="false" />
-    <file path="/BankAccountDao.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372260301526" ignored="false" />
+    <file path="/BankAccountDao.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372260381524" ignored="false" />
     <file path="/TestTransaction.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372230290846" ignored="false" />
     <file path="/TransactionDao.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372056773977" ignored="false" />
     <file path="/Transaction.java" changelist="570e2211-6870-4d40-8c53-21b65a955d35" time="1372056767570" ignored="false" />
@@ -99,7 +99,7 @@
       <file leaf-file-name="BankAccountDao.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/BankAccountDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="21" selection-start="890" selection-end="890" vertical-scroll-proportion="0.4463668">
+            <state line="28" column="8" selection-start="802" selection-end="802" vertical-scroll-proportion="0.79238755">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -800,7 +800,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/BankAccountDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="890" selection-end="890" vertical-scroll-proportion="0.4463668">
+        <state line="28" column="8" selection-start="802" selection-end="802" vertical-scroll-proportion="0.79238755">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
