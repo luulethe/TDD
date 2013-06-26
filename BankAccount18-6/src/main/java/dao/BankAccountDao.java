@@ -23,14 +23,22 @@ public class BankAccountDao {
 
     public void save(BankAccountEntity bankAccountEntity) throws SQLException {
         String accountNumber = bankAccountEntity.getAccountNumber();
-        String queryString = "SELECT * FROM SAVINGS_ACCOUNT WHERE ACCOUNT_NUMBER='" + accountNumber+ "'";
+        String queryString = "SELECT * FROM SAVINGS_ACCOUNT WHERE ACCOUNT_NUMBER='" + accountNumber + "'";
         ResultSet resultSet = dbConnection.createStatement().executeQuery(queryString);
         if (resultSet.next()) {
-            String queryStringSave = "UPDATE SAVINGS_ACCOUNT SET balance = " + bankAccountEntity.getBalance() + " WHERE account_number = '" + accountNumber + "'" ;
+            String queryStringSave = "UPDATE SAVINGS_ACCOUNT SET balance = " + bankAccountEntity.getBalance() + " WHERE account_number = '" + accountNumber + "'";
             System.out.println(queryStringSave);
             dbConnection.createStatement().executeUpdate(queryStringSave);
+        } else {
+            String queryStringSave = "INSERT INTO SAVINGS_ACCOUNT(account_number, balance, open_time_stamp) VALUES ('"
+                    + bankAccountEntity.getAccountNumber() + "'," + bankAccountEntity.getBalance() + "," + bankAccountEntity.getOpenTimeStamp() + ");";
+            System.out.println(queryStringSave);
+            dbConnection.createStatement().executeUpdate(queryStringSave);
+
         }
+
     }
+
     public BankAccountEntity getAccount(String accountNumber) throws SQLException {
         String queryString = "SELECT * FROM SAVINGS_ACCOUNT WHERE ACCOUNT_NUMBER='" + accountNumber + "'";
         ResultSet resultSet = dbConnection.createStatement().executeQuery(queryString);

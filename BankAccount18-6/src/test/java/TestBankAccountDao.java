@@ -95,7 +95,7 @@ public class TestBankAccountDao {
         BankAccountEntity account = new BankAccountEntity("1234567890", 0);
         bankAccountDao.save(account);
 
-        BankAccountEntity accountAfterSaving = bankAccountDao.getAccount(accountNumber);
+        BankAccountEntity accountAfterSaving = bankAccountDao.getAccount("1234567890");
 
         assertEquals(accountAfterSaving.getAccountNumber(), "1234567890");
         assertEquals(accountAfterSaving.getBalance(), 0, e);
