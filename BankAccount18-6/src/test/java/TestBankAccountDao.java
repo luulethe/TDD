@@ -160,19 +160,18 @@ public class TestBankAccountDao {
         assertEquals(listTransaction.get(1).getOpenTimeStamp(), 123456723);
         assertEquals(listTransaction.get(1).getDescription(), "withdraw");
     }
-//    @Test
-//    public void testGetAllTransactions() throws Exception {
-//        TransactionDao transactionDao = new TransactionDao(dataSource());
-//        TransactionEntity transactionEntity = new TransactionEntity(accountNumber, 100, "withdraw money");
-//        transactionDao.save(transactionEntity);
-//        List<TransactionEntity> listTransaction = transactionDao.getTransactionsOccurred(accountNumber);
-//
-//        assertEquals(listTransaction.size(), 1);
-//        assertEquals(listTransaction.get(0).getAccountNumber(),accountNumber);
-//        assertEquals(listTransaction.get(0).getAmount(), 100, e);
-//        assertEquals(listTransaction.get(0).getDescription(), "withdraw money");
-//    }
+    @Test
+    public void testSaveTransactions() throws Exception {
+        TransactionDao transactionDao = new TransactionDao(dataSource());
+        TransactionEntity transactionEntity = new TransactionEntity("1122334455", 100, "withdraw money");
+        transactionDao.save(transactionEntity);
+        List<TransactionEntity> listTransaction = transactionDao.getTransactionsOccurred("1122334455");
 
+        assertEquals(listTransaction.size(), 1);
+        assertEquals(listTransaction.get(0).getAccountNumber(),accountNumber);
+        assertEquals(listTransaction.get(0).getAmount(), 100, e);
+        assertEquals(listTransaction.get(0).getDescription(), "withdraw money");
+    }
 
     private DataSource dataSource() {
         JdbcDataSource dataSource = new JdbcDataSource();
