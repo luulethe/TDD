@@ -155,7 +155,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testGetNTransaction() {
+    public void testGetNTransaction() throws Exception {
         int n = 2;
         List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber, n);
     }

@@ -53,7 +53,14 @@ public class TransactionDao {
         return tempList;
     }
 
-    public List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+    public List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n) throws Exception{
+        String queryString = "SELECT * FROM TRANSACTION WHERE ACCOUNT_NUMBER='" +
+                accountNumber + "' ORDER BY timestamp DESC limit " + n;
+        ResultSet resultSet = dbConnection.createStatement().executeQuery(queryString);
+        List<TransactionEntity> tempList = new ArrayList<TransactionEntity>();
+        while (resultSet.next()) {
+            tempList.add(new TransactionEntity(accountNumber, resultSet.getLong("timestamp"), resultSet.getDouble("amount"), resultSet.getString("description")));
+        }
+        return tempList;
     }
 }

@@ -62,7 +62,7 @@ public class BankAccount {
         return Transaction.getTransactionsOccurred(accountNumber, startTime, stopTime);
     }
 
-    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n) {
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n) throws Exception{
         return Transaction.getTransactionsOccurred(accountNumber, n);
     }
 
