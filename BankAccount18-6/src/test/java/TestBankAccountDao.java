@@ -150,28 +150,31 @@ public class TestBankAccountDao {
         List<TransactionEntity> listTransaction = transactionDao.getTransactionsOccurred(accountNumber);
 
         assertEquals(listTransaction.size(), 2);
-        assertEquals(listTransaction.get(0).getAccountNumber(),accountNumber);
+        assertEquals(listTransaction.get(0).getAccountNumber(), accountNumber);
         assertEquals(listTransaction.get(0).getAmount(), 1000, e);
         assertEquals(listTransaction.get(0).getOpenTimeStamp(), 12345678);
         assertEquals(listTransaction.get(0).getDescription(), "deposit");
 
-        assertEquals(listTransaction.get(1).getAccountNumber(),accountNumber);
+        assertEquals(listTransaction.get(1).getAccountNumber(), accountNumber);
         assertEquals(listTransaction.get(1).getAmount(), 1000, e);
         assertEquals(listTransaction.get(1).getOpenTimeStamp(), 123456723);
         assertEquals(listTransaction.get(1).getDescription(), "withdraw");
     }
+
     @Test
     public void testSaveTransactions() throws Exception {
         TransactionDao transactionDao = new TransactionDao(dataSource());
-        TransactionEntity transactionEntity = new TransactionEntity("1122334455", 100, "withdraw money");
+        TransactionEntity transactionEntity = new TransactionEntity("1122334455", 12345, 100, "withdraw money");
         transactionDao.save(transactionEntity);
         List<TransactionEntity> listTransaction = transactionDao.getTransactionsOccurred("1122334455");
 
         assertEquals(listTransaction.size(), 1);
-        assertEquals(listTransaction.get(0).getAccountNumber(),accountNumber);
+        assertEquals(listTransaction.get(0).getAccountNumber(), "1122334455");
+        assertEquals(listTransaction.get(0).getOpenTimeStamp(), 12345);
         assertEquals(listTransaction.get(0).getAmount(), 100, e);
         assertEquals(listTransaction.get(0).getDescription(), "withdraw money");
     }
+    //@Test
 
     private DataSource dataSource() {
         JdbcDataSource dataSource = new JdbcDataSource();

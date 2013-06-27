@@ -19,7 +19,7 @@ public class Transaction {
         Transaction.transactionDao = dao;
     }
 
-    public static void createTransaction(String accountNumber, int amount, String description) {
+    public static void createTransaction(String accountNumber, int amount, String description) throws Exception{
         TransactionEntity transactionEntity = new TransactionEntity(accountNumber, amount, description);
         transactionDao.save(transactionEntity);
     }

@@ -23,7 +23,13 @@ public class TransactionDao {
         this.dbConnection = dataSource.getConnection();
     }
 
-    public void save(TransactionEntity transactionEntity) {
+    public void save(TransactionEntity transactionEntity) throws  Exception {
+        String queryStringSave = "INSERT INTO TRANSACTION(account_number, timestamp, amount, description) VALUES ('"
+                + transactionEntity.getAccountNumber() + "'," + transactionEntity.getOpenTimeStamp() + "," + transactionEntity.getAmount()
+                + ",'" + transactionEntity.getDescription() + "');";
+        System.out.println(queryStringSave);
+        dbConnection.createStatement().executeUpdate(queryStringSave);
+
     }
 
     public List<TransactionEntity> getTransactionsOccurred(String accountNumber) throws Exception {

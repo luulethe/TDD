@@ -6,7 +6,7 @@ create table if not exists SAVINGS_ACCOUNT (
 
 create table if not exists TRANSACTION (
   account_number varchar,
-  timestamp int,
+  timestamp bigint,
   amount int,
   description varchar,
 )
