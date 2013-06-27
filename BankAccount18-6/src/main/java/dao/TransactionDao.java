@@ -23,7 +23,7 @@ public class TransactionDao {
         this.dbConnection = dataSource.getConnection();
     }
 
-    public void save(TransactionEntity transactionEntity) throws  Exception {
+    public void save(TransactionEntity transactionEntity) throws Exception {
         String queryStringSave = "INSERT INTO TRANSACTION(account_number, timestamp, amount, description) VALUES ('"
                 + transactionEntity.getAccountNumber() + "'," + transactionEntity.getOpenTimeStamp() + "," + transactionEntity.getAmount()
                 + ",'" + transactionEntity.getDescription() + "');";
@@ -35,19 +35,22 @@ public class TransactionDao {
     public List<TransactionEntity> getTransactionsOccurred(String accountNumber) throws Exception {
         String queryString = "SELECT * FROM TRANSACTION WHERE ACCOUNT_NUMBER='" + accountNumber + "'";
         ResultSet resultSet = dbConnection.createStatement().executeQuery(queryString);
-        if (resultSet.next()) {
-            List<TransactionEntity> tempList = new ArrayList<TransactionEntity>();
-            do {
-                tempList.add(new TransactionEntity(accountNumber, resultSet.getLong("timestamp"), resultSet.getDouble("amount"), resultSet.getString("description")));
-            }
-            while (resultSet.next());
-            return tempList;
-        } else
-            return null;
+        List<TransactionEntity> tempList = new ArrayList<TransactionEntity>();
+        while (resultSet.next()) {
+            tempList.add(new TransactionEntity(accountNumber, resultSet.getLong("timestamp"), resultSet.getDouble("amount"), resultSet.getString("description")));
+        }
+        return tempList;
     }
 
-    public List<TransactionEntity> getTransactionsOccurred(String accountNumber, long startTime, long stopTime) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+    public List<TransactionEntity> getTransactionsOccurred(String accountNumber, long startTime, long stopTime) throws Exception {
+        String queryString = "SELECT * FROM TRANSACTION WHERE ACCOUNT_NUMBER='" +
+                accountNumber + "' AND timestamp >=" + startTime + "AND timestamp <= " + stopTime;
+        ResultSet resultSet = dbConnection.createStatement().executeQuery(queryString);
+        List<TransactionEntity> tempList = new ArrayList<TransactionEntity>();
+        while (resultSet.next()) {
+            tempList.add(new TransactionEntity(accountNumber, resultSet.getLong("timestamp"), resultSet.getDouble("amount"), resultSet.getString("description")));
+        }
+        return tempList;
     }
 
     public List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n) {

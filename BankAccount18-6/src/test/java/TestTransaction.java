@@ -148,7 +148,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testGetTransactionOccurredBetweenTwoTime() {
+    public void testGetTransactionOccurredBetweenTwoTime() throws Exception{
         long startTime = 1000;
         long stopTime = 2000;
         List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber, startTime, stopTime);
