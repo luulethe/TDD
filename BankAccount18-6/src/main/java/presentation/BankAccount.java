@@ -54,8 +54,7 @@ public class BankAccount {
             Transaction.createTransaction(accountNumber, amount, description);
     }
 
-    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
-        System.out.println("dddd");
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) throws Exception {
         return Transaction.getTransactionsOccurred(accountNumber);
     }
 

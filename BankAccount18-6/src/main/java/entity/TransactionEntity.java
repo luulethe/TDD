@@ -23,6 +23,13 @@ public class TransactionEntity {
         this.openTimeStamp = calendar.getTimeInMillis();
     }
 
+    public TransactionEntity(String accountNumber, long openTimeStamp, double amount, String description) {
+        this.accountNumber = accountNumber;
+        this.description = description;
+        this.amount = amount;
+        this.openTimeStamp = openTimeStamp;
+    }
+
     public String getAccountNumber() {
         return accountNumber;
     }

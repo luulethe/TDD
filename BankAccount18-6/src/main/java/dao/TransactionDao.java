@@ -1,8 +1,12 @@
 package dao;
 
+import entity.BankAccountEntity;
 import entity.TransactionEntity;
 
 import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,15 +17,27 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class TransactionDao {
-    public TransactionDao(DataSource dataSource) {
-        //To change body of created methods use File | Settings | File Templates.
+    private Connection dbConnection;
+
+    public TransactionDao(DataSource dataSource) throws Exception {
+        this.dbConnection = dataSource.getConnection();
     }
 
     public void save(TransactionEntity transactionEntity) {
     }
 
-    public List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+    public List<TransactionEntity> getTransactionsOccurred(String accountNumber) throws Exception {
+        String queryString = "SELECT * FROM TRANSACTION WHERE ACCOUNT_NUMBER='" + accountNumber + "'";
+        ResultSet resultSet = dbConnection.createStatement().executeQuery(queryString);
+        if (resultSet.next()) {
+            List<TransactionEntity> tempList = new ArrayList<TransactionEntity>();
+            do {
+                tempList.add(new TransactionEntity(accountNumber, resultSet.getLong("timestamp"), resultSet.getDouble("amount"), resultSet.getString("description")));
+            }
+            while (resultSet.next());
+            return tempList;
+        } else
+            return null;
     }
 
     public List<TransactionEntity> getTransactionsOccurred(String accountNumber, long startTime, long stopTime) {

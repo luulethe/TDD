@@ -145,17 +145,34 @@ public class TestBankAccountDao {
     }
 
     @Test
-    public void testSaveAndGetAllTransactions() throws Exception {
+    public void testGetAllTransactions() throws Exception {
         TransactionDao transactionDao = new TransactionDao(dataSource());
-        TransactionEntity transactionEntity = new TransactionEntity(accountNumber, 100, "withdraw money");
-        transactionDao.save(transactionEntity);
         List<TransactionEntity> listTransaction = transactionDao.getTransactionsOccurred(accountNumber);
 
-        assertEquals(listTransaction.size(), 1);
+        assertEquals(listTransaction.size(), 2);
         assertEquals(listTransaction.get(0).getAccountNumber(),accountNumber);
-        assertEquals(listTransaction.get(0).getAmount(), 100, e);
-        assertEquals(listTransaction.get(0).getDescription(), "withdraw money");
+        assertEquals(listTransaction.get(0).getAmount(), 1000, e);
+        assertEquals(listTransaction.get(0).getOpenTimeStamp(), 12345678);
+        assertEquals(listTransaction.get(0).getDescription(), "deposit");
+
+        assertEquals(listTransaction.get(1).getAccountNumber(),accountNumber);
+        assertEquals(listTransaction.get(1).getAmount(), 1000, e);
+        assertEquals(listTransaction.get(1).getOpenTimeStamp(), 123456723);
+        assertEquals(listTransaction.get(1).getDescription(), "withdraw");
     }
+//    @Test
+//    public void testGetAllTransactions() throws Exception {
+//        TransactionDao transactionDao = new TransactionDao(dataSource());
+//        TransactionEntity transactionEntity = new TransactionEntity(accountNumber, 100, "withdraw money");
+//        transactionDao.save(transactionEntity);
+//        List<TransactionEntity> listTransaction = transactionDao.getTransactionsOccurred(accountNumber);
+//
+//        assertEquals(listTransaction.size(), 1);
+//        assertEquals(listTransaction.get(0).getAccountNumber(),accountNumber);
+//        assertEquals(listTransaction.get(0).getAmount(), 100, e);
+//        assertEquals(listTransaction.get(0).getDescription(), "withdraw money");
+//    }
+
 
     private DataSource dataSource() {
         JdbcDataSource dataSource = new JdbcDataSource();

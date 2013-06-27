@@ -24,7 +24,7 @@ public class Transaction {
         transactionDao.save(transactionEntity);
     }
 
-    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
+    public static List<TransactionEntity> getTransactionsOccurred(String accountNumber) throws Exception{
         return transactionDao.getTransactionsOccurred(accountNumber);  //To change body of created methods use File | Settings | File Templates.
     }
 

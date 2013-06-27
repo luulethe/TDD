@@ -143,7 +143,7 @@ public class TestTransaction {
     }
 
     @Test
-    public void testGetTransactionOccurred() {
+    public void testGetTransactionOccurred() throws Exception{
         List<TransactionEntity> list = BankAccount.getTransactionsOccurred(accountNumber);
     }
 
