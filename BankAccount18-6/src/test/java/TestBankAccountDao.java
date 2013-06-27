@@ -1,5 +1,7 @@
 import dao.BankAccountDao;
+import dao.TransactionDao;
 import entity.BankAccountEntity;
+import entity.TransactionEntity;
 import exceptionPackage.NegativeBalaceException;
 import exceptionPackage.NegativeOpenTimeStampException;
 import exceptionPackage.WrongNameException;
@@ -16,8 +18,10 @@ import org.junit.Test;
 
 import javax.sql.DataSource;
 import java.nio.charset.Charset;
+import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertTrue;
 import static junit.framework.Assert.fail;
 
 /**
@@ -138,6 +142,19 @@ public class TestBankAccountDao {
         BankAccountEntity account = new BankAccountEntity(accountNumber, 10, -12345);
         bankAccountDao.save(account);
         fail("Exception expected");
+    }
+
+    @Test
+    public void testSaveAndGetAllTransactions() throws Exception {
+        TransactionDao transactionDao = new TransactionDao(dataSource());
+        TransactionEntity transactionEntity = new TransactionEntity(accountNumber, 100, "withdraw money");
+        transactionDao.save(transactionEntity);
+        List<TransactionEntity> listTransaction = transactionDao.getTransactionsOccurred(accountNumber);
+
+        assertEquals(listTransaction.size(), 1);
+        assertEquals(listTransaction.get(0).getAccountNumber(),accountNumber);
+        assertEquals(listTransaction.get(0).getAmount(), 100, e);
+        assertEquals(listTransaction.get(0).getDescription(), "withdraw money");
     }
 
     private DataSource dataSource() {

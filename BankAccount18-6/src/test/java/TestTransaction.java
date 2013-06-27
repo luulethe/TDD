@@ -169,10 +169,10 @@ public class TestTransaction {
 //        System.out.println("cccccccccccccccc");
 //        when(BankAccount.getTransactionsOccurred("0123456789")).thenReturn(listTransaction);
 //
-//        //System.out.println(BankAccount.getTransactionsOccurred("0123456789"));
-//        //verify(BankAccount.getTransactionsOccurred(argument.capture()));
-//        //System.out.println(argument.getValue());
+//        System.out.println(BankAccount.getTransactionsOccurred("0123456789"));
+//        verify(BankAccount.getTransactionsOccurred(argument.capture()));
+//       // System.out.println(argument.getValue());
 //
-//        //verify(mockTransactionDA).findOneTime("0123456789",1000L,1200L);
+//        //verify(mockTransactionDao).findOneTime("0123456789",1000L,1200L);
 //    }
 }

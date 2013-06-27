@@ -2,6 +2,7 @@ package dao;
 
 import entity.TransactionEntity;
 
+import javax.sql.DataSource;
 import java.util.List;
 
 /**
@@ -12,7 +13,11 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class TransactionDao {
-    public void save(TransactionEntity capture) {
+    public TransactionDao(DataSource dataSource) {
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public void save(TransactionEntity transactionEntity) {
     }
 
     public List<TransactionEntity> getTransactionsOccurred(String accountNumber) {
