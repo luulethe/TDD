@@ -9,7 +9,9 @@ import com.qsoft.bankaccount.persistence.model.BankAccountEntity;
  */
 public interface BankAccountDAO
 {
-    public BankAccountEntity getAccount(long id) ;
+    public BankAccountEntity getAccount(String accountNumber) ;
 
     void add();
+
+    void save(BankAccountEntity bankAccountEntity);
 }

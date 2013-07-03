@@ -29,6 +29,8 @@ public class BankAccountEntity
     @Column(name = "open_time_stamp")
     long openTimeStamp;
 
+    private static Calendar calendar = Calendar.getInstance();
+
     public BankAccountEntity(String accountNumber, double balance, long openTimeStamp)
     {
         this.accountNumber = accountNumber;
@@ -36,6 +38,60 @@ public class BankAccountEntity
         this.openTimeStamp = openTimeStamp;
     }
 
-    private static Calendar calendar = Calendar.getInstance();
+    public BankAccountEntity(String accountNumber, int balance)
+    {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.openTimeStamp = calendar.getTimeInMillis();
+    }
 
+    public double getBalance()
+    {
+        return balance;
+    }
+
+    public void setBalance(double balance)
+    {
+        this.balance = balance;
+    }
+
+    public long getOpenTimeStamp()
+    {
+        return openTimeStamp;
+    }
+
+    public void setOpenTimeStamp(long openTimeStamp)
+    {
+        this.openTimeStamp = openTimeStamp;
+    }
+
+    public static Calendar getCalendar()
+    {
+        return calendar;
+    }
+
+    public static void setCalendar(Calendar calendar)
+    {
+        BankAccountEntity.calendar = calendar;
+    }
+
+    public long getId()
+    {
+        return id;
+    }
+
+    public void setId(long id)
+    {
+        this.id = id;
+    }
+
+    public String getAccountNumber()
+    {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber)
+    {
+        this.accountNumber = accountNumber;
+    }
 }

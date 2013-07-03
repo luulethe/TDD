@@ -19,7 +19,7 @@ public class BankAccountDAOImpl implements BankAccountDAO
     private EntityManager entityManager;
 
     @Override
-    public BankAccountEntity getAccount(long id)
+    public BankAccountEntity getAccount(String accountNumber)
     {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
@@ -29,6 +29,11 @@ public class BankAccountDAOImpl implements BankAccountDAO
     {
         BankAccountEntity bankAccountEntity = new BankAccountEntity("0123456789", 1000, 1000l);
         entityManager.persist(bankAccountEntity);
+    }
 
+    @Override
+    public void save(BankAccountEntity bankAccountEntity)
+    {
+        //To change body of implemented methods use File | Settings | File Templates.
     }
 }
