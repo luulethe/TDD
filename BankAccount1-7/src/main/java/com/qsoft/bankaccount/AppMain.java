@@ -1,5 +1,7 @@
 package com.qsoft.bankaccount;
 
+import com.qsoft.bankaccount.business.impl.BankAccountServiceImpl;
+import com.qsoft.bankaccount.persistence.dao.BankAccountDAO;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -14,5 +16,8 @@ public class AppMain
     {
         ApplicationContext appContext = new ClassPathXmlApplicationContext(
                 "applicationContext.xml");
+        BankAccountDAO bankAccountDAO = (BankAccountDAO) appContext.getBean("bankAccountDao");
+        bankAccountDAO.add();
+        //BankAccountServiceImpl
     }
 }

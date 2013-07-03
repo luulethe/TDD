@@ -11,4 +11,5 @@ public interface BankAccountDAO
 {
     public BankAccountEntity getAccount(long id) ;
 
+    void add();
 }

@@ -23,4 +23,12 @@ public class BankAccountDAOImpl implements BankAccountDAO
     {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
+
+    @Override
+    public void add()
+    {
+        BankAccountEntity bankAccountEntity = new BankAccountEntity("0123456789", 1000, 1000l);
+        entityManager.persist(bankAccountEntity);
+
+    }
 }
