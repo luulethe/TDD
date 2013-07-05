@@ -16,7 +16,7 @@ public class AppMain
     {
         ApplicationContext appContext = new ClassPathXmlApplicationContext(
                 "applicationContext.xml");
-        BankAccountDAO bankAccountDAO = (BankAccountDAO) appContext.getBean("bankAccountDao");
+        BankAccountDAO bankAccountDAO = (BankAccountDAO) appContext.getBean("bankAccountDAO");
         bankAccountDAO.add();
         //BankAccountServiceImpl
     }

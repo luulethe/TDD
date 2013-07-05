@@ -11,11 +11,17 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd">
 
+    <bean id="placeholderConfig"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:db.properties"/>
+    </bean>
+
     <bean id="bankAccountDAO" class="com.qsoft.bankaccount.persistence.dao.impl.BankAccountDAOImpl"/>
     <bean id="transactionDAO" class="com.qsoft.bankaccount.persistence.dao.impl.TransactionDAOImpl"/>
 
     <bean id="sevice" class="com.qsoft.bankaccount.business.impl.BankAccountServiceImpl">
     </bean>
+
     <bean id="entityManagerFactory"
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <!--p:dataSource-ref="dataSource">-->
@@ -23,31 +29,25 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="persistenceUnitName" value="NewPersistenceUnit"/>
         <property name="persistenceXmlLocation" value="META-INF/persistence.xml"/>
-        <property name="jpaVendorAdapter">
-            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
-                <!--<property name="database" value="POSTGRESQL" />-->
-                <!--<property name="showSql" value="true" />-->
-            </bean>
-        </property>
     </bean>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-        <property name="driverClassName" value="${database.driver}"/>
+        <property name="driverClassName" value="${db.driver}"/>
         <!--using postgres driver-->
-        <property name="url" value="${database.url}"/>
-        <property name="username" value="dbc_user"/>
-        <property name="password" value="${database.password}"/>
+        <property name="url" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
 
     </bean>
-    <bean
-            class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="locations">
-            <list>
-                <value>db.properties</value>
-            </list>
-        </property>
-        <property name="ignoreResourceNotFound" value="true"/>
-    </bean>
+    <!--<bean-->
+            <!--class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+        <!--<property name="locations">-->
+            <!--<list>-->
+                <!--<value>db.properties</value>-->
+            <!--</list>-->
+        <!--</property>-->
+        <!--<property name="ignoreResourceNotFound" value="true"/>-->
+    <!--</bean>-->
 
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="dataSource" ref="dataSource"></property>

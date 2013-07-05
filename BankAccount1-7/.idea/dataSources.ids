@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Data Source" product="PostgreSQL" version="9.2.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.1 JDBC4 (build 901)" uuid="ef31fc64-97b1-41e8-b29b-3a0437b67430">
+  <data-source source="LOCAL" name="Data Source" product="PostgreSQL" version="9.2.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.1 JDBC4 (build 901)" uuid="74cdfc4e-9cc3-43b4-b212-98e8971abcec">
     <identifier-quote-string>"</identifier-quote-string>
     <synchronize>true</synchronize>
     <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-    <jdbc-url>jdbc:postgresql://localhost/bank_account</jdbc-url>
-    <user-name>postgres</user-name>
+    <jdbc-url>jdbc:postgresql://localhost:5432/bank_account</jdbc-url>
+    <user-name>dbc_user</user-name>
     <user-password>df9bdf98df99df9edf9fdf9c</user-password>
     <libraries>
       <library>
@@ -2303,8 +2303,8 @@
     </table>
     <table name="abc" schema="public" catalog="bank_account" type="TABLE" />
     <table name="bank_account" schema="public" catalog="bank_account" type="TABLE">
-      <column name="id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnc2VxX2lkMSc6OnJlZ2NsYXNzKQ==" autoIncrement="true" />
-      <column name="account_number" sqlType="varchar" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="account_number" sqlType="varchar" length="255" precision="0" nullable="true" jdbcType="12" />
       <column name="balance" sqlType="float8" length="17" precision="17" nullable="true" jdbcType="8" />
       <column name="open_time_stamp" sqlType="int8" length="19" precision="0" nullable="true" jdbcType="-5" />
       <primary-key name="bank_account_pkey" columns="id" />
