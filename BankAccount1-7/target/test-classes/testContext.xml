@@ -13,21 +13,21 @@
         <property name="location" value="classpath:dbTest.properties"/>
     </bean>
 
-    <!--<bean id="entityManagerFactory"-->
-          <!--class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">-->
-        <!--&lt;!&ndash;p:dataSource-ref="dataSource">&ndash;&gt;-->
-        <!--<property name="packagesToScan" value="com.qsoft.bankaccount.persistence.model"/>-->
-        <!--<property name="dataSource" ref="dataSource"/>-->
-        <!--<property name="persistenceUnitName" value="NewPersistenceUnitTest"/>-->
-        <!--<property name="persistenceXmlLocation" value="META-INF/persistenceTest.xml"/>-->
-    <!--</bean>-->
+    <bean id="entityManagerFactory"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <!--p:dataSource-ref="dataSource">-->
+        <property name="packagesToScan" value="com.qsoft.bankaccount.persistence.model"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="persistenceUnitName" value="NewPersistenceUnitTest"/>
+        <property name="persistenceXmlLocation" value="META-INF/persistenceTest.xml"/>
+    </bean>
 
-    <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">-->
-        <!--<property name="driverClassName" value="${db.driver}"/>-->
-        <!--&lt;!&ndash;using postgres driver&ndash;&gt;-->
-        <!--<property name="url" value="${db.url}"/>-->
-        <!--<property name="username" value="${db.username}"/>-->
-        <!--<property name="password" value="${db.password}"/>-->
-    <!--</bean>-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${db.driver}"/>
+        <!--using postgres driver-->
+        <property name="url" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
 
 </beans>

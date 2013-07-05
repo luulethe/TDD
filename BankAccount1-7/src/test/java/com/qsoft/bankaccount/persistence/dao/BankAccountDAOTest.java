@@ -74,8 +74,8 @@ public class BankAccountDAOTest
     @Test
     public void testGetAccount() throws Exception
     {
-        BankAccountDAO bankAccountDao = new BankAccountDAOImpl();
-        BankAccountEntity account = bankAccountDao.getAccount(accountNumber);
+        //BankAccountDAO bankAccountDAO = new BankAccountDAOImpl();
+        BankAccountEntity account = bankAccountDAO.getAccount(accountNumber);
 
         assertEquals("0123456789", account.getAccountNumber());
         assertEquals(100, account.getBalance(), e);

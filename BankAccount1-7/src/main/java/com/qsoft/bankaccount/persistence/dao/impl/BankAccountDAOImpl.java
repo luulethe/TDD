@@ -2,6 +2,7 @@ package com.qsoft.bankaccount.persistence.dao.impl;
 
 import com.qsoft.bankaccount.persistence.dao.BankAccountDAO;
 import com.qsoft.bankaccount.persistence.model.BankAccountEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
@@ -14,6 +15,7 @@ import javax.persistence.Query;
  * Time: 1:38 PM
  */
 @Transactional
+@Component
 public class BankAccountDAOImpl implements BankAccountDAO
 {
     @PersistenceContext
@@ -22,14 +24,14 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @Override
     public BankAccountEntity getAccount(String accountNumber)
     {
-        System.out.println("12222222222222222222222222222222");
-        System.out.println(entityManager);
-        Query query = entityManager.createQuery("select o from BankAccountEntity o where o.accountNumber = :qAccountNumber");
-        query.setParameter("qAccountNumber", accountNumber);
-        return (BankAccountEntity) query.getResultList().get(0);
-
-//        entityManager.
-//        return null;  //To change body of implemented methods use File | Settings | File Templates.
+//        System.out.println("12222222222222222222222222222222");
+//        System.out.println(entityManager);
+//        Query query = entityManager.createQuery("select o from BankAccountEntity o where o.accountNumber = :qAccountNumber");
+//        query.setParameter("qAccountNumber", accountNumber);
+//        return (BankAccountEntity) query.getResultList().get(0);
+          System.out.println(entityManager);
+          return entityManager.find(BankAccountEntity.class,1l);
+        //return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override

@@ -31,6 +31,9 @@ public class BankAccountEntity
 
     private static Calendar calendar = Calendar.getInstance();
 
+    public BankAccountEntity()
+    {
+    }
     public BankAccountEntity(String accountNumber, double balance, long openTimeStamp)
     {
         this.accountNumber = accountNumber;
