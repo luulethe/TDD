@@ -19,6 +19,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.sql.DataSource;
 
 import static junit.framework.Assert.assertEquals;
@@ -36,12 +38,15 @@ import static junit.framework.Assert.assertEquals;
 @Transactional
 public class BankAccountDAOTest
 {
+    @PersistenceContext
+    private EntityManager entityManager;
+
     @Autowired
     private BankAccountDAO bankAccountDAO;
-    final static String accountNumber = "0234567890";
+    final static String accountNumber = "0123456789";
     final static double e = 0.00001;
     @Autowired
-    private DataSource dataSource;
+    private DataSource dataSourceTest;
 
     private IDatabaseTester databaseTester;
 
@@ -59,7 +64,7 @@ public class BankAccountDAOTest
 
     private void cleanlyInsert(IDataSet dataSet) throws Exception
     {
-        databaseTester = new DataSourceDatabaseTester(dataSource);
+        databaseTester = new DataSourceDatabaseTester(dataSourceTest);
         databaseTester.setSetUpOperation(DatabaseOperation.CLEAN_INSERT);
         databaseTester.setDataSet(dataSet);
         databaseTester.onSetup();
@@ -74,12 +79,30 @@ public class BankAccountDAOTest
     @Test
     public void testGetAccount() throws Exception
     {
-        //BankAccountDAO bankAccountDAO = new BankAccountDAOImpl();
         BankAccountEntity account = bankAccountDAO.getAccount(accountNumber);
 
         assertEquals("0123456789", account.getAccountNumber());
         assertEquals(100, account.getBalance(), e);
         assertEquals(12345678, account.getOpenTimeStamp());
+    }
+
+    @Test
+    public void testGetAccountReturnNull() throws Exception
+    {
+        BankAccountEntity account = bankAccountDAO.getAccount("0123456787");
+        assertEquals(account, null);
+    }
+
+    @Test
+    public void testSaveAnExistingAccount() throws Exception {
+        BankAccountEntity account = bankAccountDAO.getAccount(accountNumber);
+        account.setBalance(2000);
+        bankAccountDAO.save(account);
+
+        entityManager.detach(account);
+        BankAccountEntity accountAfterSaving = bankAccountDAO.getAccount(accountNumber);
+
+        assertEquals(accountAfterSaving.getBalance(), 2000, e);
     }
 
     @Test

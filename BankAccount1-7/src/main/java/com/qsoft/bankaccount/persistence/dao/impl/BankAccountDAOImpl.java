@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import java.util.List;
 
 /**
  * User: luult
@@ -24,14 +25,13 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @Override
     public BankAccountEntity getAccount(String accountNumber)
     {
-//        System.out.println("12222222222222222222222222222222");
-//        System.out.println(entityManager);
-//        Query query = entityManager.createQuery("select o from BankAccountEntity o where o.accountNumber = :qAccountNumber");
-//        query.setParameter("qAccountNumber", accountNumber);
-//        return (BankAccountEntity) query.getResultList().get(0);
-          System.out.println(entityManager);
-          return entityManager.find(BankAccountEntity.class,1l);
-        //return null;  //To change body of implemented methods use File | Settings | File Templates.
+        Query query = entityManager.createQuery("select o from BankAccountEntity o where o.accountNumber = :qAccountNumber",BankAccountEntity.class);
+        query.setParameter("qAccountNumber", accountNumber);
+        List<BankAccountEntity> list = query.getResultList();
+        if (list.size() == 0)
+            return null;
+        else
+            return  list.get(0);
     }
 
     @Override
@@ -40,10 +40,11 @@ public class BankAccountDAOImpl implements BankAccountDAO
         BankAccountEntity bankAccountEntity = new BankAccountEntity("0123456789", 100011, 1000l);
         entityManager.persist(bankAccountEntity);
     }
-
+    @Transactional
     @Override
     public void save(BankAccountEntity bankAccountEntity)
     {
-        //To change body of implemented methods use File | Settings | File Templates.
+        entityManager.persist(bankAccountEntity);
+        entityManager.flush();
     }
 }

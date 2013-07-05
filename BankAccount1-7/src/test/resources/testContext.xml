@@ -17,12 +17,12 @@
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <!--p:dataSource-ref="dataSource">-->
         <property name="packagesToScan" value="com.qsoft.bankaccount.persistence.model"/>
-        <property name="dataSource" ref="dataSource"/>
+        <property name="dataSource" ref="dataSourceTest"/>
         <property name="persistenceUnitName" value="NewPersistenceUnitTest"/>
         <property name="persistenceXmlLocation" value="META-INF/persistenceTest.xml"/>
     </bean>
 
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <bean id="dataSourceTest" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${db.driver}"/>
         <!--using postgres driver-->
         <property name="url" value="${db.url}"/>
