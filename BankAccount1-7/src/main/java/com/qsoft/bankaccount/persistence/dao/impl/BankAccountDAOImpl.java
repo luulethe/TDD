@@ -40,7 +40,6 @@ public class BankAccountDAOImpl implements BankAccountDAO
         BankAccountEntity bankAccountEntity = new BankAccountEntity("0123456789", 100011, 1000l);
         entityManager.persist(bankAccountEntity);
     }
-    @Transactional
     @Override
     public void save(BankAccountEntity bankAccountEntity)
     {

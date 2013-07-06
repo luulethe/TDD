@@ -18,7 +18,7 @@ public class BankAccountEntity
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_id1")
     @Id
     @Column(name = "id")
-    private long id;
+    private Long id;
 
     @Column(name = "account_number")
     private String accountNumber;
@@ -78,12 +78,12 @@ public class BankAccountEntity
         BankAccountEntity.calendar = calendar;
     }
 
-    public long getId()
+    public Long getId()
     {
         return id;
     }
 
-    public void setId(long id)
+    public void setId(Long id)
     {
         this.id = id;
     }

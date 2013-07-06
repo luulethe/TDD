@@ -31,7 +31,7 @@ import static junit.framework.Assert.assertEquals;
  * Time: 11:14 PM
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:testContext.xml"})
+@ContextConfiguration(locations = {"classpath:applicationContext.xml"})
 @TransactionConfiguration(defaultRollback = true)
 // Importance, as the transaction will be rollback for each test
 // give us a clean state.
@@ -94,7 +94,8 @@ public class BankAccountDAOTest
     }
 
     @Test
-    public void testSaveAnExistingAccount() throws Exception {
+    public void testSaveAnExistingAccount() throws Exception
+    {
         BankAccountEntity account = bankAccountDAO.getAccount(accountNumber);
         account.setBalance(2000);
         bankAccountDAO.save(account);
@@ -103,6 +104,16 @@ public class BankAccountDAOTest
         BankAccountEntity accountAfterSaving = bankAccountDAO.getAccount(accountNumber);
 
         assertEquals(accountAfterSaving.getBalance(), 2000, e);
+    }
+
+    @Test
+    public void testSaveNotExistingAccount() throws Exception
+    {
+        BankAccountEntity account = new BankAccountEntity("1234567890", 0);
+        BankAccountEntity accountAfterSaving = bankAccountDAO.getAccount("1234567890");
+
+        assertEquals(accountAfterSaving.getAccountNumber(), "1234567890");
+        assertEquals(accountAfterSaving.getBalance(), 0, e);
     }
 
     @Test
