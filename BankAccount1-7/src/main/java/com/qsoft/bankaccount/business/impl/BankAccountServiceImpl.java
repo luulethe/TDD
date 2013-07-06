@@ -27,7 +27,7 @@ public class BankAccountServiceImpl implements BankAccountService
         this.bankAccountDAO = bankAccountDAO;
     }
 
-    public BankAccountEntity open(String accountNumber)
+    public BankAccountEntity open(String accountNumber) throws Exception
     {
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 0);
         bankAccountDAO.save(bankAccountEntity);

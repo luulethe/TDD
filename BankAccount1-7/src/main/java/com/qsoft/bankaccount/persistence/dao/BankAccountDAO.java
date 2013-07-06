@@ -13,5 +13,5 @@ public interface BankAccountDAO
 
     void add();
 
-    void save(BankAccountEntity bankAccountEntity);
+    void save(BankAccountEntity bankAccountEntity)throws Exception;
 }
