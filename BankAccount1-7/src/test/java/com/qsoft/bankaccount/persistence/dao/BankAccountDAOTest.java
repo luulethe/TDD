@@ -39,7 +39,7 @@ import static junit.framework.Assert.fail;
  * Time: 11:14 PM
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:applicationContext.xml"})
+@ContextConfiguration(locations = {"classpath:testContext.xml"})
 @TransactionConfiguration(defaultRollback = true)
 // Importance, as the transaction will be rollback for each test
 // give us a clean state.

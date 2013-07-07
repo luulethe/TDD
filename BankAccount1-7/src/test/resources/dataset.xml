@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dataset>
-    <bank_account id="1" account_number="0123456789" balance="100" open_time_stamp="12345678"/>
+    <bank_account account_number="0123456789" balance="100" open_time_stamp="12345678"/>
     <transaction account_number='0123456789' open_time_stamp='12345678' amount='1000' description="deposit"/>
     <transaction account_number='0123456789' open_time_stamp='123456723' amount='1000' description="withdraw"/>
 

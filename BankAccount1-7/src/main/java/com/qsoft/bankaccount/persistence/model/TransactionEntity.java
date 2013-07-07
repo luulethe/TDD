@@ -14,7 +14,7 @@ import java.util.Calendar;
 
 public class TransactionEntity
 {
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_id")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_id")
     @Id
     @Column(name = "id")
     private Long id;

@@ -15,7 +15,7 @@ import java.util.Calendar;
 @SequenceGenerator(name = "seq_id1", sequenceName = "seq_id1", initialValue = 1, allocationSize = 1)
 public class BankAccountEntity
 {
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_id1")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_id1")
     @Id
     @Column(name = "id")
     private Long id;
