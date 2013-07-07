@@ -1,5 +1,6 @@
 package com.qsoft.bankaccount.persistence.model;
 
+import javax.persistence.*;
 import java.util.Calendar;
 
 /**
@@ -7,13 +8,34 @@ import java.util.Calendar;
  * Date: 7/3/13
  * Time: 9:18 PM
  */
+@Entity
+@Table(name = "transaction")
+@SequenceGenerator(name = "seq_id", sequenceName = "seq_id", initialValue = 1, allocationSize = 1)
+
 public class TransactionEntity
 {
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_id")
+    @Id
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "account_number")
     private String accountNumber;
+
+    @Column(name = "description")
     private String description;
+
+    @Column(name = "amount")
     private double amount;
+
+    @Column(name = "open_time_stamp")
     private long openTimeStamp;
+
     private static Calendar calendar = Calendar.getInstance();
+
+    public TransactionEntity()
+    {
+    }
 
     public TransactionEntity(String accountNumber, double amount, String description)
     {

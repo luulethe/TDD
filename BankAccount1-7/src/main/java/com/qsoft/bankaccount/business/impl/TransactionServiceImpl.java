@@ -12,6 +12,7 @@ import java.util.List;
  * Date: 7/3/13
  * Time: 9:31 PM
  */
+//@Componentt
 public class TransactionServiceImpl implements TransactionService
 {
     @Autowired

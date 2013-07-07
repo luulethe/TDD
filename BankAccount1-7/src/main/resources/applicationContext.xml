@@ -19,7 +19,7 @@
     <bean id="bankAccountDAO" class="com.qsoft.bankaccount.persistence.dao.impl.BankAccountDAOImpl" scope="prototype"/>
     <bean id="transactionDAO" class="com.qsoft.bankaccount.persistence.dao.impl.TransactionDAOImpl"/>
 
-    <bean id="sevice" class="com.qsoft.bankaccount.business.impl.BankAccountServiceImpl">
+    <bean id="bankAccountService" class="com.qsoft.bankaccount.business.impl.BankAccountServiceImpl">
     </bean>
 
     <bean id="entityManagerFactory"

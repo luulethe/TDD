@@ -5,6 +5,7 @@ import com.qsoft.bankaccount.exception.NegativeOpenTimeStampException;
 import com.qsoft.bankaccount.exception.WrongNameException;
 import com.qsoft.bankaccount.persistence.dao.BankAccountDAO;
 import com.qsoft.bankaccount.persistence.model.BankAccountEntity;
+import com.qsoft.bankaccount.persistence.model.TransactionEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -44,12 +45,17 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @Override
     public void add()
     {
-        BankAccountEntity bankAccountEntity = new BankAccountEntity("0123456789", 100011, 1000l);
-        entityManager.persist(bankAccountEntity);
+        for (int i = 0; i < 10; i++)
+        {
+            BankAccountEntity bankAccountEntity = new BankAccountEntity("0123456789", 100011, 1000l);
+            TransactionEntity transactionEntity = new TransactionEntity("01234333", 1000, "abc");
+            entityManager.persist(bankAccountEntity);
+            entityManager.persist(transactionEntity);
+        }
     }
 
     @Override
-    public void save(BankAccountEntity bankAccountEntity)  throws Exception
+    public void save(BankAccountEntity bankAccountEntity) throws Exception
     {
         validateAccount(bankAccountEntity);
         entityManager.persist(bankAccountEntity);
@@ -71,11 +77,20 @@ public class BankAccountDAOImpl implements BankAccountDAO
             throw new NegativeOpenTimeStampException();
         }
     }
-    private boolean isValidateName(String accountNumber) {
-        if (accountNumber.length() != 10) return false;
+
+    private boolean isValidateName(String accountNumber)
+    {
+        if (accountNumber.length() != 10)
+        {
+            return false;
+        }
         for (int i = 0; i < 10; i++)
+        {
             if (!((accountNumber.charAt(i) >= '0') && (accountNumber.charAt(i) <= '9')))
+            {
                 return false;
+            }
+        }
         return true;
     }
 

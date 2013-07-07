@@ -1,5 +1,6 @@
 package com.qsoft.bankaccount.persistence.dao;
 
+import com.qsoft.bankaccount.business.BankAccountService;
 import com.qsoft.bankaccount.exception.NegativeOpenTimeStampException;
 import com.qsoft.bankaccount.exception.WrongNameException;
 import com.qsoft.bankaccount.exception.NegativeBalanceException;
@@ -45,11 +46,14 @@ import static junit.framework.Assert.fail;
 @Transactional
 public class BankAccountDAOTest
 {
-    @PersistenceContext
-    private EntityManager entityManager;
+//    @PersistenceContext
+//    private EntityManager entityManager;
 
     @Autowired
     private BankAccountDAO bankAccountDAO;
+
+    @Autowired
+    private BankAccountService bankAccountService;
 
     @Autowired
     private TransactionDAO transactionDAO;
@@ -111,7 +115,7 @@ public class BankAccountDAOTest
         account.setBalance(2000);
         bankAccountDAO.save(account);
 
-        entityManager.detach(account);
+        //entityManager.detach(account);
         BankAccountEntity accountAfterSaving = bankAccountDAO.getAccount(accountNumber);
 
         assertEquals(accountAfterSaving.getBalance(), 2000, e);
@@ -150,7 +154,8 @@ public class BankAccountDAOTest
     }
 
     @Test
-    public void testGetAllTransactions() throws Exception {
+    public void testGetAllTransactions() throws Exception
+    {
         List<TransactionEntity> listTransaction = transactionDAO.getTransactionsOccurred(accountNumber);
 
         assertEquals(listTransaction.size(), 2);
@@ -164,5 +169,58 @@ public class BankAccountDAOTest
         assertEquals(listTransaction.get(1).getOpenTimeStamp(), 123456723);
         assertEquals(listTransaction.get(1).getDescription(), "withdraw");
     }
+
+    @Test
+    public void testSaveTransactions() throws Exception
+    {
+
+        TransactionEntity transactionEntity = new TransactionEntity("1122334455", 12345, 100, "withdraw money");
+        transactionDAO.save(transactionEntity);
+        List<TransactionEntity> listTransaction = transactionDAO.getTransactionsOccurred("1122334455");
+
+        assertEquals(listTransaction.size(), 1);
+        assertEquals(listTransaction.get(0).getAccountNumber(), "1122334455");
+        assertEquals(listTransaction.get(0).getOpenTimeStamp(), 12345);
+        assertEquals(listTransaction.get(0).getAmount(), 100, e);
+        assertEquals(listTransaction.get(0).getDescription(), "withdraw money");
+    }
+
+    @Test
+    public void testTransactionsBetween2Time() throws Exception
+    {
+        long startTime = 12345679;
+        long stopTime = 123456724;
+        List<TransactionEntity> listTransaction = transactionDAO.getTransactionsOccurred(accountNumber, startTime, stopTime);
+
+        assertEquals(listTransaction.size(), 1);
+        assertEquals(listTransaction.get(0).getAccountNumber(), accountNumber);
+        assertEquals(listTransaction.get(0).getAmount(), 1000, e);
+        assertEquals(listTransaction.get(0).getOpenTimeStamp(), 123456723);
+        assertEquals(listTransaction.get(0).getDescription(), "withdraw");
+    }
+    @Test
+    public void testNLatestTransactions() throws Exception {
+        List<TransactionEntity> listTransaction = transactionDAO.getTransactionsOccurred(accountNumber, 1);
+
+        assertEquals(listTransaction.size(), 1);
+        assertEquals(listTransaction.get(0).getAccountNumber(), accountNumber);
+        assertEquals(listTransaction.get(0).getAmount(), 1000, e);
+        assertEquals(listTransaction.get(0).getOpenTimeStamp(), 123456723);
+        assertEquals(listTransaction.get(0).getDescription(), "withdraw");
+    }
+
+//    @Test
+//    public void test11() throws Exception
+//    {
+//        BankAccountEntity account = bankAccountService.getAccount(accountNumber);
+//        System.out.println(account.getBalance());
+//        account.setBalance(2000);
+////        bankAccountDAO.save(account);
+////
+////        entityManager.detach(account);
+//        BankAccountEntity accountAfterSaving = bankAccountDAO.getAccount(accountNumber);
+//        System.out.println(accountAfterSaving.getBalance());
+//    }
+
 
 }

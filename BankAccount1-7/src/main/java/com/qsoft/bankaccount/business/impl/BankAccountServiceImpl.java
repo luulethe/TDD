@@ -20,7 +20,7 @@ import java.util.List;
 public class BankAccountServiceImpl implements BankAccountService
 {
     @Autowired
-    private static BankAccountDAO bankAccountDAO;
+    private BankAccountDAO bankAccountDAO;
 
     public void setDao(BankAccountDAO bankAccountDAO)
     {
