@@ -7,6 +7,7 @@ import com.qsoft.bankaccount.persistence.model.BankAccountEntity;
 import com.qsoft.bankaccount.persistence.model.TransactionEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.jdbc.datasource.DataSourceUtils;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -20,11 +21,18 @@ import java.util.List;
 public class BankAccountServiceImpl implements BankAccountService
 {
     @Autowired
-    private BankAccountDAO bankAccountDAO;
+    private static BankAccountDAO bankAccountDAO;
 
     public void setDao(BankAccountDAO bankAccountDAO)
     {
         this.bankAccountDAO = bankAccountDAO;
+        System.out.println("daodaodaodao");
+        System.out.println(this.bankAccountDAO);
+    }
+
+    public BankAccountDAO getDao()
+    {
+        return bankAccountDAO;
     }
 
     public BankAccountEntity open(String accountNumber) throws Exception
@@ -37,6 +45,7 @@ public class BankAccountServiceImpl implements BankAccountService
     @Override
     public BankAccountEntity getAccount(String accountNumber) throws Exception
     {
+        System.out.println(bankAccountDAO);
         return bankAccountDAO.getAccount(accountNumber);
     }
 

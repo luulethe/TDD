@@ -46,8 +46,8 @@ import static junit.framework.Assert.fail;
 @Transactional
 public class BankAccountDAOTest
 {
-//    @PersistenceContext
-//    private EntityManager entityManager;
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @Autowired
     private BankAccountDAO bankAccountDAO;
@@ -63,8 +63,6 @@ public class BankAccountDAOTest
     private DataSource dataSourceTest;
 
     private IDatabaseTester databaseTester;
-
-
     @Before
     public void setup() throws Exception
     {
@@ -115,7 +113,7 @@ public class BankAccountDAOTest
         account.setBalance(2000);
         bankAccountDAO.save(account);
 
-        //entityManager.detach(account);
+        entityManager.detach(account);
         BankAccountEntity accountAfterSaving = bankAccountDAO.getAccount(accountNumber);
 
         assertEquals(accountAfterSaving.getBalance(), 2000, e);
@@ -208,19 +206,4 @@ public class BankAccountDAOTest
         assertEquals(listTransaction.get(0).getOpenTimeStamp(), 123456723);
         assertEquals(listTransaction.get(0).getDescription(), "withdraw");
     }
-
-//    @Test
-//    public void test11() throws Exception
-//    {
-//        BankAccountEntity account = bankAccountService.getAccount(accountNumber);
-//        System.out.println(account.getBalance());
-//        account.setBalance(2000);
-////        bankAccountDAO.save(account);
-////
-////        entityManager.detach(account);
-//        BankAccountEntity accountAfterSaving = bankAccountDAO.getAccount(accountNumber);
-//        System.out.println(accountAfterSaving.getBalance());
-//    }
-
-
 }

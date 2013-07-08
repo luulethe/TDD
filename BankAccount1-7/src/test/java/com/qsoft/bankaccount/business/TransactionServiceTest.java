@@ -7,7 +7,10 @@ import com.qsoft.bankaccount.persistence.dao.TransactionDAO;
 import com.qsoft.bankaccount.persistence.model.BankAccountEntity;
 import com.qsoft.bankaccount.persistence.model.TransactionEntity;
 import org.junit.*;
+import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.Calendar;
 import java.util.List;
@@ -16,12 +19,13 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.times;
-
 /**
  * User: luult
  * Date: 7/3/13
  * Time: 10:02 PM
  */
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration(locations = {"classpath:testContext.xml"})
 public class TransactionServiceTest
 {
     String accountNumber = "1234567890";
@@ -46,6 +50,8 @@ public class TransactionServiceTest
         BankAccountEntity bankAccountEntity = new BankAccountEntity(accountNumber, 1000);
         when(mockBankAccountDao.getAccount(accountNumber)).thenReturn(bankAccountEntity);
         ArgumentCaptor<BankAccountEntity> argument = ArgumentCaptor.forClass(BankAccountEntity.class);
+
+        bankAccountService.setDao(mockBankAccountDao);
 
         bankAccountService.deposit(accountNumber, 100, "deposit money");
         verify(mockBankAccountDao, times(1)).save(argument.capture());

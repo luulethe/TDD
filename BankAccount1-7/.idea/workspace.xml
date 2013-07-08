@@ -1,53 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aba0da90-d170-489b-accf-3104eb8cb9aa" name="Default" comment="" />
+    <list default="true" id="d8f4f7d0-645e-4f08-afd5-1c02475850c2" name="Default" comment="" />
     <ignored path="BankAccount1-7.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372999609228" ignored="false" />
-    <file path="/BankAccountDAOImpl.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1373022659862" ignored="false" />
-    <file path="/BankAccountDAO.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372861484995" ignored="false" />
-    <file path="/pom.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372929458281" ignored="false" />
-    <file path="/applicationContext.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372987642698" ignored="false" />
-    <file path="/BankAccountEntity.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372865830219" ignored="false" />
-    <file path="/BankAccountServiceImpl.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372867726688" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/dbcatalog_hibernate/dbcatalog/src/main/resources/applicationContext.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372749774096" ignored="false" />
-    <file path="/persistence.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372987948770" ignored="false" />
-    <file path="/AppMain.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372833601015" ignored="false" />
-    <file path="/Dummy.txt" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372995777659" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../tech stack/spring/Spring+Hibernate+JPA example/HibernateExamples/src/main/java/com/Qsoft/test/App.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372822253650" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/catalog/catalog/pom.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372822825162" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/catalog/catalog/src/main/resources/DBconfiguration.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372824629385" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/catalog/catalog/catalog.log" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372833451823" ignored="false" />
-    <file path="/db.properties" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372931392352" ignored="false" />
-    <file path="/TransactionServiceImpl.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372867734609" ignored="false" />
-    <file path="/TransactionService.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372866126625" ignored="false" />
-    <file path="/TransactionDAO.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372863291762" ignored="false" />
-    <file path="/TransactionDAOImpl.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372863370094" ignored="false" />
-    <file path="/BankAccountServiceTest.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372865428403" ignored="false" />
-    <file path="/TransactionServiceTest.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372866291781" ignored="false" />
-    <file path="/testContext.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1373007153166" ignored="false" />
-    <file path="/dataset.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372896040689" ignored="false" />
-    <file path="/BankAccountDAOTest.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1373022384680" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/dbcatalog_hibernate/dbcatalog/src/test/resources/testContext.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372921668903" ignored="false" />
-    <file path="/test-db.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372922624892" ignored="false" />
-    <file path="$PROJECT_DIR$/../../TDDExample_DBUnit/src/test/resources/test-db.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372922490155" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/Bindingxxxx/Bindingxxxx/src/main/java/haivl/Model.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372926071374" ignored="false" />
-    <file path="/View.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372926163188" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/Bindingxxxx/Bindingxxxx/src/main/java/haivl/View.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372926174793" ignored="false" />
-    <file path="/a.dummy" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372950414981" ignored="false" />
-    <file path="/persistenceTest.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372933729124" ignored="false" />
-    <file path="/testContext1.xml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372949935292" ignored="false" />
-    <file path="/TestSample.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372984930750" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/catalog/catalog/src/main/java/com/discorp/dbcatalog/persistence/model/GroupableDataModel.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372993942082" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/BindingBuild/BindingBuild/BindingBuild.iml" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372994312013" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/BindingBuild/BindingBuild/src/main/java/model/Student.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1373015592236" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/BindingBuild/BindingBuild/src/main/java/view/StudentUI.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1373015557820" ignored="false" />
-    <file path="/StudentUI.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1373015554670" ignored="false" />
-    <file path="$USER_HOME$/Downloads/BankAccountSpring_28_09_2013-master/BankAccountSpring_28_09_2013-master/src/main/java/com/qsoft/bankaccount/persistence/dao/impl/BankAccountDAOImpl.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372997240172" ignored="false" />
-    <file path="$USER_HOME$/Downloads/BankAccountSpring_28_09_2013-master/BankAccountSpring_28_09_2013-master/src/main/java/com/qsoft/bankaccount/persistence/dao/impl/GenericDAO.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372998169253" ignored="false" />
-    <file path="/GenericDAO.java" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1372998076178" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../../dbCatalog/BindingBuild/BindingBuild/src/main/java/view/StudentUI.form" changelist="aba0da90-d170-489b-accf-3104eb8cb9aa" time="1373015503873" ignored="false" />
+    <file path="/dataset.xml" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373216542389" ignored="false" />
+    <file path="/a.sql" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373186164914" ignored="false" />
+    <file path="/BankAccountDAOImpl.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373186805780" ignored="false" />
+    <file path="/TransactionDAOImpl.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373210058326" ignored="false" />
+    <file path="/BankAccountDAOTest.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373209060360" ignored="false" />
+    <file path="/persistence.xml" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373215287911" ignored="false" />
+    <file path="/persistenceTest.xml" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373217938171" ignored="false" />
+    <file path="/BankAccountEntity.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373213819463" ignored="false" />
+    <file path="/TransactionEntity.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373213070621" ignored="false" />
+    <file path="dbtable:/38661ec9/c06e0f4d-567b-4ed5-8858-2040ac2831e1/dbcatalog.public.dealer_id_seq" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373214476008" ignored="false" />
+    <file path="dbtable:/38661ec9/c06e0f4d-567b-4ed5-8858-2040ac2831e1/dbcatalog.public.dealer" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373247122364" ignored="false" />
+    <file path="/fragment.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373218483381" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/test/java/com/qsoft/dbcatalog/persistence/dao/impl/DealerDAOImplTest.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373219040454" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/pom.xml" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373216955456" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/test/resources/dataset.xml" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373216664291" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/main/java/com/qsoft/dbcatalog/persistence/model/Dealer.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373247426025" ignored="false" />
+    <file path="/Dealer.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373247422186" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/main/resources/META-INF/persistence.xml" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373215294710" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/test/resources/META-INF/persistenceTest.xml" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373217940536" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/main/resources/applicationContext.xml" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373216209948" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/test/resources/testContext.xml" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373217973233" ignored="false" />
+    <file path="/testContext.xml" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373217067456" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/test/resources/dbTest.properties" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373217116316" ignored="false" />
+    <file path="/DealerDAOImplTest.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373219010817" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/test/java/com/qsoft/dbcatalog/business/impl/DealerServiceImplTest.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373218494749" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/main/java/com/qsoft/dbcatalog/persistence/dao/impl/DealerDAOImpl.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373247026841" ignored="false" />
+    <file path="/DealerDAOImpl.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373247021354" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/main/java/com/qsoft/dbcatalog/ui/controller/DealerController.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373248645721" ignored="false" />
+    <file path="/DealerController.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373248518458" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/main/java/com/qsoft/dbcatalog/ui/view/DealerView.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373248352348" ignored="false" />
+    <file path="/DealerView.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373248350022" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source1/trunk/dbcatalog/src/main/java/com/qsoft/dbcatalog/ui/view/DealerView.form" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373246143293" ignored="false" />
+    <file path="/TransactionServiceTest.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373294752458" ignored="false" />
+    <file path="/BankAccountServiceImpl.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373294853842" ignored="false" />
+    <file path="/BankAccountService.java" changelist="d8f4f7d0-645e-4f08-afd5-1c02475850c2" time="1373294559947" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,23 +61,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/persistence/dao/BankAccountDAOTest.java" line="2" class="BankAccountDAOTest.java" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -121,6 +95,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -130,37 +105,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="TransactionServiceTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/business/TransactionServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="8" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.39661017">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="49" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankAccountServiceTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/business/BankAccountServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BankAccountDAOTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/persistence/dao/BankAccountDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="15" selection-start="3522" selection-end="3522" vertical-scroll-proportion="0.0">
+            <state line="113" column="8" selection-start="3807" selection-end="3807" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AopUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.0.RELEASE/spring-aop-3.2.0.RELEASE-sources.jar!/org/springframework/aop/support/AopUtils.java">
+      <file leaf-file-name="BankAccountService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/BankAccountService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="316" column="8" selection-start="11941" selection-end="11941" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankAccountEntity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/model/BankAccountEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="18" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataset.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/dataset.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="63" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+            <state line="22" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,52 +153,43 @@
       <file leaf-file-name="BankAccountServiceImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/impl/BankAccountServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+            <state line="23" column="18" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankAccountDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/dao/BankAccountDAO.java">
+      <file leaf-file-name="TestSample.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/persistence/dao/TestSample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="9" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+            <state line="26" column="0" selection-start="766" selection-end="985" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankAccountDAOImpl.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BankAccountDAOImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/dao/impl/BankAccountDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="60" selection-start="786" selection-end="786" vertical-scroll-proportion="0.71270716">
+            <state line="23" column="23" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReflectiveMethodInvocation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.0.RELEASE/spring-aop-3.2.0.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+      <file leaf-file-name="TransactionService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/TransactionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="21" selection-start="6320" selection-end="6320" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JdkDynamicAopProxy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.0.RELEASE/spring-aop-3.2.0.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
+      <file leaf-file-name="TransactionServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/impl/TransactionServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="18" selection-start="5399" selection-end="5399" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionInterceptor.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.2.0.RELEASE/spring-tx-3.2.0.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="28" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
+            <state line="45" column="16" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -230,66 +205,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/AppMain.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/src/test/resources/dbTest.properties" />
-        <option value="$PROJECT_DIR$/src/test/resources/testContext1.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/dataset.xml" />
-        <option value="dbtable:/36b5ab7f/74cdfc4e-9cc3-43b4-b212-98e8971abcec/bank_account.public.bank_account" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/model/BankAccountEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/dao/impl/BankAccountDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/dao/impl/TransactionDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/persistence/dao/todoList.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/META-INF/persistenceTest.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/dataset.xml" />
+        <option value="dbtable:/36b5ab7f/74cdfc4e-9cc3-43b4-b212-98e8971abcec/bank_account.public.bank_account" />
+        <option value="dbtable:/36b5ab7f/74cdfc4e-9cc3-43b4-b212-98e8971abcec/bank_account.public.transaction" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/model/TransactionEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/model/BankAccountEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/BankAccountService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/impl/BankAccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/persistence/dao/TestSample.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/testContext.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/persistence/dao/BankAccountDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/dao/impl/BankAccountDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/business/TransactionServiceTest.java" />
       </list>
     </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="754" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Spring Model</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>SpringJavaAutowiringInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -325,10 +263,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="BankAccount1-7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -695,54 +629,27 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="OverrideImplement.combined" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propCompiler" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="options.lastSelected" value="project.propCompiler" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="Database.TableEditor.Splitter" value="0.9000001" />
+    <property name="Database.TableEditor.Splitter" value="0.89999986" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.qsoft.bankaccount.persistence.dao" />
-      <recent name="com.qsoft.bankaccount.business" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.qsoft.bankaccount.persistence.dao.impl" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\qsoft\training\TDD\homework\TDD\BankAccount1-7\src\test\resources" />
-      <recent name="H:\qsoft\training\TDD\homework\TDD\BankAccount1-7\src\test\resources\META-INF" />
-      <recent name="H:\qsoft\training\TDD\homework\TDD\BankAccount1-7\src\main\resources" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.qsoft.bankaccount.persistence.model" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.BankAccountDAOTest">
+  <component name="RunManager" selected="JUnit.All in BankAccount1-7">
     <configuration default="false" name="BankAccountDAOTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -771,40 +678,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="BankAccountDAOTest.testGetAccount" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.qsoft.bankaccount.persistence.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BankAccount1-7" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qsoft.bankaccount.persistence.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.qsoft.bankaccount.persistence.dao.BankAccountDAOTest" />
-      <option name="METHOD_NAME" value="testGetAccount" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="AppMain" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -827,19 +700,42 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="TestSample.testSample" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="All in BankAccount1-7" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="BankAccount1-7" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TransactionServiceTest.testDeposit" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.qsoft.bankaccount.persistence.dao.*" />
+          <option name="PATTERN" value="com.qsoft.bankaccount.business.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="BankAccount1-7" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qsoft.bankaccount.persistence.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.qsoft.bankaccount.persistence.dao.TestSample" />
-      <option name="METHOD_NAME" value="testSample" />
+      <option name="PACKAGE_NAME" value="com.qsoft.bankaccount.business" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.bankaccount.business.TransactionServiceTest" />
+      <option name="METHOD_NAME" value="testDeposit" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -879,13 +775,7 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -988,17 +878,17 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testGetAccount" />
-      <item index="2" class="java.lang.String" itemvalue="Application.AppMain" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestSample.testSample" />
+      <item index="1" class="java.lang.String" itemvalue="Application.AppMain" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in BankAccount1-7" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TransactionServiceTest.testDeposit" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testSaveAnExistingAccount" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in BankAccount1-7" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testSaveAnExistingAccount" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testGetAccount" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestSample.testSample" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TransactionServiceTest.testDeposit" />
         <item index="4" class="java.lang.String" itemvalue="Application.AppMain" />
       </list>
     </recent_temporary>
@@ -1010,61 +900,41 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aba0da90-d170-489b-accf-3104eb8cb9aa" name="Default" comment="" />
-      <created>1372660695625</created>
-      <updated>1372660695625</updated>
+      <changelist id="d8f4f7d0-645e-4f08-afd5-1c02475850c2" name="Default" comment="" />
+      <created>1373185696263</created>
+      <updated>1373185696263</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24545455" sideWeight="0.24537815" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16768916" sideWeight="0.8134454" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13712122" sideWeight="0.805042" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51428574" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17727272" sideWeight="0.24537815" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34117648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32436976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17727272" sideWeight="0.24537815" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5596639" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26287878" sideWeight="0.40504202" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.594958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26439393" sideWeight="0.5966387" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40336135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13277312" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1100,7 +970,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
@@ -1128,201 +998,118 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.1/junit-4.8.1.jar!/org/junit/runners/model/FrameworkMethod.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/model/BankAccountEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.2.0.RELEASE/spring-core-3.2.0.RELEASE.jar!/org/springframework/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="26" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.30092594" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/business/BankAccountServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
+        <state line="17" column="5" selection-start="391" selection-end="405" vertical-scroll-proportion="0.3178808">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.2.0.RELEASE/spring-tx-3.2.0.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testContext1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.0.RELEASE/spring-aop-3.2.0.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="31" selection-start="1578" selection-end="1578" vertical-scroll-proportion="-2.72">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.0.RELEASE/spring-aop-3.2.0.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="1063" selection-end="1063" vertical-scroll-proportion="-2.72">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/impl/BankAccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/dataset.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="63" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+        <state line="6" column="28" selection-start="371" selection-end="371" vertical-scroll-proportion="0.26490065">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.0.RELEASE/spring-aop-3.2.0.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="35" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.7254902">
+        <state line="80" column="32" selection-start="2680" selection-end="2887" vertical-scroll-proportion="0.35320088">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.0.RELEASE/spring-aop-3.2.0.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="21" selection-start="6320" selection-end="6320" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.0.RELEASE/spring-aop-3.2.0.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/persistenceTest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="18" selection-start="5399" selection-end="5399" vertical-scroll-proportion="0.0">
+        <state line="3" column="28" selection-start="0" selection-end="842" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/model/BankAccountEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/business/BankAccountServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="18" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.0">
+        <state line="19" column="13" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/dao/BankAccountDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+        <state line="33" column="49" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.0.RELEASE/spring-aop-3.2.0.RELEASE-sources.jar!/org/springframework/aop/support/AopUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/TransactionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="316" column="8" selection-start="11941" selection-end="11941" vertical-scroll-proportion="0.0">
+        <state line="20" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/BankAccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/impl/TransactionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="16" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/business/impl/BankAccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/persistence/dao/BankAccountDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="15" selection-start="3522" selection-end="3522" vertical-scroll-proportion="0.0">
+        <state line="113" column="8" selection-start="3807" selection-end="3807" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/persistence/dao/TestSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="766" selection-end="985" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/bankaccount/persistence/dao/impl/BankAccountDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="60" selection-start="786" selection-end="786" vertical-scroll-proportion="0.71270716">
+        <state line="23" column="23" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>JPA</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.6</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>BankAccount1-7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.6</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/bankaccount/business/TransactionServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="8" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.39661017">
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 

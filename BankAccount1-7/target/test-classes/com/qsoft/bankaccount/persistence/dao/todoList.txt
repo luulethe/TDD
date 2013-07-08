@@ -8,4 +8,3 @@ trong tài khoản là âm, openTimeStamp là âm.
 7. Test save transaction
 8. Test lấy tất cả transaction giữa 2 khoảng thời gian
 9. Test lấy n transaction gần nhất.
-10. Test bắn các ngoại lệ với các tham số đưa vào không hợp lệ như stopTime < startTime, n < 0

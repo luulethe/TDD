@@ -25,7 +25,7 @@
     <option name="effort" value="default" />
     <option name="priority" value="Medium" />
   </component>
-  <component name="IdProvider" IDEtalkID="E6F87A59369912C84C4422A516EA36EE" />
+  <component name="IdProvider" IDEtalkID="1C161EB88D6D6D94B90BF1C0A8E5767E" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -39,6 +39,22 @@
   <component name="SuppressionsComponent">
     <option name="suppCommentEnabled" value="false" />
     <option name="suppComment" value="SUPPRESS CODING RULES" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

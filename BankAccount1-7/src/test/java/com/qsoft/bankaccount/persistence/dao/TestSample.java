@@ -20,10 +20,10 @@ public class TestSample
         BankAccountDAO bankAccountDAO = (BankAccountDAO) appContext.getBean("bankAccountDAO");
         bankAccountDAO.add();
         //BankAccountDAO bankAccountDAO = new BankAccountDAOImpl();
-        BankAccountEntity account = bankAccountDAO.getAccount("0");
-        System.out.println(account);
-        System.out.println(account.getAccountNumber());
-        System.out.println(account.getBalance());
+//        BankAccountEntity account = bankAccountDAO.getAccount("0");
+//        System.out.println(account);
+//        System.out.println(account.getAccountNumber());
+//        System.out.println(account.getBalance());
     }
 
 }

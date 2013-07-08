@@ -12,6 +12,8 @@ import java.util.List;
  */
 public interface BankAccountService
 {
+    public BankAccountDAO getDao();
+
     public void setDao(BankAccountDAO bankAccountDAO);
 
     public BankAccountEntity open(String accountNumber) throws Exception;
