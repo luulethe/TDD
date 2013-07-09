@@ -63,6 +63,7 @@ public class BankAccountDAOTest
     private DataSource dataSourceTest;
 
     private IDatabaseTester databaseTester;
+
     @Before
     public void setup() throws Exception
     {
@@ -97,5 +98,26 @@ public class BankAccountDAOTest
         assertEquals("0123456789", account.getAccountNumber());
         assertEquals(100, account.getBalance(), e);
         assertEquals(12345678, account.getOpenTimeStamp());
+    }
+
+    @Test
+    public void testGetNotExistingAccount() throws Exception
+    {
+        BankAccountEntity account = bankAccountDAO.getAccount("11111222222");
+        assertEquals(account, null);
+    }
+
+    @Test
+    public void testSaveAnExistingAccount() throws Exception
+    {
+        BankAccountEntity account = bankAccountDAO.getAccount(accountNumber);
+        account.setBalance(2000);
+        entityManager.detach(account);
+        bankAccountDAO.save(account);
+        BankAccountEntity accountAfterSaving = bankAccountDAO.getAccount(accountNumber);
+
+        assertEquals(accountAfterSaving.getAccountNumber(), accountNumber );
+        assertEquals(accountAfterSaving.getBalance(), 2000, e);
+        assertEquals(accountAfterSaving.getOpenTimeStamp(), 12345678);
     }
 }
