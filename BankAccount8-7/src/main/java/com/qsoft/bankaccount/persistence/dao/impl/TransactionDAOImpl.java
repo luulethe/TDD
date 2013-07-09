@@ -24,7 +24,8 @@ public class TransactionDAOImpl implements TransactionDAO
     @Override
     public void save(TransactionEntity transactionEntity)
     {
-        //To change body of implemented methods use File | Settings | File Templates.
+        entityManager.persist(transactionEntity);
+        entityManager.flush();
     }
 
     @Override
