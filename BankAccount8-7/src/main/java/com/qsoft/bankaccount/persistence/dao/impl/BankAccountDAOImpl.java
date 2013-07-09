@@ -1,5 +1,6 @@
 package com.qsoft.bankaccount.persistence.dao.impl;
 
+import com.qsoft.bankaccount.exception.InvalidLengthNameException;
 import com.qsoft.bankaccount.exception.NegativeBalanceException;
 import com.qsoft.bankaccount.exception.NegativeOpenTimeStampException;
 import com.qsoft.bankaccount.exception.WrongNameException;
@@ -45,6 +46,8 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @Override
     public void save(BankAccountEntity bankAccountEntity) throws Exception
     {
+        if (bankAccountEntity.getAccountNumber().length() != 10)
+            throw new InvalidLengthNameException();
         if (bankAccountEntity.getId() == null)
         {
             entityManager.persist(bankAccountEntity);
