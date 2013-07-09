@@ -212,10 +212,22 @@ public class BankAccountDAOTest
     }
 
     @Test
-    public void testGetNLatestTransactions() throws Exception
+    public void testGetZeroTransaction() throws Exception
     {
         int n = 0;
         List<TransactionEntity> transactionEntities = transactionDAO.getTransactionsOccurred(accountNumber, n);
         assertEquals(transactionEntities, null);
+    }
+
+    @Test
+    public void testGetNLatestTransactions() throws Exception
+    {
+        int n = 1;
+        List<TransactionEntity> transactionEntities = transactionDAO.getTransactionsOccurred(accountNumber, n);
+        assertEquals(transactionEntities.size(), 1);
+        assertEquals(transactionEntities.get(0).getAccountNumber(), accountNumber);
+        assertEquals(transactionEntities.get(0).getAmount(), 1000, e);
+        assertEquals(transactionEntities.get(0).getOpenTimeStamp(), 123456723);
+        assertEquals(transactionEntities.get(0).getDescription(), "withdraw");
     }
 }

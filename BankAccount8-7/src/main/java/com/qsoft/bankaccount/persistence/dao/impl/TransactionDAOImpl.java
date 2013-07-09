@@ -49,6 +49,11 @@ public class TransactionDAOImpl implements TransactionDAO
     @Override
     public List<TransactionEntity> getTransactionsOccurred(String accountNumber, int n)
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        if (n == 0)
+            return null;
+        Query query = entityManager.createQuery("select o from TransactionEntity o where o.accountNumber = :qAccountNumber order by o.openTimeStamp desc ", TransactionEntity.class);
+        query.setMaxResults(n);
+        query.setParameter("qAccountNumber", accountNumber);
+        return query.getResultList();
     }
 }
