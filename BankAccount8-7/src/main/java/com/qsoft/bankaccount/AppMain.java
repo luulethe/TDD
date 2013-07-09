@@ -14,9 +14,12 @@ public class AppMain
 {
     public static void main(String[] args)
     {
-        ApplicationContext appContext = new ClassPathXmlApplicationContext(
-                "applicationContext.xml");
-        BankAccountDAO bankAccountDAO = (BankAccountDAO) appContext.getBean("bankAccountDAO");
+
+        String regex = "\\d+";
+        System.out.println("a123".matches(regex));
+//        ApplicationContext appContext = new ClassPathXmlApplicationContext(
+//                "applicationContext.xml");
+//        BankAccountDAO bankAccountDAO = (BankAccountDAO) appContext.getBean("bankAccountDAO");
         //bankAccountDAO.add();
         //BankAccountServiceImpl
     }
