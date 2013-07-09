@@ -1,6 +1,7 @@
 package com.qsoft.bankaccount.persistence.dao;
 
 import com.qsoft.bankaccount.business.BankAccountService;
+import com.qsoft.bankaccount.exception.InvalidLengthNameException;
 import com.qsoft.bankaccount.exception.NegativeOpenTimeStampException;
 import com.qsoft.bankaccount.exception.WrongNameException;
 import com.qsoft.bankaccount.exception.NegativeBalanceException;
@@ -16,6 +17,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.omg.CORBA.DynAnyPackage.Invalid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -134,4 +136,11 @@ public class BankAccountDAOTest
         assertEquals(accountAfterSaving.getOpenTimeStamp(), 12345678);
     }
 
+    @Test(expected = InvalidLengthNameException.class)
+    public void testSaveAnAccountWithLengthIsNot10() throws Exception
+    {
+        BankAccountEntity account = new BankAccountEntity("112233445577", 1234, 12345678);
+        bankAccountDAO.save(account);
+        fail();
+    }
 }
