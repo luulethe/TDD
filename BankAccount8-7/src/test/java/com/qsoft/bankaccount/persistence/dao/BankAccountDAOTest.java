@@ -1,10 +1,7 @@
 package com.qsoft.bankaccount.persistence.dao;
 
 import com.qsoft.bankaccount.business.BankAccountService;
-import com.qsoft.bankaccount.exception.InvalidLengthNameException;
-import com.qsoft.bankaccount.exception.NegativeOpenTimeStampException;
-import com.qsoft.bankaccount.exception.WrongNameException;
-import com.qsoft.bankaccount.exception.NegativeBalanceException;
+import com.qsoft.bankaccount.exception.*;
 import com.qsoft.bankaccount.persistence.dao.impl.BankAccountDAOImpl;
 import com.qsoft.bankaccount.persistence.model.BankAccountEntity;
 import com.qsoft.bankaccount.persistence.model.TransactionEntity;
@@ -55,10 +52,11 @@ public class BankAccountDAOTest
     private BankAccountDAO bankAccountDAO;
 
     @Autowired
-    private BankAccountService bankAccountService;
+    private TransactionDAO transactionDAO;
 
     @Autowired
-    private TransactionDAO transactionDAO;
+    private BankAccountService bankAccountService;
+
     final static String accountNumber = "0123456789";
     final static double e = 0.00001;
     @Autowired
@@ -143,6 +141,15 @@ public class BankAccountDAOTest
         bankAccountDAO.save(account);
         fail();
     }
+
+    @Test(expected = NotOnlyDigitNameException.class)
+    public void testSaveAnAccountWithNameDoNotOnlyContainDigit() throws Exception
+    {
+        BankAccountEntity account = new BankAccountEntity("a112233445", 1234, 12345678);
+        bankAccountDAO.save(account);
+        fail();
+    }
+
     @Test(expected = NegativeBalanceException.class)
     public void testSaveAnAccountWithNegativeBalance() throws Exception
     {
@@ -151,4 +158,27 @@ public class BankAccountDAOTest
         fail();
     }
 
+    @Test(expected = NegativeOpenTimeStampException.class)
+    public void testSaveAnAccountWithNegativeOpenTimeStamp() throws Exception
+    {
+        BankAccountEntity account = new BankAccountEntity("1122334455", 1234, -12345678);
+        bankAccountDAO.save(account);
+        fail();
+    }
+
+    @Test
+    public void testGetAllTransactions() throws Exception
+    {
+        List<TransactionEntity> transactionEntities = transactionDAO.getTransactionsOccurred(accountNumber);
+
+        assertEquals(transactionEntities.get(0).getAccountNumber(), accountNumber);
+        assertEquals(transactionEntities.get(0).getAmount(), 1000, e);
+        assertEquals(transactionEntities.get(0).getOpenTimeStamp(), 12345678);
+        assertEquals(transactionEntities.get(0).getDescription(), "deposit");
+
+        assertEquals(transactionEntities.get(1).getAccountNumber(), accountNumber);
+        assertEquals(transactionEntities.get(1).getAmount(), 1000, e);
+        assertEquals(transactionEntities.get(1).getOpenTimeStamp(), 123456723);
+        assertEquals(transactionEntities.get(1).getDescription(), "withdraw");
+    }
 }

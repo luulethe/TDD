@@ -3,6 +3,7 @@ package com.qsoft.bankaccount.persistence.dao.impl;
 import com.qsoft.bankaccount.persistence.dao.TransactionDAO;
 import com.qsoft.bankaccount.persistence.model.BankAccountEntity;
 import com.qsoft.bankaccount.persistence.model.TransactionEntity;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -14,8 +15,11 @@ import java.util.List;
  * Date: 7/3/13
  * Time: 9:49 PM
  */
+@Component
 public class TransactionDAOImpl implements TransactionDAO
 {
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @Override
     public void save(TransactionEntity transactionEntity)
@@ -26,7 +30,9 @@ public class TransactionDAOImpl implements TransactionDAO
     @Override
     public List<TransactionEntity> getTransactionsOccurred(String accountNumber)
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        Query query = entityManager.createQuery("select o from TransactionEntity o where o.accountNumber = :qAccountNumber", TransactionEntity.class);
+        query.setParameter("qAccountNumber", accountNumber);
+        return query.getResultList();
     }
 
     @Override

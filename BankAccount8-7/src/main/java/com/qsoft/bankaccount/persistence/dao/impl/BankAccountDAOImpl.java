@@ -1,9 +1,6 @@
 package com.qsoft.bankaccount.persistence.dao.impl;
 
-import com.qsoft.bankaccount.exception.InvalidLengthNameException;
-import com.qsoft.bankaccount.exception.NegativeBalanceException;
-import com.qsoft.bankaccount.exception.NegativeOpenTimeStampException;
-import com.qsoft.bankaccount.exception.WrongNameException;
+import com.qsoft.bankaccount.exception.*;
 import com.qsoft.bankaccount.persistence.dao.BankAccountDAO;
 import com.qsoft.bankaccount.persistence.model.BankAccountEntity;
 import com.qsoft.bankaccount.persistence.model.TransactionEntity;
@@ -46,14 +43,36 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @Override
     public void save(BankAccountEntity bankAccountEntity) throws Exception
     {
-        if (bankAccountEntity.getAccountNumber().length() != 10)
-            throw new InvalidLengthNameException();
+        validateAccount(bankAccountEntity);
         if (bankAccountEntity.getId() == null)
         {
             entityManager.persist(bankAccountEntity);
         }
         else
+        {
             entityManager.merge(bankAccountEntity);
+        }
         entityManager.flush();
     }
+
+    private void validateAccount(BankAccountEntity bankAccountEntity) throws Exception
+    {
+        if (bankAccountEntity.getAccountNumber().length() != 10)
+        {
+            throw new InvalidLengthNameException();
+        }
+        String regex = "\\d+";
+        if (!bankAccountEntity.getAccountNumber().matches(regex))
+            throw new NotOnlyDigitNameException();
+
+        if (bankAccountEntity.getBalance() < 0)
+        {
+            throw new NegativeBalanceException();
+        }
+        if (bankAccountEntity.getOpenTimeStamp() < 0)
+        {
+            throw new NegativeOpenTimeStampException();
+        }
+    }
+
 }
