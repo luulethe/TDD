@@ -45,8 +45,12 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @Override
     public void save(BankAccountEntity bankAccountEntity) throws Exception
     {
-        //To change body of implemented methods use File | Settings | File Templates.
+        if (bankAccountEntity.getId() == null)
+        {
+            entityManager.persist(bankAccountEntity);
+        }
+        else
+            entityManager.merge(bankAccountEntity);
+        entityManager.flush();
     }
-
-
 }

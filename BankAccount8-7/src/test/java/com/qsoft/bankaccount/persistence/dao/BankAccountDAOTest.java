@@ -120,4 +120,19 @@ public class BankAccountDAOTest
         assertEquals(accountAfterSaving.getBalance(), 2000, e);
         assertEquals(accountAfterSaving.getOpenTimeStamp(), 12345678);
     }
+
+    @Test
+    public void testSaveAnExistingAccount() throws Exception
+    {
+        BankAccountEntity account = bankAccountDAO.getAccount(accountNumber);
+        account.setBalance(2000);
+        entityManager.detach(account);
+        bankAccountDAO.save(account);
+        BankAccountEntity accountAfterSaving = bankAccountDAO.getAccount(accountNumber);
+
+        assertEquals(accountAfterSaving.getAccountNumber(), accountNumber );
+        assertEquals(accountAfterSaving.getBalance(), 2000, e);
+        assertEquals(accountAfterSaving.getOpenTimeStamp(), 12345678);
+    }
+
 }
