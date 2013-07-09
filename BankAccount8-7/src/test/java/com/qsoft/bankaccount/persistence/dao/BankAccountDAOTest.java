@@ -143,4 +143,12 @@ public class BankAccountDAOTest
         bankAccountDAO.save(account);
         fail();
     }
+    @Test(expected = NegativeBalanceException.class)
+    public void testSaveAnAccountWithNegativeBalance() throws Exception
+    {
+        BankAccountEntity account = new BankAccountEntity("1122334455", -1234, 12345678);
+        bankAccountDAO.save(account);
+        fail();
+    }
+
 }
