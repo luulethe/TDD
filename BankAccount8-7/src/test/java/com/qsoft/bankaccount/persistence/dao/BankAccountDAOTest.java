@@ -185,7 +185,7 @@ public class BankAccountDAOTest
     @Test
     public void testSaveATransaction() throws Exception
     {
-        TransactionEntity transactionEntity = new TransactionEntity("1122334455",12345678, 12345, "deposit a money");
+        TransactionEntity transactionEntity = new TransactionEntity("1122334455", 12345678, 12345, "deposit a money");
         transactionDAO.save(transactionEntity);
 
         List<TransactionEntity> transactionEntities = transactionDAO.getTransactionsOccurred("1122334455");
@@ -209,5 +209,13 @@ public class BankAccountDAOTest
         assertEquals(transactionEntities.get(0).getAmount(), 1000, e);
         assertEquals(transactionEntities.get(0).getOpenTimeStamp(), 123456723);
         assertEquals(transactionEntities.get(0).getDescription(), "withdraw");
+    }
+
+    @Test
+    public void testGetNLatestTransactions() throws Exception
+    {
+        int n = 0;
+        List<TransactionEntity> transactionEntities = transactionDAO.getTransactionsOccurred(accountNumber, n);
+        assertEquals(transactionEntities, null);
     }
 }
