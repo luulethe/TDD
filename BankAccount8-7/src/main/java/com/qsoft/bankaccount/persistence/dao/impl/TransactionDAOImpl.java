@@ -39,7 +39,11 @@ public class TransactionDAOImpl implements TransactionDAO
     @Override
     public List<TransactionEntity> getTransactionsOccurred(String accountNumber, long startTime, long stopTime)
     {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        Query query = entityManager.createQuery("select o from TransactionEntity o where o.accountNumber = :qAccountNumber and o.openTimeStamp >= :qStartTime and o.openTimeStamp <= :qStopTime", TransactionEntity.class);
+        query.setParameter("qAccountNumber", accountNumber);
+        query.setParameter("qStartTime", startTime);
+        query.setParameter("qStopTime", stopTime);
+        return query.getResultList();
     }
 
     @Override

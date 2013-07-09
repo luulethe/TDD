@@ -196,4 +196,18 @@ public class BankAccountDAOTest
         assertEquals(transactionEntities.get(0).getOpenTimeStamp(), 12345678);
         assertEquals(transactionEntities.get(0).getDescription(), "deposit a money");
     }
+
+    @Test
+    public void testGetAllTransactionsBetween2Times() throws Exception
+    {
+        long startTime = 123456722;
+        long stopTime = 123456724;
+        List<TransactionEntity> transactionEntities = transactionDAO.getTransactionsOccurred(accountNumber, startTime, stopTime);
+
+        assertEquals(transactionEntities.size(), 1);
+        assertEquals(transactionEntities.get(0).getAccountNumber(), accountNumber);
+        assertEquals(transactionEntities.get(0).getAmount(), 1000, e);
+        assertEquals(transactionEntities.get(0).getOpenTimeStamp(), 123456723);
+        assertEquals(transactionEntities.get(0).getDescription(), "withdraw");
+    }
 }
