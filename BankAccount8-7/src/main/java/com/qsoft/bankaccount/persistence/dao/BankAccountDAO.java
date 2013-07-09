@@ -11,7 +11,5 @@ public interface BankAccountDAO
 {
     public BankAccountEntity getAccount(String accountNumber) ;
 
-    void add();
-
     void save(BankAccountEntity bankAccountEntity)throws Exception;
 }

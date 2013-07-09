@@ -43,55 +43,10 @@ public class BankAccountDAOImpl implements BankAccountDAO
     }
 
     @Override
-    public void add()
-    {
-        for (int i = 0; i < 10; i++)
-        {
-            BankAccountEntity bankAccountEntity = new BankAccountEntity("0123456789", 100011, 1000l);
-            TransactionEntity transactionEntity = new TransactionEntity("01234333", 1000, "abc");
-            entityManager.persist(bankAccountEntity);
-            entityManager.persist(transactionEntity);
-        }
-    }
-
-    @Override
     public void save(BankAccountEntity bankAccountEntity) throws Exception
     {
-        validateAccount(bankAccountEntity);
-        entityManager.persist(bankAccountEntity);
-        entityManager.flush();
+        //To change body of implemented methods use File | Settings | File Templates.
     }
 
-    private void validateAccount(BankAccountEntity bankAccountEntity) throws Exception
-    {
-        if (!isValidateName(bankAccountEntity.getAccountNumber()))
-        {
-            throw new WrongNameException();
-        }
-        if (bankAccountEntity.getBalance() < 0)
-        {
-            throw new NegativeBalanceException();
-        }
-        if (bankAccountEntity.getOpenTimeStamp() < 0)
-        {
-            throw new NegativeOpenTimeStampException();
-        }
-    }
-
-    private boolean isValidateName(String accountNumber)
-    {
-        if (accountNumber.length() != 10)
-        {
-            return false;
-        }
-        for (int i = 0; i < 10; i++)
-        {
-            if (!((accountNumber.charAt(i) >= '0') && (accountNumber.charAt(i) <= '9')))
-            {
-                return false;
-            }
-        }
-        return true;
-    }
 
 }
