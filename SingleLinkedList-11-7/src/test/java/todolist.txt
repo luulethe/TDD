@@ -1,0 +1,2 @@
+1. khởi tạo 1 danh sách rỗng, kiểm tra size có bằng 0 hay ko ?
+2. Chèn 1 phần tử vào đầu danh sách, spt của danh sách là 1.
