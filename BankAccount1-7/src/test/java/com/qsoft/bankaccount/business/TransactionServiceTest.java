@@ -54,6 +54,7 @@ public class TransactionServiceTest
         bankAccountService.setDao(mockBankAccountDao);
 
         bankAccountService.deposit(accountNumber, 100, "deposit money");
+
         verify(mockBankAccountDao, times(1)).save(argument.capture());
 
         assertEquals(argument.getValue().getAccountNumber(), accountNumber);

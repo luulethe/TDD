@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6ee270c-23b4-4841-a468-19cbcdb68221" name="Default" comment="" />
-    <ignored path="SingleLinkedList-11-7.iws" />
+    <list default="true" id="082cb70a-f661-401e-937e-a6d9dbf84d94" name="Default" comment="" />
+    <ignored path="SingleLinkedList12-7.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/todolist.txt" changelist="c6ee270c-23b4-4841-a468-19cbcdb68221" time="1373526470227" ignored="false" />
-    <file path="/TestSingleLinkedList.java" changelist="c6ee270c-23b4-4841-a468-19cbcdb68221" time="1373526206624" ignored="false" />
-    <file path="/pom.xml" changelist="c6ee270c-23b4-4841-a468-19cbcdb68221" time="1373525249248" ignored="false" />
-    <file path="/SingleLinkedList.java" changelist="c6ee270c-23b4-4841-a468-19cbcdb68221" time="1373526429940" ignored="false" />
-    <file path="/Node.java" changelist="c6ee270c-23b4-4841-a468-19cbcdb68221" time="1373526341136" ignored="false" />
+    <file path="/pom.xml" changelist="082cb70a-f661-401e-937e-a6d9dbf84d94" time="1373611933264" ignored="false" />
+    <file path="/TestSingleLinkedList.java" changelist="082cb70a-f661-401e-937e-a6d9dbf84d94" time="1373613339379" ignored="false" />
+    <file path="/fragment.java" changelist="082cb70a-f661-401e-937e-a6d9dbf84d94" time="1373612058804" ignored="false" />
+    <file path="/SingleLinkedList.java" changelist="082cb70a-f661-401e-937e-a6d9dbf84d94" time="1373612145325" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -57,41 +57,19 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="SingleLinkedList-11-7" />
+    <favorites_list name="SingleLinkedList12-7" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingleLinkedList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SingleLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="22" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#182#188#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="5" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,7 +78,7 @@
       <file leaf-file-name="TestSingleLinkedList.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestSingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="20" selection-start="530" selection-end="530" vertical-scroll-proportion="0.6246649">
+            <state line="22" column="40" selection-start="501" selection-end="501" vertical-scroll-proportion="0.6246649">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todolist.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/todolist.txt">
+      <file leaf-file-name="SingleLinkedList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="60" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+            <state line="10" column="18" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,10 +106,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/TestSingleLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/SingleLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/todolist.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/TestSingleLinkedList.java" />
       </list>
     </option>
   </component>
@@ -176,32 +152,33 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SingleLinkedList-11-7" />
+              <option name="myItemId" value="SingleLinkedList12-7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SingleLinkedList-11-7" />
+              <option name="myItemId" value="SingleLinkedList12-7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SingleLinkedList-11-7" />
+              <option name="myItemId" value="SingleLinkedList12-7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SingleLinkedList-11-7" />
+              <option name="myItemId" value="SingleLinkedList12-7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SingleLinkedList-11-7" />
+              <option name="myItemId" value="SingleLinkedList12-7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -219,11 +196,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SingleLinkedList-11-7" />
+              <option name="myItemId" value="SingleLinkedList12-7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SingleLinkedList-11-7" />
+              <option name="myItemId" value="SingleLinkedList12-7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -237,11 +214,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SingleLinkedList-11-7" />
+              <option name="myItemId" value="SingleLinkedList12-7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SingleLinkedList-11-7" />
+              <option name="myItemId" value="SingleLinkedList12-7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -259,7 +236,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,16 +249,21 @@
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.TestSingleLinkedList.testEmptyList">
-    <configuration default="false" name="TestSingleLinkedList.testEmptyList" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestSingleLinkedList">
+    <configuration default="false" name="TestSingleLinkedList" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="SingleLinkedList-11-7" />
+      <module name="SingleLinkedList12-7" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestSingleLinkedList" />
-      <option name="METHOD_NAME" value="testEmptyList" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -389,11 +370,11 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestSingleLinkedList.testEmptyList" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestSingleLinkedList" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestSingleLinkedList.testEmptyList" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestSingleLinkedList" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -404,9 +385,9 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c6ee270c-23b4-4841-a468-19cbcdb68221" name="Default" comment="" />
-      <created>1373524653185</created>
-      <updated>1373524653185</updated>
+      <changelist id="082cb70a-f661-401e-937e-a6d9dbf84d94" name="Default" comment="" />
+      <created>1373611899057</created>
+      <updated>1373611899057</updated>
     </task>
     <servers />
   </component>
@@ -433,7 +414,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -503,38 +484,21 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="22" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#182#188#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/todolist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="60" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+        <state line="10" column="18" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestSingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="530" selection-end="530" vertical-scroll-proportion="0.6246649">
+        <state line="22" column="40" selection-start="501" selection-end="501" vertical-scroll-proportion="0.6246649">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
