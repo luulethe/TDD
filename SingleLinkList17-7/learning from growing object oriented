@@ -1,0 +1,5 @@
+1. Làm TDD sẽ phát hiện sớm các lỗi có thể xảy ra.
+2. Có nhiều dự án không có test cẩn thận thì sau vài tháng làm việc đã phải hủy
+3. TDD ban đầu có thể chậm, nhưng sau khi đã viết dc một số test, thì sau đi sẽ nhanh hơn.
+4. Em không hiểu đoạn đầu của "Bộ xương di động"
+5. Cách tốt nhất để ta buộc phải hiểu rõ một quy trình là ta hãy tự động hóa quy trình đó
