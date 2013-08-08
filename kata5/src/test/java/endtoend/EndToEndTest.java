@@ -14,6 +14,9 @@ public class EndToEndTest
     public  void startGameThenExit()
     {
         application.startGame();
+        application.newGame();
+        application.checkStatusStartGame();
         application.endGame();
+        application.checkStatusEndGame();
     }
 }

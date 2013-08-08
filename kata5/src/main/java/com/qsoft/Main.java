@@ -1,5 +1,7 @@
 package com.qsoft;
 
+import com.qsoft.ui.MainWindow;
+
 /**
  * User: luult
  * Date: 8/7/13
@@ -7,9 +9,9 @@ package com.qsoft;
  */
 public class Main
 {
+
     public static void main()
     {
-
-
+        new MainWindow();
     }
 }
