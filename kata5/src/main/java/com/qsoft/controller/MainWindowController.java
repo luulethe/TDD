@@ -15,6 +15,8 @@ public class MainWindowController implements ActionListener
 {
     private MainWindow mainWindow;
 
+    Boolean flag = true;
+
     public MainWindowController(MainWindow mainWindow)
     {
         this.mainWindow = mainWindow;
@@ -31,19 +33,43 @@ public class MainWindowController implements ActionListener
         {
             mainWindow.getLbStatus().setText("Ended");
         }
-        else if ( e.getActionCommand().equals("button1"))
+        else if (e.getActionCommand().equals("button1"))
         {
-            mainWindow.getButton1().setText("X");
+            if (flag)
+            {
+                mainWindow.getButton1().setText("X");
+            }
+            else
+            {
+                mainWindow.getButton1().setText("O");
+            }
+            flag = !flag;
             mainWindow.getButton1().setEnabled(false);
         }
-        else if ( e.getActionCommand().equals("button2"))
+        else if (e.getActionCommand().equals("button2"))
         {
-            mainWindow.getButton2().setText("O");
+            if (flag)
+            {
+                mainWindow.getButton2().setText("X");
+            }
+            else
+            {
+                mainWindow.getButton2().setText("O");
+            }
+            flag = !flag;
             mainWindow.getButton2().setEnabled(false);
         }
-        else if ( e.getActionCommand().equals("button3"))
+        else if (e.getActionCommand().equals("button3"))
         {
-            mainWindow.getButton3().setText("X");
+            if (flag)
+            {
+                mainWindow.getButton3().setText("X");
+            }
+            else
+            {
+                mainWindow.getButton3().setText("O");
+            }
+            flag = !flag;
             mainWindow.getButton3().setEnabled(false);
         }
 
