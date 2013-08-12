@@ -58,15 +58,10 @@ public class EndToEndTest
     {
         initializeGame();
         application.move(0);
-        application.showCell(0, CROSS_PLAYER);
         application.move(4);
-        application.showCell(4, ROUND_PLAYER);
         application.move(1);
-        application.showCell(1, CROSS_PLAYER);
         application.move(5);
-        application.showCell(5, ROUND_PLAYER);
         application.move(2);
-        application.showCell(2, CROSS_PLAYER);
 
         application.showWinnerIsCross();
 
@@ -77,15 +72,10 @@ public class EndToEndTest
     {
         initializeGame();
         application.move(0);
-        application.showCell(0, CROSS_PLAYER);
         application.move(4);
-        application.showCell(4, ROUND_PLAYER);
         application.move(3);
-        application.showCell(3, CROSS_PLAYER);
         application.move(5);
-        application.showCell(5, ROUND_PLAYER);
         application.move(6);
-        application.showCell(6, CROSS_PLAYER);
 
         application.showWinnerIsCross();
 
@@ -96,24 +86,21 @@ public class EndToEndTest
     {
         initializeGame();
         application.move(0);
-        application.showCell(0, CROSS_PLAYER);
         application.move(5);
-        application.showCell(5, ROUND_PLAYER);
         application.move(4);
-        application.showCell(4, CROSS_PLAYER);
         application.move(6);
-        application.showCell(6, ROUND_PLAYER);
         application.move(8);
-        application.showCell(8, CROSS_PLAYER);
 
         application.showWinnerIsCross();
 
     }
-//    @Test
-//    public void startGameThenMoveWhenFullMap()
-//    {
-//
-//    }
+    @Test
+    public void startGameThenMoveWhenFullMap()
+    {
+        initializeGame();
+
+
+    }
 
     @After
     public void close()
