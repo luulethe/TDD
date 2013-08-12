@@ -218,6 +218,7 @@ public class MainWindow extends JFrame
         button1.setText("");
         panel4.add(button1, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         button2 = new JButton();
+        button2.setFont(new Font(button2.getFont().getName(), button2.getFont().getStyle(), 48));
         button2.setName("button2");
         button2.setText("");
         panel4.add(button2, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));

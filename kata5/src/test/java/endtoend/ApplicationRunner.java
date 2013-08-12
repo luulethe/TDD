@@ -58,4 +58,9 @@ public class ApplicationRunner
     {
         driver.hasCrossInCell(indexCell);
     }
+
+    public void showRoundCell(int indexCell)
+    {
+        driver.hasRoundInCell(indexCell);
+    }
 }

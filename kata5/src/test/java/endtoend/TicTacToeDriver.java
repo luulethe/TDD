@@ -64,4 +64,10 @@ public class TicTacToeDriver extends JFrameDriver
         String name = "button" + indexCell;
         getButton(name).hasText(equalTo("X"));
     }
+
+    public void hasRoundInCell(int indexCell)
+    {
+        String name = "button" + indexCell;
+        getButton(name).hasText(equalTo("O"));
+    }
 }

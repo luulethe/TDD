@@ -31,4 +31,21 @@ public class EndToEndTest
         application.endGame();
         application.showStatusEndGame();
     }
+
+    @Test
+    public void startGameThenExitAfterMovingMoreThanOneStep()
+    {
+        application.startGame();
+        application.newGame();
+        application.showStatusStartGame();
+        application.move(1);
+        application.showCrossCell(1);
+        application.move(2);
+        application.showRoundCell(2);
+        application.move(3);
+        application.showCrossCell(3);
+        application.endGame();
+        application.showStatusEndGame();
+    }
+
 }
