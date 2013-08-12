@@ -49,7 +49,7 @@ public class EndToEndTest
         application.showStatusEndGame();
     }
     @Test
-    public void startGameThenMoveThenHasAWiner()
+    public void startGameThenMoveThenHasAWinnerInRow()
     {
         application.startGame();
         application.newGame();
@@ -66,6 +66,27 @@ public class EndToEndTest
         application.showCrossCell(2);
 
         application.showWinnerIsCross();
+
+    }
+    @Test
+    public void startGameThenMoveThenHasAWinnerInColumn()
+    {
+        application.startGame();
+        application.newGame();
+        application.showStatusStartGame();
+        application.move(0);
+        application.showCrossCell(0);
+        application.move(4);
+        application.showRoundCell(4);
+        application.move(3);
+        application.showCrossCell(3);
+        application.move(5);
+        application.showRoundCell(5);
+        application.move(6);
+        application.showCrossCell(6);
+
+        application.showWinnerIsCross();
+
     }
 
     @After
