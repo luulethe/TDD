@@ -39,11 +39,6 @@
               <text value="Start"/>
             </properties>
           </component>
-          <vspacer id="793d8">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </vspacer>
           <component id="7a376" class="javax.swing.JButton" binding="btEnd">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -58,6 +53,103 @@
               <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
           </hspacer>
+          <grid id="7613d" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="296e" class="javax.swing.JButton" binding="button1" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="4" hsize-policy="4" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="button1"/>
+                  <font size="28"/>
+                  <foreground color="-52429"/>
+                  <hideActionText value="false"/>
+                  <horizontalTextPosition value="0"/>
+                  <name value="button1"/>
+                  <opaque value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="31867" class="javax.swing.JButton" binding="button2" default-binding="true">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value="button2"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="5a834" class="javax.swing.JButton" binding="button3" default-binding="true">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value="button3"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="a1d17" class="javax.swing.JButton" binding="button6">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="4" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value="button6"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="11156" class="javax.swing.JButton" binding="button5" default-binding="true">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value="button5"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="97fb4" class="javax.swing.JButton" binding="button4">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value="button4"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="eb489" class="javax.swing.JButton" binding="button9">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="4" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value="button9"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="e879a" class="javax.swing.JButton" binding="button8" default-binding="true">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value="button8"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="81833" class="javax.swing.JButton" binding="button7">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value="button7"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
         </children>
       </grid>
     </children>

@@ -17,7 +17,7 @@ public class ApplicationRunner
         Thread thread = new Thread("Test Application") {
             @Override public void run() {
                 try {
-                    Main.main();
+                    Main.main(null);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -38,15 +38,24 @@ public class ApplicationRunner
         driver.clickEndButton();
     }
 
-    public void checkStatusStartGame()
+    public void showStatusStartGame()
     {
          driver.hasStatusStartGame();
     }
 
-    public void checkStatusEndGame()
+    public void showStatusEndGame()
     {
         driver.hasStatusEndGame();
         //To change body of created methods use File | Settings | File Templates.
     }
 
+    public void move(int indexCell)
+    {
+        driver.clickCellNumber(indexCell);
+    }
+
+    public void showCrossCell(int indexCell)
+    {
+        driver.hasCrossInCell(indexCell);
+    }
 }

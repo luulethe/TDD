@@ -26,13 +26,10 @@ public class TicTacToeDriver extends JFrameDriver
                         showingOnScreen()),
                 new AWTEventQueueProber(timeoutMillis, 100));
     }
-    private JButtonDriver startButton() {
-        return new JButtonDriver(this, JButton.class, named(MainWindow.START_BUTTON_NAME));
+    private JButtonDriver getButton(String name) {
+        return new JButtonDriver(this, JButton.class, named(name));
     }
 
-    private JButtonDriver endButton() {
-        return new JButtonDriver(this, JButton.class, named(MainWindow.END_BUTTON_NAME));
-    }
     public void hasStatusStartGame()
     {
         JLabelDriver labelStatus = new JLabelDriver(this, named(MainWindow.LABEL_STATUS_NAME));
@@ -41,12 +38,12 @@ public class TicTacToeDriver extends JFrameDriver
 
     public void clickEndButton()
     {
-        endButton().click();
+        getButton(MainWindow.END_BUTTON_NAME).click();
     }
 
     public void clickStartButton()
     {
-        startButton().click();
+        getButton(MainWindow.START_BUTTON_NAME).click();
     }
 
     public void hasStatusEndGame()
@@ -54,5 +51,17 @@ public class TicTacToeDriver extends JFrameDriver
         JLabelDriver labelStatus = new JLabelDriver(this, named(MainWindow.LABEL_STATUS_NAME));
         labelStatus.hasText(equalTo("Ended"));
         //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public void clickCellNumber(int indexCell)
+    {
+        String name = "button" + indexCell;
+        getButton(name).click();
+    }
+
+    public void hasCrossInCell(int indexCell)
+    {
+        String name = "button" + indexCell;
+        getButton(name).hasText(equalTo("X"));
     }
 }

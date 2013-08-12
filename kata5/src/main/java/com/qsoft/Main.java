@@ -10,8 +10,14 @@ import com.qsoft.ui.MainWindow;
 public class Main
 {
 
-    public static void main()
+    public static void main(String[] args)
     {
         new MainWindow();
     }
+
+//    public static void main()
+//    {
+//        new MainWindow();
+//        //To change body of created methods use File | Settings | File Templates.
+//    }
 }

@@ -15,8 +15,20 @@ public class EndToEndTest
     {
         application.startGame();
         application.newGame();
-        application.checkStatusStartGame();
+        application.showStatusStartGame();
         application.endGame();
-        application.checkStatusEndGame();
+        application.showStatusEndGame();
+    }
+
+    @Test
+    public void startGameThenExitAfterMovingOneStep()
+    {
+        application.startGame();
+        application.newGame();
+        application.showStatusStartGame();
+        application.move(1);
+        application.showCrossCell(1);
+        application.endGame();
+        application.showStatusEndGame();
     }
 }

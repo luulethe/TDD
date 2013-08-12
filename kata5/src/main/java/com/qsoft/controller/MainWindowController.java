@@ -2,6 +2,7 @@ package com.qsoft.controller;
 
 import com.qsoft.ui.MainWindow;
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -30,6 +31,10 @@ public class MainWindowController implements ActionListener
         {
             mainWindow.getLbStatus().setText("Ended");
         }
-
+        else if ( e.getActionCommand().equals("button1"))
+        {
+            mainWindow.getButton1().setText("X");
+            mainWindow.getButton1().setEnabled(false);
+        }
     }
 }
