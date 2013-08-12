@@ -38,7 +38,7 @@ public class TicTacToeDriver extends JFrameDriver
 
     public void clickEndButton()
     {
-        getButton(MainWindow.END_BUTTON_NAME).click();
+        getButton(MainWindow.STOP_BUTTON_NAME).click();
     }
 
     public void clickStartButton()

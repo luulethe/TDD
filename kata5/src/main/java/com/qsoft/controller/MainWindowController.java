@@ -32,6 +32,7 @@ public class MainWindowController implements ActionListener
         else if (e.getActionCommand().equals("Stop"))
         {
             mainWindow.getLbStatus().setText("Ended");
+            mainWindow.disableAllButtonGame();
         }
     }
 }
