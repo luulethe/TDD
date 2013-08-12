@@ -88,6 +88,26 @@ public class EndToEndTest
         application.showWinnerIsCross();
 
     }
+    @Test
+    public void startGameThenMoveThenHasAWinnerInCross()
+    {
+        application.startGame();
+        application.newGame();
+        application.showStatusStartGame();
+        application.move(0);
+        application.showCrossCell(0);
+        application.move(5);
+        application.showRoundCell(5);
+        application.move(4);
+        application.showCrossCell(4);
+        application.move(6);
+        application.showRoundCell(6);
+        application.move(8);
+        application.showCrossCell(8);
+
+        application.showWinnerIsCross();
+
+    }
 
     @After
     public void close()
