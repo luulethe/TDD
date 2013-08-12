@@ -65,6 +65,14 @@ public class MainPanelController implements ActionListener
                 return arrayText[i];
             }
         }
+        if (arrayText[0].equals(arrayText[4]) && arrayText[4].equals(arrayText[8]))
+        {
+            return arrayText[0];
+        }
+        if (arrayText[2].equals(arrayText[4]) && arrayText[4].equals(arrayText[6]))
+        {
+            return arrayText[2];
+        }
         return "";
     }
 }
