@@ -81,6 +81,7 @@
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <actionCommand value="button2"/>
                   <font size="48"/>
                   <name value="button2"/>
                   <text value=""/>
@@ -91,6 +92,7 @@
                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <actionCommand value="button3"/>
                   <name value="button3"/>
                   <text value=""/>
                 </properties>
@@ -100,6 +102,7 @@
                   <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="4" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <actionCommand value="button6"/>
                   <name value="button6"/>
                   <text value=""/>
                 </properties>
@@ -109,6 +112,7 @@
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <actionCommand value="button5"/>
                   <name value="button5"/>
                   <text value=""/>
                 </properties>
@@ -118,6 +122,7 @@
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <actionCommand value="button4"/>
                   <name value="button4"/>
                   <text value=""/>
                 </properties>
@@ -127,6 +132,7 @@
                   <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="4" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <actionCommand value="button9"/>
                   <name value="button9"/>
                   <text value=""/>
                 </properties>
@@ -136,6 +142,7 @@
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <actionCommand value="button8"/>
                   <name value="button8"/>
                   <text value=""/>
                 </properties>
@@ -145,6 +152,7 @@
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <actionCommand value="button7"/>
                   <name value="button7"/>
                   <text value=""/>
                 </properties>

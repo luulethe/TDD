@@ -36,5 +36,16 @@ public class MainWindowController implements ActionListener
             mainWindow.getButton1().setText("X");
             mainWindow.getButton1().setEnabled(false);
         }
+        else if ( e.getActionCommand().equals("button2"))
+        {
+            mainWindow.getButton2().setText("O");
+            mainWindow.getButton2().setEnabled(false);
+        }
+        else if ( e.getActionCommand().equals("button3"))
+        {
+            mainWindow.getButton3().setText("X");
+            mainWindow.getButton3().setEnabled(false);
+        }
+
     }
 }

@@ -61,6 +61,8 @@ public class MainWindow extends JFrame
         btStart.addActionListener(mainWindowController);
         btEnd.addActionListener(mainWindowController);
         button1.addActionListener(mainWindowController);
+        button2.addActionListener(mainWindowController);
+        button3.addActionListener(mainWindowController);
     }
 
     public JButton getButton1()
@@ -218,23 +220,28 @@ public class MainWindow extends JFrame
         button1.setText("");
         panel4.add(button1, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         button2 = new JButton();
+        button2.setActionCommand("button2");
         button2.setFont(new Font(button2.getFont().getName(), button2.getFont().getStyle(), 48));
         button2.setName("button2");
         button2.setText("");
         panel4.add(button2, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         button3 = new JButton();
+        button3.setActionCommand("button3");
         button3.setName("button3");
         button3.setText("");
         panel4.add(button3, new GridConstraints(0, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         button6 = new JButton();
+        button6.setActionCommand("button6");
         button6.setName("button6");
         button6.setText("");
         panel4.add(button6, new GridConstraints(1, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         button5 = new JButton();
+        button5.setActionCommand("button5");
         button5.setName("button5");
         button5.setText("");
         panel4.add(button5, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         button4 = new JButton();
+        button4.setActionCommand("button4");
         button4.setName("button4");
         button4.setText("");
         panel4.add(button4, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
@@ -243,10 +250,12 @@ public class MainWindow extends JFrame
         button9.setText("");
         panel4.add(button9, new GridConstraints(2, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         button8 = new JButton();
+        button8.setActionCommand("button8");
         button8.setName("button8");
         button8.setText("");
         panel4.add(button8, new GridConstraints(2, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         button7 = new JButton();
+        button7.setActionCommand("button7");
         button7.setName("button7");
         button7.setText("");
         panel4.add(button7, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
