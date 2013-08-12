@@ -42,6 +42,22 @@ public class MainPanelController implements ActionListener
         {
             mainWindow.getLbStatus().setText(nameOfWinner + " won");
         }
+        else if (checkFull())
+        {
+            mainWindow.getLbStatus().setText("Draw");
+        }
+    }
+
+    private boolean checkFull()
+    {
+        for (int i = 0; i < 9; i++)
+        {
+            if (mainWindow.getButton(i + "").getText().toString().equals(""))
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     private String checkWinner()
