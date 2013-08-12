@@ -68,4 +68,9 @@ public class ApplicationRunner
     {
         driver.dispose();
     }
+
+    public void showWinnerIsCross()
+    {
+        driver.hasStatusWinner();
+    }
 }

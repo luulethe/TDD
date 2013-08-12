@@ -48,6 +48,25 @@ public class EndToEndTest
         application.endGame();
         application.showStatusEndGame();
     }
+    @Test
+    public void startGameThenMoveThenHasAWiner()
+    {
+        application.startGame();
+        application.newGame();
+        application.showStatusStartGame();
+        application.move(0);
+        application.showCrossCell(0);
+        application.move(4);
+        application.showRoundCell(4);
+        application.move(1);
+        application.showCrossCell(1);
+        application.move(5);
+        application.showRoundCell(5);
+        application.move(2);
+        application.showCrossCell(2);
+
+        application.showWinnerIsCross();
+    }
 
     @After
     public void close()

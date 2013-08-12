@@ -71,4 +71,10 @@ public class TicTacToeDriver extends JFrameDriver
         String name = "button" + indexCell;
         getButton(name).hasText(equalTo("O"));
     }
+
+    public void hasStatusWinner()
+    {
+        JLabelDriver labelStatus = new JLabelDriver(this, named(MainWindow.LABEL_STATUS_NAME));
+        labelStatus.hasText(equalTo("X Won"));
+    }
 }
