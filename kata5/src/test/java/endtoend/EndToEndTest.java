@@ -1,5 +1,6 @@
 package endtoend;
 
+import org.junit.After;
 import org.junit.Test;
 
 /**
@@ -48,4 +49,9 @@ public class EndToEndTest
         application.showStatusEndGame();
     }
 
+    @After
+    public void close()
+    {
+        application.close();
+    }
 }

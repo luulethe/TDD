@@ -25,7 +25,7 @@ public class ApplicationRunner
         };
         thread.setDaemon(true);
         thread.start();
-        driver = new TicTacToeDriver(2000);
+        driver = new TicTacToeDriver(1000);
         driver.hasTitle(MainWindow.APPLICATION_TITLE);
     }
     public void newGame()
@@ -62,5 +62,10 @@ public class ApplicationRunner
     public void showRoundCell(int indexCell)
     {
         driver.hasRoundInCell(indexCell);
+    }
+
+    public void close()
+    {
+        driver.dispose();
     }
 }
