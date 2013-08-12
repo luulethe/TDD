@@ -60,21 +60,16 @@ public class TicTacToeDriver extends JFrameDriver
         getButton(name).click();
     }
 
-    public void hasCrossInCell(int indexCell)
-    {
-        String name = "button" + indexCell;
-        getButton(name).hasText(equalTo("X"));
-    }
-
-    public void hasRoundInCell(int indexCell)
-    {
-        String name = "button" + indexCell;
-        getButton(name).hasText(equalTo("O"));
-    }
-
     public void hasStatusWinner()
     {
         JLabelDriver labelStatus = new JLabelDriver(this, named(MainWindow.LABEL_STATUS_NAME));
         labelStatus.hasText(equalTo("X won"));
+    }
+
+    public void hasNamePlayerInCell(int indexCell, String namePlayer)
+    {
+        String name = "button" + indexCell;
+        getButton(name).hasText(equalTo(namePlayer));
+        //To change body of created methods use File | Settings | File Templates.
     }
 }

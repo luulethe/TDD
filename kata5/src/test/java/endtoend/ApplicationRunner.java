@@ -54,16 +54,6 @@ public class ApplicationRunner
         driver.clickCellNumber(indexCell);
     }
 
-    public void showCrossCell(int indexCell)
-    {
-        driver.hasCrossInCell(indexCell);
-    }
-
-    public void showRoundCell(int indexCell)
-    {
-        driver.hasRoundInCell(indexCell);
-    }
-
     public void close()
     {
         driver.dispose();
@@ -72,5 +62,10 @@ public class ApplicationRunner
     public void showWinnerIsCross()
     {
         driver.hasStatusWinner();
+    }
+
+    public void showCell(int indexCell, String namePlayer)
+    {
+        driver.hasNamePlayerInCell(indexCell, namePlayer); //To change body of created methods use File | Settings | File Templates.
     }
 }
