@@ -14,19 +14,22 @@ public class EndToEndTest
     @Test
     public  void startGameThenExit()
     {
+        initializeGame();
+        application.endGame();
+        application.showStatusEndGame();
+    }
+
+    private void initializeGame()
+    {
         application.startGame();
         application.newGame();
         application.showStatusStartGame();
-        application.endGame();
-        application.showStatusEndGame();
     }
 
     @Test
     public void startGameThenExitAfterMovingOneStep()
     {
-        application.startGame();
-        application.newGame();
-        application.showStatusStartGame();
+        initializeGame();
         application.move(1);
         application.showCrossCell(1);
         application.endGame();
@@ -36,9 +39,7 @@ public class EndToEndTest
     @Test
     public void startGameThenExitAfterMovingMoreThanOneStep()
     {
-        application.startGame();
-        application.newGame();
-        application.showStatusStartGame();
+        initializeGame();
         application.move(1);
         application.showCrossCell(1);
         application.move(2);
@@ -51,9 +52,7 @@ public class EndToEndTest
     @Test
     public void startGameThenMoveThenHasAWinnerInRow()
     {
-        application.startGame();
-        application.newGame();
-        application.showStatusStartGame();
+        initializeGame();
         application.move(0);
         application.showCrossCell(0);
         application.move(4);
@@ -71,9 +70,7 @@ public class EndToEndTest
     @Test
     public void startGameThenMoveThenHasAWinnerInColumn()
     {
-        application.startGame();
-        application.newGame();
-        application.showStatusStartGame();
+        initializeGame();
         application.move(0);
         application.showCrossCell(0);
         application.move(4);
@@ -91,9 +88,7 @@ public class EndToEndTest
     @Test
     public void startGameThenMoveThenHasAWinnerInCross()
     {
-        application.startGame();
-        application.newGame();
-        application.showStatusStartGame();
+        initializeGame();
         application.move(0);
         application.showCrossCell(0);
         application.move(5);
