@@ -72,4 +72,10 @@ public class TicTacToeDriver extends JFrameDriver
         getButton(name).hasText(equalTo(namePlayer));
         //To change body of created methods use File | Settings | File Templates.
     }
+
+    public void hasStatusDraw()
+    {
+        JLabelDriver labelStatus = new JLabelDriver(this, named(MainWindow.LABEL_STATUS_NAME));
+        labelStatus.hasText(equalTo("Draw"));
+    }
 }

@@ -68,4 +68,9 @@ public class ApplicationRunner
     {
         driver.hasNamePlayerInCell(indexCell, namePlayer); //To change body of created methods use File | Settings | File Templates.
     }
+
+    public void showDrawStatus()
+    {
+        driver.hasStatusDraw();
+    }
 }

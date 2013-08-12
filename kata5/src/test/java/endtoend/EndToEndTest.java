@@ -98,6 +98,19 @@ public class EndToEndTest
     public void startGameThenMoveWhenFullMap()
     {
         initializeGame();
+        application.move(0);
+        application.move(1);
+        application.move(2);
+        application.move(3);
+        application.move(4);
+        application.move(6);
+        application.move(5);
+        application.move(8);
+        application.move(7);
+
+        application.showDrawStatus();
+
+
 
 
     }
