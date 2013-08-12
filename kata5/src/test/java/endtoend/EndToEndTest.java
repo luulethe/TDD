@@ -14,19 +14,19 @@ public class EndToEndTest
     private static final String CROSS_PLAYER = "X";
     private static final String ROUND_PLAYER = "O";
 
+    private void initializeGame()
+    {
+        application.startGame();
+        application.newGame();
+        application.showStatusStartGame();
+    }
+
     @Test
     public void startGameThenExit()
     {
         initializeGame();
         application.endGame();
         application.showStatusEndGame();
-    }
-
-    private void initializeGame()
-    {
-        application.startGame();
-        application.newGame();
-        application.showStatusStartGame();
     }
 
     @Test
@@ -109,9 +109,6 @@ public class EndToEndTest
         application.move(7);
 
         application.showDrawStatus();
-
-
-
 
     }
 

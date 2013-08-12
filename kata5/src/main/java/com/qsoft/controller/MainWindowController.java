@@ -27,6 +27,7 @@ public class MainWindowController implements ActionListener
         if (e.getActionCommand().equals("Start"))
         {
             mainWindow.getLbStatus().setText("Started");
+            mainWindow.resetMainPanel();
         }
         else if (e.getActionCommand().equals("Stop"))
         {
