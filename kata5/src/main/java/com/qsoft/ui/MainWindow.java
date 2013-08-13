@@ -22,6 +22,7 @@ public class MainWindow extends JFrame
     public static final String START_BUTTON_NAME = "btStart";
     public static final String STOP_BUTTON_NAME = "btStop";
     public static final String LABEL_STATUS_NAME = "lbStatus";
+    public static final String HISTORY_BUTTON_NAME = "btHistory";
     private JPanel panel1;
     private JButton btStart;
     private JLabel lbStatus;
@@ -30,6 +31,16 @@ public class MainWindow extends JFrame
     private ArrayList<JButton> buttonList = new ArrayList<JButton>();
     MainWindowController mainWindowController;
     MainPanelController mainPanelController;
+
+    public JButton getBtStart()
+    {
+        return btStart;
+    }
+
+    public JButton getBtStop()
+    {
+        return btStop;
+    }
 
     public MainWindow()
     {
@@ -142,6 +153,7 @@ public class MainWindow extends JFrame
         final Spacer spacer1 = new Spacer();
         panel4.add(spacer1, new GridConstraints(0, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
         btStop = new JButton();
+        btStop.setEnabled(false);
         btStop.setName("btStop");
         btStop.setText("Stop");
         panel4.add(btStop, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));

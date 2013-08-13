@@ -1,6 +1,7 @@
 package endtoend;
 
 import com.qsoft.Main;
+import com.qsoft.ui.FrameHistory;
 import com.qsoft.ui.MainWindow;
 
 
@@ -11,66 +12,89 @@ import com.qsoft.ui.MainWindow;
  */
 public class ApplicationRunner
 {
-    private TicTacToeDriver driver;
+    private TicTacToeDriver ticTacToeDriver;
+    private HistoryDriver historyDriver;
+
     public void startGame()
     {
-        Thread thread = new Thread("Test Application") {
-            @Override public void run() {
-                try {
+        Thread thread = new Thread("Test Application")
+        {
+            @Override
+            public void run()
+            {
+                try
+                {
                     Main.main(null);
-                } catch (Exception e) {
+                }
+                catch (Exception e)
+                {
                     e.printStackTrace();
                 }
             }
         };
         thread.setDaemon(true);
         thread.start();
-        driver = new TicTacToeDriver(1000);
-        driver.hasTitle(MainWindow.APPLICATION_TITLE);
+        ticTacToeDriver = new TicTacToeDriver(1000);
+        ticTacToeDriver.hasTitle(MainWindow.APPLICATION_TITLE);
+
     }
+
     public void newGame()
     {
-        driver.clickStartButton();        //To change body of created methods use File | Settings | File Templates.
+        ticTacToeDriver.clickStartButton();        //To change body of created methods use File | Settings | File Templates.
     }
 
     public void endGame()
     {
-        driver.clickEndButton();
+        ticTacToeDriver.clickEndButton();
     }
 
     public void showStatusStartGame()
     {
-         driver.hasStatusStartGame();
+        ticTacToeDriver.hasStatusStartGame();
     }
 
     public void showStatusEndGame()
     {
-        driver.hasStatusEndGame();
+        ticTacToeDriver.hasStatusEndGame();
         //To change body of created methods use File | Settings | File Templates.
     }
 
     public void move(int indexCell)
     {
-        driver.clickCellNumber(indexCell);
+        ticTacToeDriver.clickCellNumber(indexCell);
     }
 
     public void close()
     {
-        driver.dispose();
+        ticTacToeDriver.dispose();
     }
 
     public void showWinnerIsCross()
     {
-        driver.hasStatusWinner();
+        ticTacToeDriver.hasStatusWinner();
     }
 
     public void showCell(int indexCell, String namePlayer)
     {
-        driver.hasNamePlayerInCell(indexCell, namePlayer); //To change body of created methods use File | Settings | File Templates.
+        ticTacToeDriver.hasNamePlayerInCell(indexCell, namePlayer); //To change body of created methods use File | Settings | File Templates.
     }
 
     public void showDrawStatus()
     {
-        driver.hasStatusDraw();
+        ticTacToeDriver.hasStatusDraw();
+    }
+
+
+    public void startShowHistory()
+    {
+        ticTacToeDriver.clickButtonHistory();
+        historyDriver = new HistoryDriver(1000);
+        historyDriver.hasTitle(FrameHistory.FRAME_HISTORY_NAME);
+    }
+
+    public void showEmptyHistory()
+    {
+        historyDriver.hasShowEmptyHistory();
     }
 }

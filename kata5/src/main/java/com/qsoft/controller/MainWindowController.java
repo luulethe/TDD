@@ -28,11 +28,15 @@ public class MainWindowController implements ActionListener
         {
             mainWindow.getLbStatus().setText("Started");
             mainWindow.resetMainPanel();
+            mainWindow.getBtStart().setEnabled(false);
+            mainWindow.getBtStop().setEnabled(true);
         }
         else if (e.getActionCommand().equals("Stop"))
         {
             mainWindow.getLbStatus().setText("Ended");
             mainWindow.disableAllButtonGame();
+            mainWindow.getBtStart().setEnabled(true);
+            mainWindow.getBtStop().setEnabled(false);
         }
     }
 }

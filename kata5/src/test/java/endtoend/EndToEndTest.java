@@ -112,6 +112,15 @@ public class EndToEndTest
 
     }
 
+    @Test
+    public void showHistoryWhenNoGameHappen()
+    {
+        application.startGame();
+        application.startShowHistory();
+        application.showEmptyHistory();
+    }
+
+
     @After
     public void close()
     {

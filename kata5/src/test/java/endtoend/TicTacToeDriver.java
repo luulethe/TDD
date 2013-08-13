@@ -44,6 +44,7 @@ public class TicTacToeDriver extends JFrameDriver
     public void clickStartButton()
     {
         getButton(MainWindow.START_BUTTON_NAME).click();
+
     }
 
     public void hasStatusEndGame()
@@ -78,4 +79,10 @@ public class TicTacToeDriver extends JFrameDriver
         JLabelDriver labelStatus = new JLabelDriver(this, named(MainWindow.LABEL_STATUS_NAME));
         labelStatus.hasText(equalTo("Draw"));
     }
+
+    public void clickButtonHistory()
+    {
+        getButton(MainWindow.HISTORY_BUTTON_NAME).click();
+    }
+
 }
