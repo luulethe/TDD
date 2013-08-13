@@ -1,6 +1,6 @@
 package com.qsoft;
 
-import com.qsoft.ui.MainWindow;
+import com.qsoft.ui.view.MainWindow;
 
 /**
  * User: luult

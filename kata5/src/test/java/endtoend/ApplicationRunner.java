@@ -1,8 +1,8 @@
 package endtoend;
 
 import com.qsoft.Main;
-import com.qsoft.ui.FrameHistory;
-import com.qsoft.ui.MainWindow;
+import com.qsoft.ui.view.FrameHistory;
+import com.qsoft.ui.view.MainWindow;
 
 
 /**
@@ -34,7 +34,7 @@ public class ApplicationRunner
         };
         thread.setDaemon(true);
         thread.start();
-        ticTacToeDriver = new TicTacToeDriver(1000);
+        ticTacToeDriver = new TicTacToeDriver(500);
         ticTacToeDriver.hasTitle(MainWindow.APPLICATION_TITLE);
 
     }
@@ -89,7 +89,7 @@ public class ApplicationRunner
     public void startShowHistory()
     {
         ticTacToeDriver.clickButtonHistory();
-        historyDriver = new HistoryDriver(1000);
+        historyDriver = new HistoryDriver(500);
         historyDriver.hasTitle(FrameHistory.FRAME_HISTORY_NAME);
     }
 

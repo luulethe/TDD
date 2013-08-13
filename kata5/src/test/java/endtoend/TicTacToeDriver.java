@@ -5,7 +5,7 @@ import com.objogate.wl.swing.driver.JButtonDriver;
 import com.objogate.wl.swing.driver.JFrameDriver;
 import com.objogate.wl.swing.driver.JLabelDriver;
 import com.objogate.wl.swing.gesture.GesturePerformer;
-import com.qsoft.ui.MainWindow;
+import com.qsoft.ui.view.MainWindow;
 
 import javax.swing.*;
 
@@ -24,7 +24,7 @@ public class TicTacToeDriver extends JFrameDriver
                 JFrameDriver.topLevelFrame(
                         named(MainWindow.MAIN_WINDOW_NAME),
                         showingOnScreen()),
-                new AWTEventQueueProber(timeoutMillis, 100));
+                new AWTEventQueueProber(timeoutMillis, 50));
     }
     private JButtonDriver getButton(String name) {
         return new JButtonDriver(this, JButton.class, named(name));
