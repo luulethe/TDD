@@ -3,8 +3,8 @@ package com.qsoft.ui;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
+import com.qsoft.controller.ButtonPanelController;
 import com.qsoft.controller.MainPanelController;
-import com.qsoft.controller.MainWindowController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -28,8 +28,9 @@ public class MainWindow extends JFrame
     private JLabel lbStatus;
     private JButton btStop;
     private JPanel mainPanel;
+    private JButton btHistory;
     private ArrayList<JButton> buttonList = new ArrayList<JButton>();
-    MainWindowController mainWindowController;
+    ButtonPanelController buttonPanelController;
     MainPanelController mainPanelController;
 
     public JButton getBtStart()
@@ -61,10 +62,12 @@ public class MainWindow extends JFrame
 //        panel1.add(button);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        mainWindowController = new MainWindowController(this);
+        buttonPanelController = new ButtonPanelController();
+        buttonPanelController.setMainWindow(this);
         mainPanelController = new MainPanelController(this);
-        btStart.addActionListener(mainWindowController);
-        btStop.addActionListener(mainWindowController);
+        btStart.addActionListener(buttonPanelController);
+        btStop.addActionListener(buttonPanelController);
+        btHistory.addActionListener(buttonPanelController);
         addButtonToView();
         mainPanel.setEnabled(false);
         mainPanel.setVisible(false);
@@ -144,7 +147,7 @@ public class MainWindow extends JFrame
         panel3.setLayout(new BorderLayout(0, 0));
         panel1.add(panel3, BorderLayout.CENTER);
         final JPanel panel4 = new JPanel();
-        panel4.setLayout(new GridLayoutManager(1, 3, new Insets(0, 0, 0, 0), -1, -1));
+        panel4.setLayout(new GridLayoutManager(1, 4, new Insets(0, 0, 0, 0), -1, -1));
         panel3.add(panel4, BorderLayout.NORTH);
         btStart = new JButton();
         btStart.setName("btStart");
@@ -157,6 +160,10 @@ public class MainWindow extends JFrame
         btStop.setName("btStop");
         btStop.setText("Stop");
         panel4.add(btStop, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        btHistory = new JButton();
+        btHistory.setName("btHistory");
+        btHistory.setText("History");
+        panel4.add(btHistory, new GridConstraints(0, 3, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         mainPanel = new JPanel();
         mainPanel.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
         panel3.add(mainPanel, BorderLayout.CENTER);

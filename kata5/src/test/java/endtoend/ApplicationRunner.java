@@ -95,6 +95,7 @@ public class ApplicationRunner
 
     public void showEmptyHistory()
     {
+        historyDriver.hasColumnTitles();
         historyDriver.hasShowEmptyHistory();
     }
 }

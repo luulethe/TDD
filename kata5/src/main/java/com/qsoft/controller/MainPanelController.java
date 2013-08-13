@@ -41,6 +41,7 @@ public class MainPanelController implements ActionListener
         if (!nameOfWinner.equals(""))
         {
             mainWindow.getLbStatus().setText(nameOfWinner + " won");
+            mainWindow.disableAllButtonGame();
         }
         else if (checkFull())
         {
