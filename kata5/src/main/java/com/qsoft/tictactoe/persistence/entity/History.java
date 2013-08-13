@@ -1,6 +1,4 @@
-package com.qsoft.persistence.entity;
-
-import java.security.PrivateKey;
+package com.qsoft.tictactoe.persistence.entity;
 
 /**
  * User: luult

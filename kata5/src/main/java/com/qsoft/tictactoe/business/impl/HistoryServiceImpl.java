@@ -1,8 +1,8 @@
-package com.qsoft.business.impl;
+package com.qsoft.tictactoe.business.impl;
 
-import com.qsoft.business.HistoryService;
-import com.qsoft.persistence.dao.HistoryDAO;
-import com.qsoft.persistence.entity.History;
+import com.qsoft.tictactoe.business.HistoryService;
+import com.qsoft.tictactoe.persistence.dao.HistoryDAO;
+import com.qsoft.tictactoe.persistence.entity.History;
 
 import java.util.List;
 

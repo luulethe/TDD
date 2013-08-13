@@ -5,7 +5,7 @@ import com.objogate.wl.swing.driver.JButtonDriver;
 import com.objogate.wl.swing.driver.JFrameDriver;
 import com.objogate.wl.swing.driver.JLabelDriver;
 import com.objogate.wl.swing.gesture.GesturePerformer;
-import com.qsoft.ui.view.MainWindow;
+import com.qsoft.tictactoe.ui.view.MainWindow;
 
 import javax.swing.*;
 

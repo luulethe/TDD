@@ -1,6 +1,6 @@
-package com.qsoft.persistence.dao;
+package com.qsoft.tictactoe.persistence.dao;
 
-import com.qsoft.persistence.entity.History;
+import com.qsoft.tictactoe.persistence.entity.History;
 
 import java.util.List;
 

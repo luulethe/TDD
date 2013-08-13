@@ -1,9 +1,9 @@
-package com.qsoft.ui.controller;
+package com.qsoft.tictactoe.ui.controller;
 
-import com.qsoft.business.HistoryService;
-import com.qsoft.persistence.entity.History;
-import com.qsoft.ui.view.FrameHistory;
-import com.qsoft.ui.view.MainWindow;
+import com.qsoft.tictactoe.business.HistoryService;
+import com.qsoft.tictactoe.persistence.entity.History;
+import com.qsoft.tictactoe.ui.view.FrameHistory;
+import com.qsoft.tictactoe.ui.view.MainWindow;
 
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;

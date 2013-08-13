@@ -1,6 +1,6 @@
-package com.qsoft.ui.controller;
+package com.qsoft.tictactoe.ui.controller;
 
-import com.qsoft.ui.view.MainWindow;
+import com.qsoft.tictactoe.ui.view.MainWindow;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

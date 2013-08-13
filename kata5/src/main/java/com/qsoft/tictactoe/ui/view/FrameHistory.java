@@ -1,4 +1,4 @@
-package com.qsoft.ui.view;
+package com.qsoft.tictactoe.ui.view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;

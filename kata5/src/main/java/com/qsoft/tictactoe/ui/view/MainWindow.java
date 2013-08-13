@@ -1,10 +1,10 @@
-package com.qsoft.ui.view;
+package com.qsoft.tictactoe.ui.view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
-import com.qsoft.ui.controller.ButtonPanelController;
-import com.qsoft.ui.controller.MainPanelController;
+import com.qsoft.tictactoe.ui.controller.ButtonPanelController;
+import com.qsoft.tictactoe.ui.controller.MainPanelController;
 
 import javax.swing.*;
 import java.awt.*;

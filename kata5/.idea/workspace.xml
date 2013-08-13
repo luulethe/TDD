@@ -4,15 +4,15 @@
     <list default="true" id="6b4356a6-3463-489f-87b6-58867e544642" name="Default" comment="" />
     <ignored path="kata5.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375924294529" ignored="false" />
-    <file path="/EndToEndTest.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375928512700" ignored="false" />
-    <file path="/pom.xml" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375840903032" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../goos-code-master/goos-code-master/src/test/java/endtoend/test/endtoend/auctionsniper/AuctionSniperDriver.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375926209820" ignored="false" />
+    <file path="/fragment.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376367872987" ignored="false" />
+    <file path="/EndToEndTest.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376364652582" ignored="false" />
+    <file path="/pom.xml" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376366783826" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../goos-code-master/goos-code-master/src/test/java/endtoend/test/endtoend/auctionsniper/AuctionSniperDriver.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376296931881" ignored="false" />
     <file path="/AuctionSniperDriver.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375840130574" ignored="false" />
-    <file path="/ApplicationRunner.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375928682815" ignored="false" />
-    <file path="/TicTacToeDriver.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375928593094" ignored="false" />
+    <file path="/ApplicationRunner.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376364765678" ignored="false" />
+    <file path="/TicTacToeDriver.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376358740560" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source10/trunk/dbcatalog/src/main/resources/META-INF/persistence.xml" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375851454946" ignored="false" />
-    <file path="/persistence.xml" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375851453683" ignored="false" />
+    <file path="/persistence.xml" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376368292666" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source10/trunk/dbcatalog/src/main/java/com/qsoft/dbcatalog/persistence/dao/impl/ModelDAOImpl.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375850669661" ignored="false" />
     <file path="/ModelDAOImpl.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375850668864" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source10/trunk/dbcatalog/src/main/java/com/qsoft/dbcatalog/ui/view/PanelAccessory.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375850737244" ignored="false" />
@@ -22,10 +22,26 @@
     <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source10/trunk/dbcatalog/src/main/java/com/qsoft/dbcatalog/ui/view/PanelOption.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375850737244" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source10/trunk/dbcatalog/src/main/java/com/qsoft/dbcatalog/ui/view/panelModel.form" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375850737244" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../../dbCatalog/code1/source10/trunk/dbcatalog/src/main/java/com/qsoft/dbcatalog/ui/controller/ModelController.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375850737244" ignored="false" />
-    <file path="/MainWindow.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375928913222" ignored="false" />
-    <file path="/Main.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375925015458" ignored="false" />
-    <file path="/a.dummy" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375927580966" ignored="false" />
-    <file path="/MainWindowController.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1375929025146" ignored="false" />
+    <file path="/MainWindow.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376360636155" ignored="false" />
+    <file path="/Main.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376282182367" ignored="false" />
+    <file path="/a.dummy" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376362327142" ignored="false" />
+    <file path="/MainWindowController.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376357149343" ignored="false" />
+    <file path="/MainPanelController.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376364219042" ignored="false" />
+    <file path="/HistoryDriver.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376364897590" ignored="false" />
+    <file path="/ButtonPanelController.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376365988487" ignored="false" />
+    <file path="/FrameHistory.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376360590438" ignored="false" />
+    <file path="/serviceHistory.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376365910036" ignored="false" />
+    <file path="/ServiceHistoryImpl.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376365949381" ignored="false" />
+    <file path="/History.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376366591331" ignored="false" />
+    <file path="/ServiceHistoryImplTest.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376367565478" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/HistortyDAO.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376367060389" ignored="false" />
+    <file path="/HistoryDAOImpl.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376367708578" ignored="false" />
+    <file path="/HistoryService.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376367288103" ignored="false" />
+    <file path="/HistoryServiceImpl.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376367653266" ignored="false" />
+    <file path="/HistoryDAO.java" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376367668276" ignored="false" />
+    <file path="/applicationContext.xml" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376386261946" ignored="false" />
+    <file path="/db.properties" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376386744523" ignored="false" />
+    <file path="/persistenceTest.xml" changelist="6b4356a6-3463-489f-87b6-58867e544642" time="1376386879104" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +90,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -84,10 +101,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TicTacToeDriver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/endtoend/TicTacToeDriver.java">
+      <file leaf-file-name="testContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="42" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.0">
+            <state line="8" column="30" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbTest.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/dbTest.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistenceTest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/persistenceTest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="61" selection-start="297" selection-end="297" vertical-scroll-proportion="-4.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoryDAOTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/unittest/dao/HistoryDAOTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoryDAOImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/tictactoe/persistence/dao/impl/HistoryDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="35" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceHistoryImplTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/unittest/business/ServiceHistoryImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="33" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,88 +157,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JButtonDriver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/windowlicker/windowlicker-swing/r268/windowlicker-swing-r268-sources.jar!/com/objogate/wl/swing/driver/JButtonDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="67" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JLabelDriver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/windowlicker/windowlicker-swing/r268/windowlicker-swing-r268-sources.jar!/com/objogate/wl/swing/driver/JLabelDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="16" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EndToEndTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="EndToEndTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/endtoend/EndToEndTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="28" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+            <state line="124" column="16" selection-start="2790" selection-end="2790" vertical-scroll-proportion="0.33238637">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationRunner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/endtoend/ApplicationRunner.java">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="27" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+            <state line="45" column="51" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainWindow.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/ui/MainWindow.java">
+      <file leaf-file-name="persistence.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="4" selection-start="1382" selection-end="1382" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1375929274000" expanded="true" signature="2457:3972" placeholder="UI Designer generated code" />
-                <marker date="1375929274000" expanded="true" signature="2457:3848" placeholder="{...}" />
-              </folding>
+            <state line="5" column="28" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainWindowController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/controller/MainWindowController.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="47" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainWindow.form" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/ui/MainWindow.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kata5.iml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kata5.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
+            <state line="107" column="28" selection-start="3651" selection-end="3651" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,15 +203,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/ui/MainWindow1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/business/impl/ServiceHistoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/ui/controller/ButtonPanelController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/entity/History.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/HistortyDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/business/HistoryService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/unittest/ServiceHistoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/business/impl/HistoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/HistoryDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/HistoryDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/META-INF/persistenceTest.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/endtoend/EndToEndTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/endtoend/ApplicationRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/endtoend/TicTacToeDriver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/ui/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/controller/MainWindowController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/ui/MainWindow.form" />
+        <option value="$PROJECT_DIR$/src/test/java/unittest/dao/HistoryDAOTest.java" />
       </list>
     </option>
   </component>
@@ -273,16 +291,14 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="kata5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -292,6 +308,114 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unittest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unittest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,6 +462,36 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -388,6 +542,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="qsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tictactoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tictactoe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -395,8 +587,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MainWindow" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -425,18 +617,178 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="tictactoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="persistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tictactoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="persistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tictactoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="persistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tictactoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kata5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tictactoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/unittest" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
@@ -445,6 +797,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -452,13 +805,141 @@
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="unittest" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\qsoft\training\TDD\homework\TDD\kata5\src\test\resources" />
+      <recent name="H:\qsoft\training\TDD\homework\TDD\kata5\src\test\resources\META-INF" />
+      <recent name="H:\qsoft\training\TDD\homework\TDD\kata5\src\main\resources\META-INF" />
+      <recent name="H:\qsoft\training\TDD\homework\TDD\kata5\src\main\resources" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.qsoft.persistence.dao" />
       <recent name="com.qsoft.ui" />
       <recent name="endtoend" />
       <recent name="com.qsoft" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\qsoft\training\TDD\homework\TDD\kata5\src\main\java\com\qsoft\ui\view" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.EndToEndTest.startGameThenExit">
+  <component name="RunManager" selected="JUnit.EndToEndTest">
+    <configuration default="false" name="EndToEndTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="endtoend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="kata5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="endtoend" />
+      <option name="MAIN_CLASS_NAME" value="endtoend.EndToEndTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="kata5" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EndToEndTest.showHistoryWhenNoGameHappen" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="endtoend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="kata5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="endtoend" />
+      <option name="MAIN_CLASS_NAME" value="endtoend.EndToEndTest" />
+      <option name="METHOD_NAME" value="showHistoryWhenNoGameHappen" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ServiceHistoryImplTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unittest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="kata5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unittest.business" />
+      <option name="MAIN_CLASS_NAME" value="unittest.business.ServiceHistoryImplTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="false" name="EndToEndTest.startGameThenExit" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -599,12 +1080,20 @@
       <patterns />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.EndToEndTest.startGameThenExit" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.EndToEndTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EndToEndTest.showHistoryWhenNoGameHappen" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ServiceHistoryImplTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EndToEndTest.startGameThenExit" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EndToEndTest.startGameThenExit" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.EndToEndTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ServiceHistoryImplTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EndToEndTest.startGameThenExit" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.EndToEndTest.showHistoryWhenNoGameHappen" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -628,15 +1117,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.589916" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1659091" sideWeight="0.589916" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1659091" sideWeight="0.79663867" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36806723" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -649,12 +1138,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3348485" sideWeight="0.5226891" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.225" sideWeight="0.589916" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41008404" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27045456" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.79663867" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20504202" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -718,128 +1208,122 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/endtoend/EndToEndTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/tictactoe/business/HistoryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/endtoend/ApplicationRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
+        <state line="16" column="43" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/endtoend/TicTacToeDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/tictactoe/business/impl/HistoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="53" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+        <state line="19" column="31" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/tictactoe/persistence/dao/HistoryDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
+        <state line="13" column="15" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kata5.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/tictactoe/ui/controller/MainPanelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
+        <state line="41" column="9" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/tictactoe/ui/controller/ButtonPanelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="63" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="28" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="51" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="30" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.67153287">
+        <state line="107" column="28" selection-start="3651" selection-end="3651" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/windowlicker/windowlicker-swing/r268/windowlicker-swing-r268.jar!/com/objogate/wl/swing/driver/JLabelDriver.class">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dbTest.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/windowlicker/windowlicker-swing/r268/windowlicker-swing-r268-sources.jar!/com/objogate/wl/swing/driver/JButtonDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/persistenceTest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="67" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+        <state line="5" column="61" selection-start="297" selection-end="297" vertical-scroll-proportion="-4.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/windowlicker/windowlicker-swing/r268/windowlicker-swing-r268-sources.jar!/com/objogate/wl/swing/driver/JLabelDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/unittest/dao/HistoryDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
+        <state line="21" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/tictactoe/persistence/dao/impl/HistoryDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+        <state line="15" column="35" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/unittest/business/ServiceHistoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="33" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/endtoend/EndToEndTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+        <state line="124" column="16" selection-start="2790" selection-end="2790" vertical-scroll-proportion="0.33238637">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/endtoend/ApplicationRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="27" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/endtoend/TicTacToeDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="42" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/ui/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="4" selection-start="1382" selection-end="1382" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1375929274000" expanded="true" signature="2457:3972" placeholder="UI Designer generated code" />
-            <marker date="1375929274000" expanded="true" signature="2457:3848" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/controller/MainWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="47" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/ui/MainWindow.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
   </component>

@@ -1,8 +1,8 @@
 package endtoend;
 
 import com.qsoft.Main;
-import com.qsoft.ui.view.FrameHistory;
-import com.qsoft.ui.view.MainWindow;
+import com.qsoft.tictactoe.ui.view.FrameHistory;
+import com.qsoft.tictactoe.ui.view.MainWindow;
 
 
 /**

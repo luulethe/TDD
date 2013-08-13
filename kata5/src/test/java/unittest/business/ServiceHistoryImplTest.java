@@ -1,9 +1,9 @@
-package unittest;
+package unittest.business;
 
-import com.qsoft.business.HistoryService;
-import com.qsoft.business.impl.HistoryServiceImpl;
-import com.qsoft.persistence.dao.HistoryDAO;
-import com.qsoft.persistence.entity.History;
+import com.qsoft.tictactoe.business.HistoryService;
+import com.qsoft.tictactoe.business.impl.HistoryServiceImpl;
+import com.qsoft.tictactoe.persistence.dao.HistoryDAO;
+import com.qsoft.tictactoe.persistence.entity.History;
 import org.junit.Before;
 import org.junit.Test;
 

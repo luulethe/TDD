@@ -6,8 +6,7 @@ import com.objogate.wl.swing.driver.JFrameDriver;
 import com.objogate.wl.swing.driver.JTableDriver;
 import com.objogate.wl.swing.driver.JTableHeaderDriver;
 import com.objogate.wl.swing.gesture.GesturePerformer;
-import com.qsoft.ui.view.FrameHistory;
-import com.qsoft.ui.view.MainWindow;
+import com.qsoft.tictactoe.ui.view.FrameHistory;
 import org.hamcrest.Description;
 import org.hamcrest.Matchers;
 
