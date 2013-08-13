@@ -94,6 +94,7 @@ public class EndToEndTest
         application.showWinnerIsCross();
 
     }
+
     @Test
     public void startGameThenMoveWhenFullMap()
     {
@@ -120,6 +121,13 @@ public class EndToEndTest
         application.showEmptyHistory();
     }
 
+    @Test
+    public void showHistoryWhenOneGameHappen()
+    {
+        startGameThenExitAfterMovingMoreThanOneStep();
+        application.startShowHistory();
+        application.showHistory();
+    }
 
     @After
     public void close()

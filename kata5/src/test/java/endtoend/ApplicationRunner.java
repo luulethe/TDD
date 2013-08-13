@@ -98,4 +98,10 @@ public class ApplicationRunner
         historyDriver.hasColumnTitles();
         historyDriver.hasShowEmptyHistory();
     }
+
+    public void showHistory()
+    {
+        historyDriver.hasColumnTitles();
+        historyDriver.hasShowHistory();
+    }
 }
