@@ -2,7 +2,11 @@ package com.qsoft.tictactoe.persistence.dao.impl;
 
 import com.qsoft.tictactoe.persistence.dao.HistoryDAO;
 import com.qsoft.tictactoe.persistence.entity.History;
+import org.springframework.stereotype.Component;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import java.util.List;
 
 /**
@@ -10,11 +14,16 @@ import java.util.List;
  * Date: 8/13/13
  * Time: 11:11 AM
  */
+@Component
 public class HistoryDAOImpl implements HistoryDAO
 {
+    @PersistenceContext
+    private EntityManager entityManager;
+
     @Override
     public List<History> getAllHistories()
     {
-        return null;//To change body of implemented methods use File | Settings | File Templates.
+        Query query = entityManager.createQuery("select o from History o", History.class);
+        return query.getResultList();
     }
 }
