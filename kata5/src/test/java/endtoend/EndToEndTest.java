@@ -122,9 +122,17 @@ public class EndToEndTest
     }
 
     @Test
-    public void showHistoryWhenOneGameHappen()
+    public void showHistoryWhenEndGame()
     {
         startGameThenExitAfterMovingMoreThanOneStep();
+        application.startShowHistory();
+        application.showEmptyHistory();
+    }
+
+    @Test
+    public void showHistoryWhenOneGameHappen()
+    {
+        startGameThenMoveThenHasAWinnerInColumn();
         application.startShowHistory();
         application.showHistory();
     }

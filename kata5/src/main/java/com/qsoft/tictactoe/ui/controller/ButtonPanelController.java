@@ -25,13 +25,13 @@ public class ButtonPanelController implements ActionListener
     private MainWindow mainWindow;
     @Autowired
     private FrameHistory frameHistory;
-    @Autowired
-    private HistoryService historyService;
 
     @Autowired
-    private  MainController mainController;
+    private MainController mainController;
 
-    //private List<String> steps = new ArrayList<String>();
+    @Autowired
+    private  HistoryService historyService;
+
     @Override
     public void actionPerformed(ActionEvent e)
     {
@@ -62,16 +62,15 @@ public class ButtonPanelController implements ActionListener
         mainWindow.disableAllButtonGame();
         mainWindow.getBtStart().setEnabled(true);
         mainWindow.getBtStop().setEnabled(false);
-        historyService.save(mainController.getHistory());
     }
 
     private void addDataToTable(DefaultTableModel tableModel)
     {
         List<History> historyList = historyService.getAllHistories();
         int i = 1;
-        for(History history : historyList)
+        for (History history : historyList)
         {
-            tableModel.addRow(new Object[]{i,history.getFirstPlayer(),history.getWinner(),history.getSteps()});
+            tableModel.addRow(new Object[]{i, history.getFirstPlayer(), history.getWinner(), history.getSteps()});
             i++;
         }
     }

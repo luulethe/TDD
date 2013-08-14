@@ -16,7 +16,7 @@
     <bean id="entityManagerFactory"
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <!--p:dataSource-ref="dataSource">-->
-        <property name="packagesToScan" value="com.qsoft.dbcatalog.persistence.entity"/>
+        <property name="packagesToScan" value="com.qsoft.tictactoe.persistence.entity"/>
         <property name="dataSource" ref="dataSourceTest"/>
         <property name="persistenceUnitName" value="NewPersistenceUnitTest"/>
         <property name="persistenceXmlLocation" value="META-INF/persistenceTest.xml"/>

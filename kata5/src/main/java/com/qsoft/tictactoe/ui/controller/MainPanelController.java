@@ -1,5 +1,6 @@
 package com.qsoft.tictactoe.ui.controller;
 
+import com.qsoft.tictactoe.business.HistoryService;
 import com.qsoft.tictactoe.ui.view.MainWindow;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -25,6 +26,9 @@ public class MainPanelController implements ActionListener
 
     @Autowired
     private  ButtonPanelController buttonPanelController;
+
+    @Autowired
+    private HistoryService historyService;
 
     public void setCrossFirst(Boolean crossFirst)
     {
@@ -53,11 +57,13 @@ public class MainPanelController implements ActionListener
             mainWindow.getLbStatus().setText(nameOfWinner + " won");
             mainController.getHistory().setWinner(nameOfWinner);
             buttonPanelController.stopGame();
+            historyService.save(mainController.getHistory());
         }
         else if (checkFull())
         {
             mainWindow.getLbStatus().setText("Draw");
             buttonPanelController.stopGame();
+            historyService.save(mainController.getHistory());
         }
     }
 

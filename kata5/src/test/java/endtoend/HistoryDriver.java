@@ -71,6 +71,6 @@ public class HistoryDriver extends JFrameDriver
         checkNumberRow(table,1);
         table.hasRow(
                 matching(withLabelText("1"), withLabelText("X"),
-                        withLabelText(""), withLabelText("2-3-4")));
+                        withLabelText("X"), withLabelText("1-5-4-6-7")));
     }
 }
