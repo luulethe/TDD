@@ -34,7 +34,7 @@ public class ApplicationRunner
         };
         thread.setDaemon(true);
         thread.start();
-        ticTacToeDriver = new TicTacToeDriver(3000);
+        ticTacToeDriver = new TicTacToeDriver(4000);
         ticTacToeDriver.hasTitle(MainWindow.APPLICATION_TITLE);
 
     }
@@ -68,6 +68,8 @@ public class ApplicationRunner
     public void close()
     {
         ticTacToeDriver.dispose();
+        if (historyDriver !=null)
+            historyDriver.dispose();
     }
 
     public void showWinnerIsCross()
@@ -89,7 +91,7 @@ public class ApplicationRunner
     public void startShowHistory()
     {
         ticTacToeDriver.clickButtonHistory();
-        historyDriver = new HistoryDriver(3000);
+        historyDriver = new HistoryDriver(4000);
         historyDriver.hasTitle(FrameHistory.FRAME_HISTORY_NAME);
     }
 

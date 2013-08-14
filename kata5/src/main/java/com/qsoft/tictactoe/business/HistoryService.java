@@ -15,4 +15,6 @@ public interface HistoryService
     List<History> getAllHistories();
 
     void setDao(HistoryDAO mockHistoryDao);
+
+    void save(History history);
 }

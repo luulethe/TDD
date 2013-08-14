@@ -1,7 +1,6 @@
 package com.qsoft.tictactoe.ui.controller;
 
 import com.qsoft.tictactoe.ui.view.MainWindow;
-import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,17 +16,27 @@ import java.awt.event.ActionListener;
 @Component
 public class MainPanelController implements ActionListener
 {
-    Boolean flag = true;
+    Boolean isCrossFirst;
     @Autowired
     private MainWindow mainWindow;
 
+    @Autowired
+    private MainController mainController;
+
+    @Autowired
+    private  ButtonPanelController buttonPanelController;
+
+    public void setCrossFirst(Boolean crossFirst)
+    {
+        isCrossFirst = crossFirst;
+    }
 
     @Override
     public void actionPerformed(ActionEvent e)
     {
         String name = e.getActionCommand();
         JButton jButton = mainWindow.getButton(name);
-        if (flag)
+        if (isCrossFirst)
         {
             jButton.setText("X");
         }
@@ -35,17 +44,20 @@ public class MainPanelController implements ActionListener
         {
             jButton.setText("O");
         }
-        flag = !flag;
+        mainController.getHistory().addNextStep(name);
+        isCrossFirst = !isCrossFirst;
         jButton.setEnabled(false);
         String nameOfWinner = checkWinner();
         if (!nameOfWinner.equals(""))
         {
             mainWindow.getLbStatus().setText(nameOfWinner + " won");
-            mainWindow.disableAllButtonGame();
+            mainController.getHistory().setWinner(nameOfWinner);
+            buttonPanelController.stopGame();
         }
         else if (checkFull())
         {
             mainWindow.getLbStatus().setText("Draw");
+            buttonPanelController.stopGame();
         }
     }
 

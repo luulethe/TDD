@@ -36,4 +36,12 @@ public class ServiceHistoryImplTest
         List<History> historyList = historyService.getAllHistories();
         verify(mockHistoryDAO).getAllHistories();
     }
+
+    @Test
+    public void testSaveHistory()
+    {
+        History history = new History();
+        historyService.save(history);
+        verify(mockHistoryDAO).save(history);
+    }
 }

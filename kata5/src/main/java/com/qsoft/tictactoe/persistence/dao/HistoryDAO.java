@@ -12,4 +12,7 @@ import java.util.List;
 public interface HistoryDAO
 {
     List<History> getAllHistories();
+
+    void save(History history);
+
 }

@@ -28,4 +28,10 @@ public class HistoryDAOImpl implements HistoryDAO
         Query query = entityManager.createQuery("select o from History o", History.class);
         return query.getResultList();
     }
+
+    @Override
+    public void save(History history)
+    {
+        entityManager.persist(history);
+    }
 }

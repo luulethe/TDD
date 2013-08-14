@@ -2,6 +2,8 @@ package com.qsoft.tictactoe.ui.view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import org.springframework.stereotype.*;
+import org.springframework.stereotype.Component;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,6 +13,7 @@ import java.awt.*;
  * Date: 8/13/13
  * Time: 8:53 AM
  */
+@Component
 public class FrameHistory extends JFrame
 {
     public static final String FRAME_HISTORY_NAME = "History game";
@@ -18,14 +21,14 @@ public class FrameHistory extends JFrame
     private JTable historyTable;
     private JPanel panel1;
 
-    public FrameHistory()
+    public void setContentPanel()
     {
         setName(FRAME_HISTORY_NAME);
         setTitle(FRAME_HISTORY_TITLE);
         setMinimumSize(new Dimension(500, 500));
         setContentPane(panel1);
         pack();
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }
 

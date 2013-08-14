@@ -31,4 +31,10 @@ public class HistoryServiceImpl implements HistoryService
     {
         this.historyDAO = mockHistoryDAO;
     }
+
+    @Override
+    public void save(History history)
+    {
+        historyDAO.save(history);
+    }
 }

@@ -30,7 +30,7 @@ public class HistoryDriver extends JFrameDriver
                 JFrameDriver.topLevelFrame(
                         named(FrameHistory.FRAME_HISTORY_NAME),
                         showingOnScreen()),
-                new AWTEventQueueProber(timeoutMillis, 3000));
+                new AWTEventQueueProber(timeoutMillis, 4000));
     }
 
     public void hasColumnTitles()
@@ -71,6 +71,6 @@ public class HistoryDriver extends JFrameDriver
         checkNumberRow(table,1);
         table.hasRow(
                 matching(withLabelText("1"), withLabelText("X"),
-                        withLabelText(""), withLabelText("1-2-3")));
+                        withLabelText(""), withLabelText("2-3-4")));
     }
 }

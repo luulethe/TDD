@@ -27,6 +27,10 @@ public class ButtonPanelController implements ActionListener
     private FrameHistory frameHistory;
     @Autowired
     private HistoryService historyService;
+
+    @Autowired
+    private  MainController mainController;
+
     //private List<String> steps = new ArrayList<String>();
     @Override
     public void actionPerformed(ActionEvent e)
@@ -37,28 +41,38 @@ public class ButtonPanelController implements ActionListener
             mainWindow.resetMainPanel();
             mainWindow.getBtStart().setEnabled(false);
             mainWindow.getBtStop().setEnabled(true);
-            //steps.clear();
+            mainController.createNewHistory();
         }
         else if (e.getActionCommand().equals("Stop"))
         {
             mainWindow.getLbStatus().setText("Ended");
-            mainWindow.disableAllButtonGame();
-            mainWindow.getBtStart().setEnabled(true);
-            mainWindow.getBtStop().setEnabled(false);
-           // historyService.save(steps);
+            stopGame();
         }
         else if (e.getActionCommand().equals("History"))
         {
             frameHistory.setContentPanel();
             DefaultTableModel tableModel = new DefaultTableModel();
             createTable(tableModel);
-            List<History> historyList = historyService.getAllHistories();
-            int i = 1;
-            for(History history : historyList)
-            {
-                tableModel.addRow(new Object[]{i,history.getFirstPlayer(),history.getWinner(),history.getSteps()});
-                i++;
-            }
+            addDataToTable(tableModel);
+        }
+    }
+
+    public void stopGame()
+    {
+        mainWindow.disableAllButtonGame();
+        mainWindow.getBtStart().setEnabled(true);
+        mainWindow.getBtStop().setEnabled(false);
+        historyService.save(mainController.getHistory());
+    }
+
+    private void addDataToTable(DefaultTableModel tableModel)
+    {
+        List<History> historyList = historyService.getAllHistories();
+        int i = 1;
+        for(History history : historyList)
+        {
+            tableModel.addRow(new Object[]{i,history.getFirstPlayer(),history.getWinner(),history.getSteps()});
+            i++;
         }
     }
 

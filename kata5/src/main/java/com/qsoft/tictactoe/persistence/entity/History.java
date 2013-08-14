@@ -25,7 +25,6 @@ public class History
     @Column(name = "steps", length = 30)
     private String steps;
 
-
     public History()
     {
     }
@@ -36,7 +35,6 @@ public class History
         this.winner = winner;
         this.steps = steps;
     }
-
 
 
     public String getFirstPlayer()
@@ -69,4 +67,15 @@ public class History
         this.steps = steps;
     }
 
+    public void addNextStep(String name)
+    {
+        if ((steps == null) || ("".equals(steps)))
+        {
+            steps = (Integer.parseInt(name) + 1) + "" ;
+        }
+        else
+        {
+            steps += "-" + (Integer.parseInt(name) + 1) + "";//To change body of created methods use File | Settings | File Templates.
+        }
+    }
 }

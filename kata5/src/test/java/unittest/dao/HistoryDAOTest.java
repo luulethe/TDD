@@ -67,6 +67,7 @@ public class HistoryDAOTest
     {
         databaseTester.onTearDown();
     }
+
     @Test
     public void testGetAllHistories()
     {
@@ -74,10 +75,24 @@ public class HistoryDAOTest
         assertEquals(historyList.size(), 2);
         assertEquals(historyList.get(0).getFirstPlayer(), "X");
         assertEquals(historyList.get(0).getWinner(), "X");
-        assertEquals(historyList.get(0).getSteps(), "1,2,3,4,5");
+        assertEquals(historyList.get(0).getSteps(), "1-2-3-4-5");
 
         assertEquals(historyList.get(1).getFirstPlayer(), "X");
         assertEquals(historyList.get(1).getWinner(), "O");
-        assertEquals(historyList.get(1).getSteps(), "0,5,4,6,8");
+        assertEquals(historyList.get(1).getSteps(), "0-5-4-6-8");
     }
+
+    @Test
+    public void testSave()
+    {
+        History history = new History("X","X","1-2-3-4-5-6");
+        historyDAO.save(history);
+
+        List<History> historyList = historyDAO.getAllHistories();
+        assertEquals(historyList.size(), 3);
+        assertEquals(historyList.get(2).getFirstPlayer(), "X");
+        assertEquals(historyList.get(2).getWinner(), "X");
+        assertEquals(historyList.get(2).getSteps(), "1-2-3-4-5-6");
+    }
+
 }
