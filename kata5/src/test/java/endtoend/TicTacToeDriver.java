@@ -24,7 +24,7 @@ public class TicTacToeDriver extends JFrameDriver
                 JFrameDriver.topLevelFrame(
                         named(MainWindow.MAIN_WINDOW_NAME),
                         showingOnScreen()),
-                new AWTEventQueueProber(timeoutMillis, 50));
+                new AWTEventQueueProber(timeoutMillis, 3000));
     }
     private JButtonDriver getButton(String name) {
         return new JButtonDriver(this, JButton.class, named(name));

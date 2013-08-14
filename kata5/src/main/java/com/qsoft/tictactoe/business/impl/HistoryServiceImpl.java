@@ -3,7 +3,9 @@ package com.qsoft.tictactoe.business.impl;
 import com.qsoft.tictactoe.business.HistoryService;
 import com.qsoft.tictactoe.persistence.dao.HistoryDAO;
 import com.qsoft.tictactoe.persistence.entity.History;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -13,8 +15,10 @@ import java.util.List;
  * Time: 10:52 AM
  */
 @Component
+@Transactional
 public class HistoryServiceImpl implements HistoryService
 {
+    @Autowired
     private HistoryDAO historyDAO;
     @Override
     public List<History> getAllHistories()

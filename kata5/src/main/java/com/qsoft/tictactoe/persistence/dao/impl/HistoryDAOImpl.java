@@ -3,6 +3,7 @@ package com.qsoft.tictactoe.persistence.dao.impl;
 import com.qsoft.tictactoe.persistence.dao.HistoryDAO;
 import com.qsoft.tictactoe.persistence.entity.History;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -15,6 +16,7 @@ import java.util.List;
  * Time: 11:11 AM
  */
 @Component
+@Transactional
 public class HistoryDAOImpl implements HistoryDAO
 {
     @PersistenceContext

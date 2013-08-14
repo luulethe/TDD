@@ -4,10 +4,13 @@ import com.qsoft.tictactoe.business.HistoryService;
 import com.qsoft.tictactoe.persistence.entity.History;
 import com.qsoft.tictactoe.ui.view.FrameHistory;
 import com.qsoft.tictactoe.ui.view.MainWindow;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,17 +18,16 @@ import java.util.List;
  * Date: 8/8/13
  * Time: 9:14 AM
  */
+@Component
 public class ButtonPanelController implements ActionListener
 {
+    @Autowired
     private MainWindow mainWindow;
+    @Autowired
     private FrameHistory frameHistory;
+    @Autowired
     private HistoryService historyService;
-
-    public void setMainWindow(MainWindow mainWindow)
-    {
-        this.mainWindow = mainWindow;
-    }
-
+    //private List<String> steps = new ArrayList<String>();
     @Override
     public void actionPerformed(ActionEvent e)
     {
@@ -35,6 +37,7 @@ public class ButtonPanelController implements ActionListener
             mainWindow.resetMainPanel();
             mainWindow.getBtStart().setEnabled(false);
             mainWindow.getBtStop().setEnabled(true);
+            //steps.clear();
         }
         else if (e.getActionCommand().equals("Stop"))
         {
@@ -42,13 +45,20 @@ public class ButtonPanelController implements ActionListener
             mainWindow.disableAllButtonGame();
             mainWindow.getBtStart().setEnabled(true);
             mainWindow.getBtStop().setEnabled(false);
+           // historyService.save(steps);
         }
         else if (e.getActionCommand().equals("History"))
         {
-            frameHistory = new FrameHistory();
+            frameHistory.setContentPanel();
             DefaultTableModel tableModel = new DefaultTableModel();
             createTable(tableModel);
             List<History> historyList = historyService.getAllHistories();
+            int i = 1;
+            for(History history : historyList)
+            {
+                tableModel.addRow(new Object[]{i,history.getFirstPlayer(),history.getWinner(),history.getSteps()});
+                i++;
+            }
         }
     }
 

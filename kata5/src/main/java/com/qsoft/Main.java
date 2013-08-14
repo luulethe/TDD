@@ -1,6 +1,9 @@
 package com.qsoft;
 
+import com.qsoft.tictactoe.ui.controller.MainController;
 import com.qsoft.tictactoe.ui.view.MainWindow;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * User: luult
@@ -12,7 +15,9 @@ public class Main
 
     public static void main(String[] args)
     {
-        new MainWindow();
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        MainController mainController = applicationContext.getBean(MainController.class);
+        mainController.showMainView();
     }
 
 //    public static void main()

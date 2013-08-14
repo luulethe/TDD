@@ -1,6 +1,9 @@
 package com.qsoft.tictactoe.ui.controller;
 
 import com.qsoft.tictactoe.ui.view.MainWindow;
+import org.springframework.beans.factory.annotation.Autowire;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -11,15 +14,13 @@ import java.awt.event.ActionListener;
  * Date: 8/12/13
  * Time: 3:17 PM
  */
+@Component
 public class MainPanelController implements ActionListener
 {
     Boolean flag = true;
+    @Autowired
     private MainWindow mainWindow;
 
-    public MainPanelController(MainWindow mainWindow)
-    {
-        this.mainWindow = mainWindow;
-    }
 
     @Override
     public void actionPerformed(ActionEvent e)
@@ -30,7 +31,6 @@ public class MainPanelController implements ActionListener
         {
             jButton.setText("X");
         }
-
         else
         {
             jButton.setText("O");

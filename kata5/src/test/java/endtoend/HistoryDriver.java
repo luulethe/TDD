@@ -30,7 +30,7 @@ public class HistoryDriver extends JFrameDriver
                 JFrameDriver.topLevelFrame(
                         named(FrameHistory.FRAME_HISTORY_NAME),
                         showingOnScreen()),
-                new AWTEventQueueProber(timeoutMillis, 50));
+                new AWTEventQueueProber(timeoutMillis, 3000));
     }
 
     public void hasColumnTitles()
