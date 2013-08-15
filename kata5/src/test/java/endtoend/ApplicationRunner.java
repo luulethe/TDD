@@ -49,12 +49,12 @@ public class ApplicationRunner
         ticTacToeDriver.clickEndButton();
     }
 
-    public void showStatusStartGame()
+    public void showsStatusStartGame()
     {
         ticTacToeDriver.hasStatusStartGame();
     }
 
-    public void showStatusEndGame()
+    public void showsStatusEndGame()
     {
         ticTacToeDriver.hasStatusEndGame();
         //To change body of created methods use File | Settings | File Templates.
@@ -72,7 +72,7 @@ public class ApplicationRunner
             historyDriver.dispose();
     }
 
-    public void showWinnerIsCross()
+    public void showsWinnerIsCross()
     {
         ticTacToeDriver.hasStatusWinner();
     }
@@ -82,7 +82,7 @@ public class ApplicationRunner
         ticTacToeDriver.hasNamePlayerInCell(indexCell, namePlayer); //To change body of created methods use File | Settings | File Templates.
     }
 
-    public void showDrawStatus()
+    public void showsDrawStatus()
     {
         ticTacToeDriver.hasStatusDraw();
     }
@@ -95,13 +95,13 @@ public class ApplicationRunner
         historyDriver.hasTitle(FrameHistory.FRAME_HISTORY_NAME);
     }
 
-    public void showEmptyHistory()
+    public void showsEmptyHistory()
     {
         historyDriver.hasColumnTitles();
         historyDriver.hasShowEmptyHistory();
     }
 
-    public void showHistory()
+    public void showsHistory()
     {
         historyDriver.hasColumnTitles();
         historyDriver.hasShowHistory();

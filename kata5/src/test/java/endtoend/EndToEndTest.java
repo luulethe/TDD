@@ -18,7 +18,7 @@ public class EndToEndTest
     {
         application.startGame();
         application.newGame();
-        application.showStatusStartGame();
+        application.showsStatusStartGame();
     }
 
     @Test
@@ -26,7 +26,7 @@ public class EndToEndTest
     {
         initializeGame();
         application.endGame();
-        application.showStatusEndGame();
+        application.showsStatusEndGame();
     }
 
     @Test
@@ -36,7 +36,7 @@ public class EndToEndTest
         application.move(1);
         application.showCell(1, CROSS_PLAYER);
         application.endGame();
-        application.showStatusEndGame();
+        application.showsStatusEndGame();
     }
 
     @Test
@@ -50,7 +50,7 @@ public class EndToEndTest
         application.move(3);
         application.showCell(3, CROSS_PLAYER);
         application.endGame();
-        application.showStatusEndGame();
+        application.showsStatusEndGame();
     }
 
     @Test
@@ -63,7 +63,7 @@ public class EndToEndTest
         application.move(5);
         application.move(2);
 
-        application.showWinnerIsCross();
+        application.showsWinnerIsCross();
 
     }
 
@@ -77,7 +77,7 @@ public class EndToEndTest
         application.move(5);
         application.move(6);
 
-        application.showWinnerIsCross();
+        application.showsWinnerIsCross();
 
     }
 
@@ -91,7 +91,7 @@ public class EndToEndTest
         application.move(6);
         application.move(8);
 
-        application.showWinnerIsCross();
+        application.showsWinnerIsCross();
 
     }
 
@@ -109,7 +109,7 @@ public class EndToEndTest
         application.move(8);
         application.move(7);
 
-        application.showDrawStatus();
+        application.showsDrawStatus();
 
     }
 
@@ -118,7 +118,7 @@ public class EndToEndTest
     {
         application.startGame();
         application.startShowHistory();
-        application.showEmptyHistory();
+        application.showsEmptyHistory();
     }
 
     @Test
@@ -126,7 +126,7 @@ public class EndToEndTest
     {
         startGameThenExitAfterMovingMoreThanOneStep();
         application.startShowHistory();
-        application.showEmptyHistory();
+        application.showsEmptyHistory();
     }
 
     @Test
@@ -134,7 +134,7 @@ public class EndToEndTest
     {
         startGameThenMoveThenHasAWinnerInColumn();
         application.startShowHistory();
-        application.showHistory();
+        application.showsHistory();
     }
 
     @After
