@@ -30,7 +30,7 @@ public class ApplicationRunner
         };
         thread.setDaemon(true);
         thread.start();
-        ticTacToeDriver = new TicTacToeDriver(4000);
+        ticTacToeDriver = new TicTacToeDriver(3000);
         ticTacToeDriver.hasTitle(MainWindow.APPLICATION_TITLE);
     }
     public void startAGame()
