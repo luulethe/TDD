@@ -22,6 +22,7 @@ public class MainWindow extends JFrame
     public static final String MAIN_WINDOW_NAME = "Tic tac toe game";
     public static final String START_BUTTON_NAME = "btStart";
     public static final String STOP_BUTTON_NAME = "btStop";
+    public static final String LABEL_STATUS_NAME = "lbStatus";
     private JPanel panel1;
     private JTable table1;
     private JPanel buttonPanel;
@@ -108,6 +109,7 @@ public class MainWindow extends JFrame
         labelPanel.setMinimumSize(new Dimension(40, 20));
         panel2.add(labelPanel, BorderLayout.NORTH);
         lbStatus = new JLabel();
+        lbStatus.setName("lbStatus");
         lbStatus.setText("");
         labelPanel.add(lbStatus, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, new Dimension(40, 20), null, null, 0, false));
         final JPanel panel3 = new JPanel();

@@ -3,10 +3,13 @@ package endtoend;
 import com.objogate.wl.swing.AWTEventQueueProber;
 import com.objogate.wl.swing.driver.JButtonDriver;
 import com.objogate.wl.swing.driver.JFrameDriver;
+import com.objogate.wl.swing.driver.JLabelDriver;
 import com.objogate.wl.swing.gesture.GesturePerformer;
 import com.qsoft.tictactoe.ui.view.MainWindow;
 
 import javax.swing.*;
+
+import static org.hamcrest.Matchers.equalTo;
 
 /**
  * User: luult
@@ -37,5 +40,17 @@ public class TicTacToeDriver extends JFrameDriver
     public void clickStopButton()
     {
         getButton(MainWindow.STOP_BUTTON_NAME).click();
+    }
+
+    public void hasStatusStartGame()
+    {
+        JLabelDriver labelStatus = new JLabelDriver(this, named(MainWindow.LABEL_STATUS_NAME));
+        labelStatus.hasText(equalTo("Started"));        //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public void hasStatusEndGame()
+    {
+        JLabelDriver labelStatus = new JLabelDriver(this, named(MainWindow.LABEL_STATUS_NAME));
+        labelStatus.hasText(equalTo("Ended"));        //To change body of created methods use File | Settings | File Templates.
     }
 }

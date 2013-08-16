@@ -40,7 +40,7 @@ public class ApplicationRunner
 
     public void showsStatusStartGame()
     {
-         ticTacToeDriver.clickStartButton();
+         ticTacToeDriver.hasStatusStartGame();
     }
 
     public void endGame()
@@ -50,5 +50,6 @@ public class ApplicationRunner
 
     public void showsStatusEndGame()
     {
+        ticTacToeDriver.hasStatusEndGame();
     }
 }
