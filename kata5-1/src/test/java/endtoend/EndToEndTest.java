@@ -49,11 +49,11 @@ public class EndToEndTest
         applicationRunner.move(1);
         applicationRunner.showsCellIs(1, CROSS_PLAYER);
         applicationRunner.move(2);
-        applicationRunner.showsCellIs(1, ROUND_PLAYER);
+        applicationRunner.showsCellIs(2, ROUND_PLAYER);
         applicationRunner.move(3);
-        applicationRunner.showsCellIs(1, CROSS_PLAYER);
+        applicationRunner.showsCellIs(3, CROSS_PLAYER);
         applicationRunner.move(4);
-        applicationRunner.showsCellIs(1, ROUND_PLAYER);
+        applicationRunner.showsCellIs(4, ROUND_PLAYER);
 
         applicationRunner.endGame();
         applicationRunner.showsStatusEndGame();

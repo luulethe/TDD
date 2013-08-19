@@ -4,11 +4,14 @@ import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
 import com.qsoft.tictactoe.ui.controller.ButtonController;
+import com.qsoft.tictactoe.ui.controller.MainPanelController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 /**
  * User: luult
@@ -32,6 +35,11 @@ public class MainWindow extends JFrame
     private JPanel mainPanel;
     @Autowired
     private ButtonController buttonController;
+
+    @Autowired
+    private MainPanelController mainPanelController;
+
+    private ArrayList<JButton> buttonList = new ArrayList<JButton>();
 
     public JButton getBtStart()
     {
@@ -76,7 +84,9 @@ public class MainWindow extends JFrame
             JButton jButton = new JButton("");
             jButton.setActionCommand(i + "");
             jButton.setName(name);
+            jButton.addActionListener(mainPanelController);
             mainPanel.add(jButton);
+            buttonList.add(jButton);
         }
     }
 
@@ -84,6 +94,11 @@ public class MainWindow extends JFrame
     {
         btStart.addActionListener(buttonController);
         btStop.addActionListener(buttonController);
+    }
+
+    public JButton getButton(String name)
+    {
+        return buttonList.get(Integer.parseInt(name));  //To change body of created methods use File | Settings | File Templates.
     }
 
     {
