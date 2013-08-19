@@ -52,4 +52,9 @@ public class ApplicationRunner
     {
         ticTacToeDriver.hasStatusEndGame();
     }
+
+    public void move(int index)
+    {
+        ticTacToeDriver.clickCell(index);
+    }
 }

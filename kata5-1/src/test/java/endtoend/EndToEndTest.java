@@ -22,4 +22,18 @@ public class EndToEndTest
         applicationRunner.endGame();
         applicationRunner.showsStatusEndGame();
     }
+
+    @Test
+    public void startGameThenExitAfterMovingSomeSteps()
+    {
+        applicationRunner.startApplication();
+        applicationRunner.startAGame();
+
+        applicationRunner.move(1);
+        applicationRunner.move(2);
+        applicationRunner.move(3);
+
+        applicationRunner.endGame();
+        applicationRunner.showsStatusEndGame();
+    }
 }

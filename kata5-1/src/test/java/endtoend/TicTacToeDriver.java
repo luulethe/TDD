@@ -53,4 +53,9 @@ public class TicTacToeDriver extends JFrameDriver
         JLabelDriver labelStatus = new JLabelDriver(this, named(MainWindow.LABEL_STATUS_NAME));
         labelStatus.hasText(equalTo("Ended"));        //To change body of created methods use File | Settings | File Templates.
     }
+
+    public void clickCell(int index)
+    {
+        //To change body of created methods use File | Settings | File Templates.
+    }
 }
