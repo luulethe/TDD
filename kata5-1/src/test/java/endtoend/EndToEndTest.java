@@ -59,6 +59,21 @@ public class EndToEndTest
         applicationRunner.showsStatusEndGame();
     }
 
+    @Test
+    public void startANewGameThenMoveThenHasAWinner()
+    {
+        applicationRunner.startApplication();
+        applicationRunner.startAGame();
+
+        applicationRunner.move(0);
+        applicationRunner.move(3);
+        applicationRunner.move(1);
+        applicationRunner.move(4);
+        applicationRunner.move(2);
+
+        applicationRunner.showsXWon();
+
+    }
     @After
     public void close()
     {

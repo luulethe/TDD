@@ -69,4 +69,9 @@ public class ApplicationRunner
     {
         ticTacToeDriver.hasLabelInButton(index, namePlayer);
     }
+
+    public void showsXWon()
+    {
+        ticTacToeDriver.hasStatusXWin();
+    }
 }
