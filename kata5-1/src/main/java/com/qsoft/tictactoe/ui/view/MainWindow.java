@@ -24,12 +24,12 @@ public class MainWindow extends JFrame
     public static final String STOP_BUTTON_NAME = "btStop";
     public static final String LABEL_STATUS_NAME = "lbStatus";
     private JPanel panel1;
-    private JTable table1;
     private JPanel buttonPanel;
     private JButton btStart;
     private JButton btStop;
     private JPanel labelPanel;
     private JLabel lbStatus;
+    private JPanel mainPanel;
     @Autowired
     private ButtonController buttonController;
 
@@ -48,6 +48,11 @@ public class MainWindow extends JFrame
         return lbStatus;
     }
 
+    public JPanel getMainPanel()
+    {
+        return mainPanel;
+    }
+
     public void setContentPanel()
     {
 
@@ -58,7 +63,21 @@ public class MainWindow extends JFrame
         pack();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+        addMainPanel();
+        mainPanel.setVisible(false);
+    }
 
+    private void addMainPanel()
+    {
+        mainPanel.setLayout(new GridLayout(3, 3));
+        for (int i = 0; i < 9; i++)
+        {
+            String name = "button" + i;
+            JButton jButton = new JButton("");
+            jButton.setActionCommand(i + "");
+            jButton.setName(name);
+            mainPanel.add(jButton);
+        }
     }
 
     public void addListener()
@@ -112,11 +131,9 @@ public class MainWindow extends JFrame
         lbStatus.setName("lbStatus");
         lbStatus.setText("");
         labelPanel.add(lbStatus, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, new Dimension(40, 20), null, null, 0, false));
-        final JPanel panel3 = new JPanel();
-        panel3.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
-        panel1.add(panel3, BorderLayout.CENTER);
-        table1 = new JTable();
-        panel3.add(table1, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
+        mainPanel = new JPanel();
+        mainPanel.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
+        panel1.add(mainPanel, BorderLayout.CENTER);
     }
 
     /**

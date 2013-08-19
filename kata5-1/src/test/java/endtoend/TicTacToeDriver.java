@@ -56,6 +56,7 @@ public class TicTacToeDriver extends JFrameDriver
 
     public void clickCell(int index)
     {
-        //To change body of created methods use File | Settings | File Templates.
+        String name = "button" + index;
+        getButton(name).click();
     }
 }

@@ -10,7 +10,8 @@ import com.qsoft.tictactoe.ui.view.MainWindow;
  */
 public class ApplicationRunner
 {
-    private  TicTacToeDriver ticTacToeDriver;
+    private TicTacToeDriver ticTacToeDriver;
+
     public void startApplication()
     {
         Thread thread = new Thread("Test Application")
@@ -33,6 +34,7 @@ public class ApplicationRunner
         ticTacToeDriver = new TicTacToeDriver(3000);
         ticTacToeDriver.hasTitle(MainWindow.APPLICATION_TITLE);
     }
+
     public void startAGame()
     {
         ticTacToeDriver.clickStartButton();
@@ -40,7 +42,7 @@ public class ApplicationRunner
 
     public void showsStatusStartGame()
     {
-         ticTacToeDriver.hasStatusStartGame();
+        ticTacToeDriver.hasStatusStartGame();
     }
 
     public void endGame()
@@ -56,5 +58,10 @@ public class ApplicationRunner
     public void move(int index)
     {
         ticTacToeDriver.clickCell(index);
+    }
+
+    public void close()
+    {
+        ticTacToeDriver.dispose();
     }
 }

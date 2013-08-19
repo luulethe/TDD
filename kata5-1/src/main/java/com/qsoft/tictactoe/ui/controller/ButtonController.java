@@ -26,6 +26,7 @@ public class ButtonController implements ActionListener
             mainWindow.getLbStatus().setText("Started");
             mainWindow.getBtStart().setEnabled(false);
             mainWindow.getBtStop().setEnabled(true);
+            mainWindow.getMainPanel().setVisible(true);
         }
         else if (e.getActionCommand().equals("Stop"))
         {
