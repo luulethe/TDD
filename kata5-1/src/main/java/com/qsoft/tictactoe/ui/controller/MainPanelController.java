@@ -30,5 +30,13 @@ public class MainPanelController   implements ActionListener
             jButton.setText("O");
         isCrossFirst = !isCrossFirst;
         jButton.setEnabled(false);
+        String nameWinner = checkWon();
+        if (!nameWinner.equals(""))
+            mainWindow.getLbStatus().setText(nameWinner + " won");
+    }
+
+    private String checkWon()
+    {
+        return "X";  //To change body of created methods use File | Settings | File Templates.
     }
 }
