@@ -64,4 +64,9 @@ public class ApplicationRunner
     {
         ticTacToeDriver.dispose();
     }
+
+    public void showsCellIs(int index, String namePlayer)
+    {
+        ticTacToeDriver.hasLabelInButton(index, namePlayer);
+    }
 }

@@ -59,4 +59,10 @@ public class TicTacToeDriver extends JFrameDriver
         String name = "button" + index;
         getButton(name).click();
     }
+
+    public void hasLabelInButton(int index, String namePlayer)
+    {
+        String name = "button" + index;
+        getButton(name).hasText(equalTo(namePlayer));
+    }
 }

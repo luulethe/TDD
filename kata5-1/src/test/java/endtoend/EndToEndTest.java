@@ -11,6 +11,8 @@ import org.junit.Test;
 public class EndToEndTest
 {
     private final ApplicationRunner applicationRunner = new ApplicationRunner();
+    private static final String CROSS_PLAYER = "X";
+    private static final String ROUND_PLAYER = "O";
 
 
     @Test
@@ -37,6 +39,26 @@ public class EndToEndTest
         applicationRunner.endGame();
         applicationRunner.showsStatusEndGame();
     }
+
+    @Test
+    public void XAndOTurnMoveAround()
+    {
+        applicationRunner.startApplication();
+        applicationRunner.startAGame();
+
+        applicationRunner.move(1);
+        applicationRunner.showsCellIs(1, CROSS_PLAYER);
+        applicationRunner.move(2);
+        applicationRunner.showsCellIs(1, ROUND_PLAYER);
+        applicationRunner.move(3);
+        applicationRunner.showsCellIs(1, CROSS_PLAYER);
+        applicationRunner.move(4);
+        applicationRunner.showsCellIs(1, ROUND_PLAYER);
+
+        applicationRunner.endGame();
+        applicationRunner.showsStatusEndGame();
+    }
+
     @After
     public void close()
     {
