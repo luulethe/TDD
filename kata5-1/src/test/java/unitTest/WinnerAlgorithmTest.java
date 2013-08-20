@@ -40,4 +40,11 @@ public class WinnerAlgorithmTest
         String[] arrayPlayer = {"X","X","O","","O","","O","",""};
         assertEquals("O", WinnerAlgorithm.check(arrayPlayer));
     }
+
+    @Test
+    public void testNoWinner()
+    {
+        String[] arrayPlayer = {"X","X","O","","X","","O","",""};
+        assertEquals("", WinnerAlgorithm.check(arrayPlayer));
+    }
 }
