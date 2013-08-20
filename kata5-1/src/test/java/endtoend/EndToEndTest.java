@@ -93,6 +93,13 @@ public class EndToEndTest
 
         applicationRunner.showsNoWinner();
     }
+    @Test
+    public void showHistoryWhenNoGameHappen()
+    {
+        applicationRunner.startApplication();
+        applicationRunner.showHistory();
+        applicationRunner.showEmptyHistory();
+    }
 
     @After
     public void close()

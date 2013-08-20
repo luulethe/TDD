@@ -1,5 +1,6 @@
 package com.qsoft.tictactoe.ui.controller;
 
+import com.qsoft.tictactoe.ui.view.FrameHistory;
 import com.qsoft.tictactoe.ui.view.MainWindow;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -18,41 +19,29 @@ public class ButtonController implements ActionListener
     @Autowired
     private MainWindow mainWindow;
 
+    @Autowired
+    private FrameHistory frameHistory;
+
+
     @Override
     public void actionPerformed(ActionEvent e)
     {
         if (e.getActionCommand().equals("Start"))
         {
             mainWindow.getLbStatus().setText("Started");
-            setGameWhenStart();
-
+            mainWindow.getBtStart().setEnabled(false);
+            mainWindow.getBtStop().setEnabled(true);
+            mainWindow.getMainPanel().setVisible(true);
         }
         else if (e.getActionCommand().equals("Stop"))
         {
             mainWindow.getLbStatus().setText("Ended");
-            setWhenGameStop();
+            mainWindow.getBtStart().setEnabled(true);
+            mainWindow.getBtStop().setEnabled(false);
         }
-    }
-
-    private void setWhenGameStop()
-    {
-        mainWindow.getBtStart().setEnabled(true);
-        mainWindow.getBtStop().setEnabled(false);
-        for(int i = 0 ; i < 9; i++)
+        else if (e.getActionCommand().equals("History"))
         {
-            mainWindow.getButton(i+"").setEnabled(false);
-        }
-    }
-
-    private void setGameWhenStart()
-    {
-        mainWindow.getBtStart().setEnabled(false);
-        mainWindow.getBtStop().setEnabled(true);
-        mainWindow.getMainPanel().setVisible(true);
-        for(int i = 0 ; i < 9; i++)
-        {
-            mainWindow.getButton(i+"").setEnabled(true);
-            mainWindow.getButton(i+"").setText("");
+            frameHistory.setContenpanel();
         }
     }
 }

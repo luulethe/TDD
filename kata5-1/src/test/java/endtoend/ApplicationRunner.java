@@ -1,6 +1,7 @@
 package endtoend;
 
 import com.qsoft.tictactoe.Main;
+import com.qsoft.tictactoe.ui.view.FrameHistory;
 import com.qsoft.tictactoe.ui.view.MainWindow;
 
 /**
@@ -11,6 +12,7 @@ import com.qsoft.tictactoe.ui.view.MainWindow;
 public class ApplicationRunner
 {
     private TicTacToeDriver ticTacToeDriver;
+    private HistoryDriver historyDriver;
 
     public void startApplication()
     {
@@ -78,5 +80,18 @@ public class ApplicationRunner
     public void showsNoWinner()
     {
         ticTacToeDriver.hasStatusNoWinner();
+    }
+
+    public void showHistory()
+    {
+        ticTacToeDriver.clickHistoryButton();
+        historyDriver = new HistoryDriver(4000);
+        historyDriver.hasTitle(FrameHistory.FRAME_HISTORY_NAME);
+    }
+
+    public void showEmptyHistory()
+    {
+        historyDriver.hasColumnTitle();
+        historyDriver.hasShowEmptyHistory();
     }
 }

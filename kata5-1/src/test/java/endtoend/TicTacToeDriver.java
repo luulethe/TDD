@@ -77,4 +77,9 @@ public class TicTacToeDriver extends JFrameDriver
         JLabelDriver labelStatus = new JLabelDriver(this, named(MainWindow.LABEL_STATUS_NAME));
         labelStatus.hasText(equalTo("Draw"));
     }
+
+    public void clickHistoryButton()
+    {
+        getButton(MainWindow.SHOW_HISTORY_BUTTON_NAME).click();
+    }
 }

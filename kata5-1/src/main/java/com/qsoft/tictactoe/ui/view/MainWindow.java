@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 /**
@@ -26,6 +25,7 @@ public class MainWindow extends JFrame
     public static final String START_BUTTON_NAME = "btStart";
     public static final String STOP_BUTTON_NAME = "btStop";
     public static final String LABEL_STATUS_NAME = "lbStatus";
+    public static final String SHOW_HISTORY_BUTTON_NAME = "btHistory";
     private JPanel panel1;
     private JPanel buttonPanel;
     private JButton btStart;
@@ -33,6 +33,7 @@ public class MainWindow extends JFrame
     private JPanel labelPanel;
     private JLabel lbStatus;
     private JPanel mainPanel;
+    private JButton btHistory;
     @Autowired
     private ButtonController buttonController;
 
@@ -94,6 +95,8 @@ public class MainWindow extends JFrame
     {
         btStart.addActionListener(buttonController);
         btStop.addActionListener(buttonController);
+        btHistory.addActionListener(buttonController);
+
     }
 
     public JButton getButton(String name)
