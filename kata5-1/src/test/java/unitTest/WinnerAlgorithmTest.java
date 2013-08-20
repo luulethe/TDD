@@ -19,4 +19,11 @@ public class WinnerAlgorithmTest
         String[] arrayPlayer = {"X","X","X","O","O","","","",""};
         assertEquals("X", WinnerAlgorithm.check(arrayPlayer));
     }
+
+    @Test
+    public void testOWinInColumn() throws Exception
+    {
+        String[] arrayPlayer = {"O","X","X","O","","","O","",""};
+        assertEquals("O", WinnerAlgorithm.check(arrayPlayer));
+    }
 }
