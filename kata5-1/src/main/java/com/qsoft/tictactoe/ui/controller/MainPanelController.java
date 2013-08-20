@@ -1,5 +1,6 @@
 package com.qsoft.tictactoe.ui.controller;
 
+import com.qsoft.tictactoe.ui.utils.WinnerAlgorithm;
 import com.qsoft.tictactoe.ui.view.MainWindow;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -37,6 +38,9 @@ public class MainPanelController   implements ActionListener
 
     private String checkWon()
     {
-        return "X";  //To change body of created methods use File | Settings | File Templates.
+        String arrayText[] = new String[9];
+        for(int i = 0;i < 9; i ++)
+            arrayText[i] = mainWindow.getButton(i+"").getText();
+        return WinnerAlgorithm.check(arrayText);  //To change body of created methods use File | Settings | File Templates.
     }
 }
