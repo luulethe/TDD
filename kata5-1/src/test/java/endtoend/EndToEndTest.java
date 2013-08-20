@@ -74,6 +74,26 @@ public class EndToEndTest
         applicationRunner.showsXWon();
 
     }
+
+    @Test
+    public void startANewGameThenMovingFullMapHasNoWinner()
+    {
+        applicationRunner.startApplication();
+        applicationRunner.startAGame();
+
+        applicationRunner.move(0);
+        applicationRunner.move(1);
+        applicationRunner.move(2);
+        applicationRunner.move(4);
+        applicationRunner.move(3);
+        applicationRunner.move(5);
+        applicationRunner.move(7);
+        applicationRunner.move(6);
+        applicationRunner.move(8);
+
+        applicationRunner.showsNoWinner();
+    }
+
     @After
     public void close()
     {
