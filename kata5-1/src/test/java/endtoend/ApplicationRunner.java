@@ -74,4 +74,9 @@ public class ApplicationRunner
     {
         ticTacToeDriver.hasStatusXWin();
     }
+
+    public void showsNoWinner()
+    {
+        ticTacToeDriver.hasStatusNoWinner();
+    }
 }
