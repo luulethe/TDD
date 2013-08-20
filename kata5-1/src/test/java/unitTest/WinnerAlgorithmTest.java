@@ -14,16 +14,30 @@ import static org.junit.Assert.assertEquals;
 public class WinnerAlgorithmTest
 {
     @Test
-    public void testXWinInRow() throws Exception
+    public void testXWinInRow()
     {
         String[] arrayPlayer = {"X","X","X","O","O","","","",""};
         assertEquals("X", WinnerAlgorithm.check(arrayPlayer));
     }
 
     @Test
-    public void testOWinInColumn() throws Exception
+    public void testOWinInColumn()
     {
         String[] arrayPlayer = {"O","X","X","O","","","O","",""};
+        assertEquals("O", WinnerAlgorithm.check(arrayPlayer));
+    }
+
+    @Test
+    public void testXWinInCrossFromLeftTopToRightDown()
+    {
+        String[] arrayPlayer = {"X","O","O","","X","","","","X"};
+        assertEquals("X", WinnerAlgorithm.check(arrayPlayer));
+    }
+
+    @Test
+    public void testOWinInCrossFromLeftDownToRightTop()
+    {
+        String[] arrayPlayer = {"X","X","O","","O","","O","",""};
         assertEquals("O", WinnerAlgorithm.check(arrayPlayer));
     }
 }
