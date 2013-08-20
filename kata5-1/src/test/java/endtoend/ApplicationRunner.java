@@ -33,7 +33,7 @@ public class ApplicationRunner
         };
         thread.setDaemon(true);
         thread.start();
-        ticTacToeDriver = new TicTacToeDriver(3000);
+        ticTacToeDriver = new TicTacToeDriver(4000);
         ticTacToeDriver.hasTitle(MainWindow.APPLICATION_TITLE);
     }
 
@@ -82,16 +82,22 @@ public class ApplicationRunner
         ticTacToeDriver.hasStatusNoWinner();
     }
 
-    public void showHistory()
+    public void startHistory()
     {
         ticTacToeDriver.clickHistoryButton();
         historyDriver = new HistoryDriver(4000);
         historyDriver.hasTitle(FrameHistory.FRAME_HISTORY_NAME);
     }
 
-    public void showEmptyHistory()
+    public void showsEmptyHistory()
     {
         historyDriver.hasColumnTitle();
         historyDriver.hasShowEmptyHistory();
+    }
+
+    public void showsHistory()
+    {
+        historyDriver.hasColumnTitle();
+        historyDriver.hasShowHistory();
     }
 }

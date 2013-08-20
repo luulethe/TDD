@@ -97,8 +97,29 @@ public class EndToEndTest
     public void showHistoryWhenNoGameHappen()
     {
         applicationRunner.startApplication();
-        applicationRunner.showHistory();
-        applicationRunner.showEmptyHistory();
+        applicationRunner.startHistory();
+        applicationRunner.showsEmptyHistory();
+    }
+    @Test
+    public void showHistoryWhenOneGameHappenAndClickStop()
+    {
+
+        applicationRunner.startApplication();
+        applicationRunner.startAGame();
+        applicationRunner.move(1);
+        applicationRunner.move(2);
+        applicationRunner.move(3);
+        applicationRunner.endGame();
+
+        applicationRunner.startHistory();
+        applicationRunner.showsEmptyHistory();
+    }
+    @Test
+    public void showHistoryWhenOneGameHappenAndAPlayerWinner()
+    {
+        startANewGameThenMoveThenHasAWinner();
+        applicationRunner.startHistory();
+        applicationRunner.showsHistory();
     }
 
     @After
