@@ -24,15 +24,35 @@ public class ButtonController implements ActionListener
         if (e.getActionCommand().equals("Start"))
         {
             mainWindow.getLbStatus().setText("Started");
-            mainWindow.getBtStart().setEnabled(false);
-            mainWindow.getBtStop().setEnabled(true);
-            mainWindow.getMainPanel().setVisible(true);
+            setGameWhenStart();
+
         }
         else if (e.getActionCommand().equals("Stop"))
         {
             mainWindow.getLbStatus().setText("Ended");
-            mainWindow.getBtStart().setEnabled(true);
-            mainWindow.getBtStop().setEnabled(false);
+            setWhenGameStop();
+        }
+    }
+
+    private void setWhenGameStop()
+    {
+        mainWindow.getBtStart().setEnabled(true);
+        mainWindow.getBtStop().setEnabled(false);
+        for(int i = 0 ; i < 9; i++)
+        {
+            mainWindow.getButton(i+"").setEnabled(false);
+        }
+    }
+
+    private void setGameWhenStart()
+    {
+        mainWindow.getBtStart().setEnabled(false);
+        mainWindow.getBtStop().setEnabled(true);
+        mainWindow.getMainPanel().setVisible(true);
+        for(int i = 0 ; i < 9; i++)
+        {
+            mainWindow.getButton(i+"").setEnabled(true);
+            mainWindow.getButton(i+"").setText("");
         }
     }
 }
