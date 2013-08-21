@@ -46,7 +46,7 @@ public class HistoryDriver extends JFrameDriver
     {
         JTableDriver table = new JTableDriver(this);
 
-        checkNumberRow(table,0);
+        checkNumberRow(table, 0);
     }
 
     private void checkNumberRow(JTableDriver table, int numberRow)
@@ -65,12 +65,12 @@ public class HistoryDriver extends JFrameDriver
         }), Matchers.equalTo(numberRow));
     }
 
-    public void hasShowHistory()
+    public void hasShowHistoryAGameHappen(String index,String firstPlayer,String winner, String steps)
     {
         JTableDriver table = new JTableDriver(this);
-        checkNumberRow(table,1);
+        checkNumberRow(table, 1);
         table.hasRow(
-                matching(withLabelText("1"), withLabelText("X"),
-                        withLabelText("X"), withLabelText("1-5-4-6-7")));
+                matching(withLabelText(index), withLabelText(firstPlayer),
+                        withLabelText(winner), withLabelText(steps)));
     }
 }

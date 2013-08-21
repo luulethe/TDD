@@ -1,9 +1,10 @@
 package com.qsoft.tictactoe.business.impl;
 
 import com.qsoft.tictactoe.business.HistoryService;
-import com.qsoft.tictactoe.persistance.dao.HistoryDAO;
-import com.qsoft.tictactoe.persistance.entity.History;
+import com.qsoft.tictactoe.persistence.dao.HistoryDAO;
+import com.qsoft.tictactoe.persistence.entity.History;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * Date: 8/20/13
  * Time: 10:08 AM
  */
+@Component
 public class HistoryServiceImpl implements HistoryService
 {
     @Autowired
@@ -32,6 +34,6 @@ public class HistoryServiceImpl implements HistoryService
     @Override
     public void save(History history)
     {
-        //To change body of implemented methods use File | Settings | File Templates.
+        historyDAO.save(history);//To change body of implemented methods use File | Settings | File Templates.
     }
 }

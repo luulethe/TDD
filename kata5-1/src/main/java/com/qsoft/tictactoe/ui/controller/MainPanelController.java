@@ -1,5 +1,6 @@
 package com.qsoft.tictactoe.ui.controller;
 
+import com.qsoft.tictactoe.business.HistoryService;
 import com.qsoft.tictactoe.ui.utils.WinnerAlgorithm;
 import com.qsoft.tictactoe.ui.view.MainWindow;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,19 @@ public class MainPanelController implements ActionListener
     private MainWindow mainWindow;
     boolean isCrossFirst = true;
 
+    @Autowired
+    MainController mainController;
+
+    @Autowired
+    HistoryService historyService;
+
+   @Autowired
+   ButtonController buttonController;
+    public void setCrossFirst(boolean crossFirst)
+    {
+        isCrossFirst = crossFirst;
+    }
+
     @Override
     public void actionPerformed(ActionEvent e)
     {
@@ -35,15 +49,21 @@ public class MainPanelController implements ActionListener
             jButton.setText("O");
         }
         isCrossFirst = !isCrossFirst;
+        mainController.addNextStep(name);
         jButton.setEnabled(false);
         String nameWinner = checkWon();
         if (!nameWinner.equals(""))
         {
             mainWindow.getLbStatus().setText(nameWinner + " won");
+            mainController.getHistory().setWinner(nameWinner);
+            historyService.save(mainController.getHistory());
+            buttonController.setStopGame();
         }
         else if (isFullMap())
         {
             mainWindow.getLbStatus().setText(nameWinner + "Draw");
+            historyService.save(mainController.getHistory());
+            buttonController.setStopGame();
         }
     }
 

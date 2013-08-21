@@ -16,5 +16,6 @@ public class Main
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         MainController mainController = applicationContext.getBean(MainController.class);
         mainController.showMainView();
+
     }
 }

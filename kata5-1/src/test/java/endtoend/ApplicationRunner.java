@@ -65,6 +65,10 @@ public class ApplicationRunner
     public void close()
     {
         ticTacToeDriver.dispose();
+        if (historyDriver != null)
+        {
+            historyDriver.dispose();
+        }
     }
 
     public void showsCellIs(int index, String namePlayer)
@@ -95,9 +99,9 @@ public class ApplicationRunner
         historyDriver.hasShowEmptyHistory();
     }
 
-    public void showsHistory()
+    public void showsHistoryWhenAGameHappen(String index, String firstPlayer, String winner, String steps)
     {
         historyDriver.hasColumnTitle();
-        historyDriver.hasShowHistory();
+        historyDriver.hasShowHistoryAGameHappen(index, firstPlayer, winner, steps);
     }
 }

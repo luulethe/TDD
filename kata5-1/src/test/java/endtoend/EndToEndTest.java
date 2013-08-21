@@ -93,6 +93,7 @@ public class EndToEndTest
 
         applicationRunner.showsNoWinner();
     }
+
     @Test
     public void showHistoryWhenNoGameHappen()
     {
@@ -100,10 +101,10 @@ public class EndToEndTest
         applicationRunner.startHistory();
         applicationRunner.showsEmptyHistory();
     }
+
     @Test
     public void showHistoryWhenOneGameHappenAndClickStop()
     {
-
         applicationRunner.startApplication();
         applicationRunner.startAGame();
         applicationRunner.move(1);
@@ -114,12 +115,13 @@ public class EndToEndTest
         applicationRunner.startHistory();
         applicationRunner.showsEmptyHistory();
     }
+
     @Test
     public void showHistoryWhenOneGameHappenAndAPlayerWinner()
     {
         startANewGameThenMoveThenHasAWinner();
         applicationRunner.startHistory();
-        applicationRunner.showsHistory();
+        applicationRunner.showsHistoryWhenAGameHappen("1", "X", "X", "1-4-2-5-3");
     }
 
     @After
